@@ -1,0 +1,1899 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing other 1.5
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Fundamentação teórica
+\end_layout
+
+\begin_layout Standard
+A seguir, apresentam-se breves definições sobre os assuntos teóricos relacionado
+s com a monografia, utilizando-se uma abordagem 
+\emph on
+top-down
+\emph default
+ como pode-se observar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+, exibe-se uma rede de Petri que representa a montagem teórica do presente
+ trabalho, na qual o estado inicial é o mais genérico e o estado final é
+ o mais específico.
+ 
+\end_layout
+
+\begin_layout Standard
+Na rede de Petri proposta, observa-se também que cada estado representa
+ uma área das Ciências da Computação a qual possui ferramentas teóricas
+ que são adotadas para que a ficha possa ativar as transições.
+ Cada transição representa uma ferramenta que será adquirida do estado anterior
+ antes de passar ao próximo.
+ Em outras palavras, a ficha pode passar somente ao estado seguinte quando
+ uma ferramenta específica do estado anterior é definida para ser utilizada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estruturação do conhecimento para conseguir as ferramentas teóricas e técnicas
+ relacionadas com o presente trabalho.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/rede_petri_teoria.pdf
+	lyxscale 50
+	scale 59
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Soft computing
+\end_layout
+
+\begin_layout Standard
+Existem dois tipos de paradigmas computacionais, a Soft Computing (SC) e
+ a Hard Computing (HC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "HC"
+symbol "HC"
+description "Hard Computing"
+
+\end_inset
+
+), ambos os termos foram estabelecidos pela primeira vez pelo professor
+ L.
+ A.
+ Zadeh no ano 1996.
+ O HC trata sobre modelos precisos em que as soluções são atingidas imediatament
+e.
+ Por outro lado, a SC lida com modelos de aproximações e dá soluções a problemas
+ complexos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sivanandam_2004"
+
+\end_inset
+
+.
+ Como pode-se perceber, a HC é basicamente a computação convencional de
+ modo que a solução dos problemas baseia-se nos princípios da precisão.
+ Em contraste, o paradigma da SC trata sobre solucionar problemas utilizando
+ modelos imprecisos que possuem certa porcentagem de aproximação.
+\end_layout
+
+\begin_layout Standard
+Cataloga-se a SC em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "oded_2007"
+
+\end_inset
+
+ como uma coleção de novas técnicas em inteligência artificial que exploram
+ a tolerância para a imprecisão, incerteza, verdade parcial e manipulação
+ de não linearidades para poder alcançar rastreabilidade, robustez e soluções
+ de menor custo comparado com os métodos da HC, ou seja, apresenta-se uma
+ coleção de ferramentas aptas para minerar a Web porque esta encaixa-se
+ nas definições de imprecisão, incerteza e veracidade duvidosa.
+\end_layout
+
+\begin_layout Standard
+A SC é composta por técnicas como as Redes Neurais (Neural Networks
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "NN"
+symbol "NN"
+description "Neural Networks"
+
+\end_inset
+
+), Computação Evolucionária (Evolutionary Computing
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "EC"
+symbol "EC"
+description "Evolutionary Computing"
+
+\end_inset
+
+), Sistemas Difusos (Fuzzy Systems
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "FS"
+symbol "FS"
+description "Fuzzy Systems"
+
+\end_inset
+
+) e Raciocínio Probabilístico (Probabilistic Reasoning
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "PR"
+symbol "PR"
+description "Probabilistic Reasoning"
+
+\end_inset
+
+), como mostrado na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:sc_comp}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Principais componentes da família da SC.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:sc_comp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/soft_computing_family.pdf
+	lyxscale 50
+	scale 43
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kunjal_2013"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As técnicas mostradas na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:sc_comp}
+\end_layout
+
+\end_inset
+
+, nem sempre estão isoladas.
+ Elas podem ser combinadas para resolver um mesmo problema, e isso denomina-se
+ hibridação.
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zadeh_1996"
+
+\end_inset
+
+ define-se a SC como uma nova abordagem da computação a qual é análoga à
+ habilidade marcante da mente humana para pensar e aprender sobre um entorno
+ incerto e impreciso.
+ A SC, segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "devendra_2008"
+
+\end_inset
+
+, é uma vertente da computação na qual pretende-se construir máquinas inteligent
+es e sábias.
+ Pode-se observar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:top_down_abordagem}
+\end_layout
+
+\end_inset
+
+ o desenvolvimento da SC, começando pela computação convencional, até chegar
+ ao extremo de pensamento puro por parte de um computador, ou seja, o objetivo
+ final da SC é projetar e desenvolver um computador que possa agir de forma
+ semelhante aos seres humanos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Desenvolvimento da SC.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:top_down_abordagem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../img/abordagem_top_down.pdf
+	lyxscale 50
+	scale 53
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "devendra_2008"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para conseguir ativar a transição na rede de Petri da 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+ é necessário estabelecer a rede neural como técnica para poder passar ao
+ estado seguinte que é o aprendizado de máquina.
+\end_layout
+
+\begin_layout Subsubsection
+Computação Evolucionária
+\end_layout
+
+\begin_layout Subsubsection
+Sistemas Difusos
+\end_layout
+
+\begin_layout Subsubsection
+Raciocínio Probabilístico
+\end_layout
+
+\begin_layout Subsubsection
+Rede Neural Artificial
+\end_layout
+
+\begin_layout Standard
+Uma rede neural artificial (ou simplesmente rede neural) é um modelo matemático
+ simplificado de uma rede de neurônios biológicos.
+ A unidade fundamental de uma rede neural é o neurônio que está interconectado
+ com outros.
+ Essas redes executam em paralelo uma tarefa global comum e possuem a habilidade
+ de aprendizagem.
+ Explica-se em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kunjal_2013"
+
+\end_inset
+
+ que uma consequência da aprendizagem dos neurônios de uma rede neural é
+ a aquisição de conhecimento de modo a torná-lo disponível para o uso.
+ As caraterísticas básicas de uma rede neural são o paralelismo inerente,
+ acesso à informação local, a semelhança entre suas componentes e o aprendizado
+ incremental.
+\end_layout
+
+\begin_layout Subsection
+Aprendizado de máquina
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{sec:aprendizado_maquina}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A ficha encontra-se no seguinte estado, contendo já a teoria de uma rede
+ neural.
+ Nesta seção trata-se sobre as técnicas que serão adotadas do aprendizado
+ de máquina (Machine Learning, ou ML).
+\end_layout
+
+\begin_layout Standard
+O aprendizado automático ou aprendizado de máquina é um programa de computador
+ que pode “aprender” de um conjunto de entradas disponíveis.
+ Define-se, em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kevin_2012"
+
+\end_inset
+
+, que o aprendizado de máquina é um conjunto de métodos que podem detectar
+ automaticamente padrões em um determinado conjunto de dados e, posteriormente,
+ utilizar esses padrões descobertos para predizer dados futuros.
+ Aprendizado é, grosseiramente falando, o processo de converter experiência
+ em habilidade ou conhecimento 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shai_2014"
+
+\end_inset
+
+.
+ Aprender a partir de dados é o conceito fundamental do ML
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "ML"
+symbol "ML"
+description "Machine Learning"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O foco do ML é a modelagem do aprendizado e a adaptação (atividades de animais
+ e humanos) num computador.
+ Os métodos do ML são denominados “sub-simbólicos” porque não existem símbolos
+ ou manipulação deles envolvidos, em contraste com a Inteligência Artificial,
+ em que o computador manipula símbolos que refletem o entorno (processo
+ simbólico) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "stephen_2015"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Tomando como ponto de partida que as máquinas aprendem a partir de dados,
+ então, em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "stephen_2015"
+
+\end_inset
+
+ a ML trata sobre como fazer computadores modificarem ou adaptarem as suas
+ ações de modo que estas se tornem mais precisas.
+ A precisão é medida por quão bem a escolha de ações refletem as escolhas
+ corretas.
+\end_layout
+
+\begin_layout Standard
+Saber em que momento precisa-se do ML é fundamental porque justifica a utilizaçã
+o dos conceitos de ML no trabalho.
+ Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "shai_2014"
+
+\end_inset
+
+, sugere-se que os conceitos de ML devem ser utilizados em tarefas realizadas
+ por humanos ou animais.
+ De acordo com isso, precisa-se do ML para poder modelar os algoritmos deste
+ trabalho, de modo que utilizam-se dados gerados pela interação humana com
+ a Web a partir de buscas.
+\end_layout
+
+\begin_layout Standard
+De acordo com 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kevin_2012"
+
+\end_inset
+
+, o aprendizado de máquina divide-se, usualmente, em aprendizado supervisionado,
+ aprendizado não supervisionado e aprendizado por reforço.
+ Na abordagem supervisionada ou preditiva do ML, tem-se como objetivo o
+ aprendizado mapeando as saídas a partir das entradas, dado um conjunto
+ de treinamento.
+ A segunda abordagem de ML, a não supervisionada ou descritiva, tem como
+ objetivo encontrar padrões e correlações entre os dados.
+ Finalmente, a abordagem de aprendizado por reforço, trata-se do modo de
+ agir ou se comportar diante de uma situação de recompensa ou de punição.
+\end_layout
+
+\begin_layout Standard
+A atividade de classificar e extrair conhecimento a partir do conteúdo de
+ páginas Web da Wikipédia justifica a escolha da utilização das ferramentas
+ oferecidas pela abordagem supervisionada do aprendizado de máquina.
+ Então, a ficha da rede de Petri passa para o seguinte estado sabendo que
+ até esta subseção, juntando os conceitos revisados, está sendo utilizada
+ uma rede neural com aprendizagem supervisionada.
+\end_layout
+
+\begin_layout Subsection
+Mineração de dados
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{sec:mineracao_dados}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A mineração de dados (data mining) é definida, segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mohammed_2014"
+
+\end_inset
+
+, como o processo de descoberta intuitiva de novos padrões de interesse,
+ assim como modelos preditivos, descritivos e compreensíveis.
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "anand_2012"
+
+\end_inset
+
+ descreve-se a mineração de dados como a descoberta de modelos a partir
+ de dados.
+ Existem duas abordagens: a estatística e a do aprendizado de máquina.
+ Para o presente trabalho utiliza-se a abordagem de aprendizado de máquina,
+ esta decisão justifica-se na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:aprendizado_maquina}
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Uma analogia da mineração de dados faz-se em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jiawei_2012"
+
+\end_inset
+
+, com a obtenção de ouro das rochas em uma mina.
+ Ademais, enfatiza-se que o nome apropriado para mineração de dados é “conhecime
+nto minerado a partir de dados”.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jiawei_2012"
+
+\end_inset
+
+, a descoberta de conhecimento a partir de dados (ou KDD, do inglês Knowledge
+ Discovery from Data) é sinônimo de mineração de dados, não obstante em
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "umair_2014"
+
+\end_inset
+
+ coloca-se o KDD, juntamente com o CRISP-DM e o SEMMA, como um tipo de processo
+ relacionado com a mineração de dados.
+ A seguir, expõe-se uma breve descrição sobre eles:
+\end_layout
+
+\begin_layout Subsubsection
+A metodologia KDD 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "KDD"
+symbol "KDD"
+description "Knowledge Discovery From Data"
+
+\end_inset
+
+É um modelo de processo que consiste na extração de conhecimentos escondidos
+ a partir de um banco de dados.
+ Deve ser um processo interativo e iterativo, e possui cinco passos de desenvolv
+imento que se podem observar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:KDD}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Uma visão geral dos passos que compõem o processo KDD.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:KDD}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/kdd.pdf
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fayyad_1996"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A metodologia SEMMA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "SEMMA"
+symbol "SEMMA"
+description "Sample, Explore, Modify, Model and Assess"
+
+\end_inset
+
+ Do acrônimo Sample, Explore, Modify, Model and Assess; que foi desenvolvido
+ pelo instituto SAS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Statistical Analysis System, é o nome de uma empresa pioneira em Business
+ intelligence.
+ Disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.sas.com
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Foca-se basicamente no desenvolvimento e manutenção de projetos de mineração
+ de dados.
+ Consiste em um ciclo altamente iterativo de cinco passos como pode-se verificar
+ na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:SEMMA}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia SEMMA proposto pela SAS.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:SEMMA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/semma.pdf
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "binus_2014"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A metodologia CRISP-DM
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "CRISP-DM"
+symbol "CRISP-DM"
+description "Cross-Industry Standard Process for Data Mining"
+
+\end_inset
+
+ É um processo de mineração de dados que significa Cross-Industry Standard
+ Process for Data Mining.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+, o processo foi concebido no ano 1996 pelas empresas DaimlerChrysler
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+É um fabricante de automóveis de passageiros e veículos comerciais.
+ Disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+https://www.daimler.com
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, SPSS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+É um software para análise estatística de dados, disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.ibm.com/analytics/us/en/technology/spss/
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ e NCR
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+É uma empresa de tecnologia especializada em produtos para o varejo e setores
+ financeiros, disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.ncr.com
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ É uma ferramenta que está constituída por seis processos cíclicos como
+ se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:CRISP-DM}
+\end_layout
+
+\end_inset
+
+.
+ Segundo a pesquisa de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gregory_2014"
+
+\end_inset
+
+ no site KDnuggets, pode-se observar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:crisp-dm_pesquisa}
+\end_layout
+
+\end_inset
+
+ que o CRISP-DM é o método mais utilizado nos anos 2007 e 2014.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia CRISP-DM, utilizada no presente trabalho.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:CRISP-DM}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/crisp-dm.pdf
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.8
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pesquisa realizada com 200 pessoas sobre qual é a metodologia favorita utilizada
+ nos projetos de mineração de dados, nos anos 2007 e 2014.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:crisp-dm_pesquisa}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Metodologia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ano 2007 (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ano 2014 (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CRISP-DM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Criada por mim
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SEMMA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Outra
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Processo KDD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Criada pela organização onde trabalho
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Específica de domínio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nenhuma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{0.2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gregory_2014"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
+ com a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+, é necessário adotar um tipo de processo de mineração de dados.
+ Como é mencionado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, nas três metodologias que foram abarcadas, não há obrigação de seguir
+ de forma rígida seus respectivos passos.
+ Afinal, optou-se por seguir a metodologia CRISP-DM.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:materiais_metodos}
+\end_layout
+
+\end_inset
+
+ vê-se a aplicação desta metodologia a partir do ponto de vista da proposta
+ do trabalho.
+\end_layout
+
+\begin_layout Subsection
+O software Weka
+\end_layout
+
+\end_body
+\end_document
