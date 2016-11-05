@@ -74,11 +74,40 @@ Materiais e métodos
 \end_layout
 
 \begin_layout Standard
-Utiliza-se o dataset de Gas disponivel em [].
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{sec:materiais_metodos}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Utiliza-se o conjunto de dados de Gás disponível em [].
 \end_layout
 
 \begin_layout Standard
 Possui os atributos como mostra na figura
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+, mostra-se, de forma detalhada, o modelo de referência da metodologia CRISP-DM.
+ Este modelo possui seis etapas que são aplicadas para o processo de mineração
+ do conjunto de dados mencionado (Gás Sensors).
 \end_layout
 
 \begin_layout Subsection
@@ -86,11 +115,15 @@ Compreensão do projeto
 \end_layout
 
 \begin_layout Standard
+Nesta etapa
+\end_layout
+
+\begin_layout Standard
 Descrição sobre o artigo relacionado.
 \end_layout
 
 \begin_layout Subsection
-Análise dos dados
+Compreensão dos dados
 \end_layout
 
 \begin_layout Subsection
@@ -99,6 +132,10 @@ Preparação dos dados
 
 \begin_layout Subsection
 Modelagem
+\end_layout
+
+\begin_layout Standard
+Rede Neural.
 \end_layout
 
 \begin_layout Subsection

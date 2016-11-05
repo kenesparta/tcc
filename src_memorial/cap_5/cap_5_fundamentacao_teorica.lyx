@@ -584,24 +584,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-Para conseguir ativar a transição na rede de Petri da 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:organ_teorica}
-\end_layout
-
-\end_inset
-
- é necessário estabelecer a rede neural como técnica para poder passar ao
- estado seguinte que é o aprendizado de máquina.
-\end_layout
-
 \begin_layout Subsubsection
 Computação Evolucionária
 \end_layout
@@ -797,7 +779,7 @@ label{sec:mineracao_dados}
 \end_layout
 
 \begin_layout Standard
-A mineração de dados (data mining) é definida, segundo 
+A mineração de dados é definida, segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "mohammed_2014"
@@ -845,10 +827,14 @@ key "jiawei_2012"
 
 \end_inset
 
-, com a obtenção de ouro das rochas em uma mina.
+, com a obtenção de ouro puro a partir da extração de toneladas de rochas
+ em uma mina.
  Ademais, enfatiza-se que o nome apropriado para mineração de dados é “conhecime
 nto minerado a partir de dados”.
- Segundo 
+\end_layout
+
+\begin_layout Standard
+Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "jiawei_2012"
@@ -899,6 +885,21 @@ cref{fig:KDD}
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "carlos_2011"
+
+\end_inset
+
+, menciona-se que a mineração de dados existia como uma fase do processo
+ KDD.
+ A mineração de dados só compreendia a aplicação de algoritmos de otimização
+ e classificação, mas com o tempo evoluiu e atualmente refere-se ao processo
+ completo de KDD.
 \end_layout
 
 \begin_layout Standard
@@ -1871,7 +1872,7 @@ key "david_2008"
 
 \end_inset
 
-, nas três metodologias que foram abarcadas, não há obrigação de seguir
+, nas três metodologias que foram consideradas, não há obrigação de seguir
  de forma rígida seus respectivos passos.
  Afinal, optou-se por seguir a metodologia CRISP-DM.
  Na 
@@ -1892,7 +1893,7 @@ cref{sec:materiais_metodos}
 \end_layout
 
 \begin_layout Subsection
-O software Weka
+O software WEKA
 \end_layout
 
 \end_body

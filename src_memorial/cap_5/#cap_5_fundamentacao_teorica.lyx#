@@ -584,24 +584,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-Para conseguir ativar a transição na rede de Petri da 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:organ_teorica}
-\end_layout
-
-\end_inset
-
- é necessário estabelecer a rede neural como técnica para poder passar ao
- estado seguinte que é o aprendizado de máquina.
-\end_layout
-
 \begin_layout Subsubsection
 Computação Evolucionária
 \end_layout
@@ -637,10 +619,6 @@ key "kunjal_2013"
  As caraterísticas básicas de uma rede neural são o paralelismo inerente,
  acesso à informação local, a semelhança entre suas componentes e o aprendizado
  incremental.
-\end_layout
-
-\begin_layout Subsection
-Rede Neural Artificial
 \end_layout
 
 \begin_layout Subsection
@@ -801,6 +779,10 @@ label{sec:mineracao_dados}
 \end_layout
 
 \begin_layout Standard
+No começo dos anos 
+\end_layout
+
+\begin_layout Standard
 A mineração de dados (data mining) é definida, segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -873,56 +855,20 @@ key "umair_2014"
  A seguir, expõe-se uma breve descrição sobre eles:
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{description}[style=multiline,leftmargin=2.5cm]
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsubsection
+A metodologia KDD 
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-item [{
-\end_layout
-
-\end_inset
-
-KDD
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "KDD"
 symbol "KDD"
-description "knowledge discovery from data"
+description "Knowledge Discovery From Data"
 
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}]
-\end_layout
-
-\end_inset
-
- É um modelo de processo que consiste na extração de conhecimentos escondidos
+É um modelo de processo que consiste na extração de conhecimentos escondidos
  a partir de um banco de dados.
  Deve ser um processo interativo e iterativo, e possui cinco passos de desenvolv
 imento que se podem observar na 
@@ -1051,36 +997,16 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-item [{
+\begin_layout Subsubsection
+A metodologia SEMMA 
 \end_layout
 
-\end_inset
-
-SEMMA
+\begin_layout Standard
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "SEMMA"
 symbol "SEMMA"
 description "Sample, Explore, Modify, Model and Assess"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}]
-\end_layout
 
 \end_inset
 
@@ -1251,36 +1177,16 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-item [{
+\begin_layout Subsubsection
+A metodologia CRISP-DM
 \end_layout
 
-\end_inset
-
-CRISP-DM
+\begin_layout Standard
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "CRISP-DM"
 symbol "CRISP-DM"
 description "Cross-Industry Standard Process for Data Mining"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}]
-\end_layout
 
 \end_inset
 
@@ -1544,65 +1450,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{description}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
- com a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:organ_teorica}
-\end_layout
-
-\end_inset
-
-, é necessário adotar um tipo de processo de mineração de dados.
- Como é mencionado em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "david_2008"
-
-\end_inset
-
-, nas três metodologias que foram abarcadas, não há obrigação de seguir
- de forma rígida seus respectivos passos.
- Afinal, optou-se por seguir a metodologia CRISP-DM.
- Na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{sec:materiais_metodos}
-\end_layout
-
-\end_inset
-
- vê-se a aplicação desta metodologia a partir do ponto de vista da proposta
- do trabalho.
 \end_layout
 
 \begin_layout Standard
@@ -1987,8 +1834,47 @@ status open
 
 \end_layout
 
-\begin_layout Subsubsection
-A metodologia CRISP-DM
+\begin_layout Standard
+Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
+ com a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+, é necessário adotar um tipo de processo de mineração de dados.
+ Como é mencionado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, nas três metodologias que foram abarcadas, não há obrigação de seguir
+ de forma rígida seus respectivos passos.
+ Afinal, optou-se por seguir a metodologia CRISP-DM.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:materiais_metodos}
+\end_layout
+
+\end_inset
+
+ vê-se a aplicação desta metodologia a partir do ponto de vista da proposta
+ do trabalho.
 \end_layout
 
 \begin_layout Subsection
