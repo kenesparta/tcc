@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -90,7 +92,7 @@ label{sec:materiais_metodos}
 \end_layout
 
 \begin_layout Standard
-Utiliza-se o dataset de Gás disponível em [].
+Utiliza-se o conjunto de dados de Gás disponível em [].
 \end_layout
 
 \begin_layout Standard
@@ -115,11 +117,113 @@ Compreensão do projeto
 \end_layout
 
 \begin_layout Standard
-Nesta etapa
+Nesta etapa, se foca em entender os objetivos e os requerimentos das perspectiva
+s do projeto, convertendo o conhecimento em um problema de mineração de
+ dados.
+ Se modela um plano preliminar para atingir os objetivos.
+ Na [] podem-se observar o subprocesso relacionado com a compreensão do
+ projeto da metodologia CRISP-DM.
 \end_layout
 
 \begin_layout Standard
-Descrição sobre o artigo relacionado.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Subprocesso da compreensão do projeto.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Determinar os objetivos do projeto
+\end_layout
+
+\begin_layout Standard
+O principal objetivo do projeto é determinar regras lógicas do tipo IF THEN
+ ELSE que estão relacionadas com a massa de dados.
+ Esse tipo de regras lógicas ajudarão a compreender...
+\end_layout
+
+\begin_layout Subsubsection
+Avaliar a situação
+\end_layout
+
+\begin_layout Subsubsection
+Determinar o objetivo da mineração de dados
+\end_layout
+
+\begin_layout Subsubsection
+Realizar um plano do projeto
 \end_layout
 
 \begin_layout Subsection
