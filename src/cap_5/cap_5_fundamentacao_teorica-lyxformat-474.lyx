@@ -1,9 +1,7 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
-\save_transient_properties true
-\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -11,16 +9,16 @@
 \language_package default
 \inputencoding utf8
 \fontencoding global
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
-\font_math "auto" "auto"
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100 100
-\font_tt_scale 100 100
+\font_sf_scale 100
+\font_tt_scale 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -1547,7 +1545,7 @@ label{tab:crisp-dm_pesquisa}
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="3">
-<features booktabs="true" tabularvalignment="middle">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="right" valignment="top" width="0pt">
 <column alignment="right" valignment="top" width="0pt">
@@ -1923,6 +1921,22 @@ cref{sec:materiais_metodos}
 
 \begin_layout Subsection
 O software WEKA
+\end_layout
+
+\begin_layout Subsection
+Termos relevantes
+\end_layout
+
+\begin_layout Subsubsection
+Analista de dados
+\end_layout
+
+\begin_layout Subsubsection
+Cientista de dados
+\end_layout
+
+\begin_layout Subsubsection
+Big Data
 \end_layout
 
 \begin_layout Subsection
