@@ -624,8 +624,17 @@ key "kunjal_2013"
 \end_layout
 
 \begin_layout Standard
-A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas,
- com algoritmo de treinamento Levemerk Marquard.
+A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas
+ (MLP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "FS"
+symbol "MLP"
+description "Multilayer Perceptron"
+
+\end_inset
+
+), com algoritmo de treinamento Levemerk Marquard.
 \end_layout
 
 \begin_layout Subsection
@@ -1926,6 +1935,10 @@ O software WEKA
 \end_layout
 
 \begin_layout Subsection
+Árvores de decisão
+\end_layout
+
+\begin_layout Subsection
 Extração de regras
 \end_layout
 
@@ -1934,7 +1947,15 @@ O algoritmo RX
 \end_layout
 
 \begin_layout Subsubsection
-O algoritmo C4.5
+O algoritmo 
+\begin_inset Quotes eld
+\end_inset
+
+neurorule
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_body

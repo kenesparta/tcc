@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -136,12 +138,49 @@ status open
 \end_inset
 
 .
- Em contrapartida, cumprindo o papel de analista de dados, aplica-se a metodolog
-ia CRISP-DM à massa de dados disponibilizada pelo cliente.
+ Em contrapartida, cumprindo o papel de analista de dados
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Um analista de dados é um profissional que coleta, processa e executa análises
+ estatísticas de dados.
+ O do analista de dados é descobrir como os dados podem ser usados para
+ responder a perguntas e resolver problemas, disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.mastersindatascience.org/careers/data-analyst/
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, aplica-se a metodologia CRISP-DM à massa de dados disponibilizada pelo
+ cliente.
 \end_layout
 
 \begin_layout Standard
-Tendo em conta o exposto no parágrafo prévio, panteia-se a seguinte situação:
+Tendo em conta o exposto no parágrafo prévio, planteia-se a seguinte situação:
  o cliente deseja obter conhecimento relevante dos dados que possui
 \begin_inset Foot
 status open
@@ -178,7 +217,7 @@ status open
 \end_inset
 
 , então ele pede a um analista de dados para que possa realizar o trabalho
- relacionado com obtenção de conhecimento a partir dos dados.
+ relacionado com obtenção de conhecimento relevante a partir dos dados.
 \end_layout
 
 \begin_layout Standard
@@ -192,8 +231,8 @@ key "pete_2000"
 
 \end_inset
 
-, mostra-se, de forma detalhada, o modelo de referência da metodologia CRISP-DM.
- Este modelo possui seis etapas que são aplicadas para o processo de mineração
+ mostra-se, de forma detalhada, o modelo de referência da metodologia CRISP-DM.
+ Este modelo possui seis etapas que são aplicadas no processo de mineração
  do conjunto de dados proporcionados pelo cliente.
 \end_layout
 
@@ -202,22 +241,6 @@ Compreensão do projeto
 \end_layout
 
 \begin_layout Standard
-O primeiro objetivo do analista de dados é compreender, desde o ponto de
- vista dos negócios, o que o cliente realmente deseja fazer.
-\end_layout
-
-\begin_layout Standard
-Neste trabalho, o cliente possui uma massa de dados relacionada com sensores
- químicos que podem detectar diferentes tipos de odor.
- Esses sensores são oito e formam uma 
-\begin_inset Quotes eld
-\end_inset
-
-nariz eletrônica
-\begin_inset Quotes erd
-\end_inset
-
- como mostrado na 
 \begin_inset ERT
 status open
 
@@ -225,118 +248,7 @@ status open
 
 
 \backslash
-cref{fig:arranjo_sensores}
-\end_layout
-
-\end_inset
-
-.
- A nariz eletrônica coletou dados durante dois anos em um ambiente fechado
- como mencionado em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ramon_2016"
-
-\end_inset
-
-.
- Existe também informação sobre umidade e temperatura.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Arranjo de sensores utilizado para captar informação do odor do ambiente.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{fig:arranjo_sensores}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-
-\begin_inset Graphics
-	filename img/GasSensorArray_picture.png
-	lyxscale 20
-	scale 15
-
-\end_inset
-
-
-\lang brazilian
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\backslash
-vspace{-0.1em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fonte{
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ramon_2016"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
+label{subsec:compreensao_projeto}
 \end_layout
 
 \end_inset
@@ -345,40 +257,17 @@ status open
 \end_layout
 
 \begin_layout Standard
-Neste trabalho, o cliente deseja saber se existe algum tipo de regra lógica
- que relacione os valores da condutância (em 
-\begin_inset Formula $\Omega^{-1}$
-\end_inset
-
-) dos oito sensores e as classes de odor, esses tipos de odores são dois:
- de banana e de vinho, ademais existe outro tipo chamado de 
-\begin_inset Quotes eld
-\end_inset
-
-
-\emph on
-background
-\emph default
-
-\begin_inset Quotes erd
-\end_inset
-
- que é inodoro.
- Na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{subsec:compreensao_dos_dados}
+O primeiro objetivo do analista de dados é compreender, o que o cliente
+ realmente deseja fazer com os dados que dispõe.
+ O objetivo do analista é descobrir, no início, fatores importantes que
+ possam influenciar o resultado do projeto.
 \end_layout
 
-\end_inset
-
- são apresentados, de forma detalhada, os metadados e os dados referentes
- ao banco de dados fornecido pelo cliente.
+\begin_layout Standard
+Esta fase inicial centra-se na compreensão dos objetivos e os requerimentos
+ a partir de uma perspectiva de negócio, convertendo depois este conhecimento
+ em uma definição de problema de mineração de dados e um plano preliminar
+ concebido para atingir os objetivos.
  Na 
 \begin_inset ERT
 status open
@@ -392,7 +281,7 @@ cref{fig:sub_compr_do_proj}
 
 \end_inset
 
- mostra-se os quatro subprocessos relacionados à compreensão do projeto
+ mostram-se os quatro subprocessos relacionados à compreensão do projeto
  por parte do analista de dados.
 \end_layout
 
@@ -407,7 +296,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Os sub processos da 
+Os subprocessos da 
 \begin_inset Quotes eld
 \end_inset
 
@@ -439,15 +328,12 @@ label{fig:sub_compr_do_proj}
 
 \begin_layout Plain Layout
 \align center
-
 \begin_inset Graphics
 	filename img/crispdm-01.pdf
 	scale 55
 
 \end_inset
 
-
-\lang brazilian
 
 \begin_inset ERT
 status open
@@ -508,16 +394,643 @@ status open
 Determinar os objetivos do projeto
 \end_layout
 
+\begin_layout Standard
+Neste trabalho, o cliente possui uma massa de dados relacionada com sensores
+ químicos que podem detectar diferentes tipos de odor.
+ Esses sensores são oito e formam uma 
+\begin_inset Quotes eld
+\end_inset
+
+nariz eletrônica
+\begin_inset Quotes erd
+\end_inset
+
+ como mostrado na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:arranjo_sensores}
+\end_layout
+
+\end_inset
+
+.
+ Utilizando a nariz eletrônica, coletaram-se dados durante 537 dias em um
+ ambiente fechado como mencionado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ramon_2016"
+
+\end_inset
+
+, esses dados representam a variedade de eventos presentes em cenários de
+ monitoramento de uma residência.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arranjo de sensores utilizado para captar informação do odor do ambiente.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:arranjo_sensores}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/GasSensorArray_picture.png
+	lyxscale 20
+	scale 12
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ramon_2016"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em este caso particular, o cliente deseja saber se existe algum tipo de
+ regra lógica que relacione os valores da condutância (em 
+\begin_inset Formula $\Omega^{-1}$
+\end_inset
+
+) dos oito sensores e os tipos de odor.
+ Os tipos de odores são dois: de banana e de vinho, ademais existe outro
+ tipo chamado de 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+background
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ que é inodoro.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:compreensao_dos_dados}
+\end_layout
+
+\end_inset
+
+ são apresentados, de forma detalhada, os metadados e os dados referentes
+ ao banco de dados fornecido pelo cliente.
+ 
+\end_layout
+
 \begin_layout Subsubsection
 Avaliar a situação
+\end_layout
+
+\begin_layout Standard
+Esta tarefa envolve uma verificação mais detalhada de todos os recursos,
+ restrições, suposições e outros fatores que devem ser considerados na determina
+ção da meta de análise de dados e do plano do projeto.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:avaliar_situacao}
+\end_layout
+
+\end_inset
+
+ mostram-se os recurso utilizados para poder realizar a mineração de dados
+ do banco de dados fornecido pelo cliente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.8
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pesquisa realizada com 200 pessoas sobre qual é a metodologia favorita utilizada
+ nos projetos de mineração de dados, nos anos 2007 e 2014.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:avaliar_situacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Metodologia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ano 2007 (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ano 2014 (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CRISP-DM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Criada por mim
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SEMMA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Outra
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Processo KDD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Criada pela organização onde trabalho
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Específica de domínio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nenhuma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{0.2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "gregory_2014"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
 Determinar o objetivo da mineração de dados
 \end_layout
 
+\begin_layout Standard
+A mineração de dados tem como objetivo obter diversas regras lógicas que
+ relacionem os oito sensores químicos utilizados na medição com as respectivas
+ saídas: odor de banana, odor de vinho, e inodoro.
+ As regras lógicas são da forma
+\begin_inset Formula 
+\[
+\mathrm{SE}\left\langle \mathrm{expressão\,lógica}\right\rangle \mathrm{ENTÃO}\left\langle \mathrm{conclusão}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Outro objetivo da mineração será comparar as o método de extração de regras
+ a partir de redes neurais, com o algoritmo J48, disponível em [], ou chamado
+ também árvore de decisão.
+\end_layout
+
 \begin_layout Subsubsection
 Realizar um plano do projeto
+\end_layout
+
+\begin_layout Standard
+O plano do projeto baseia-se no pedido do cliente.
+ Vai-se extrair conhecimento relevante a partir da massa de dados extraída
+ da medição dos sensores, como exposto na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:compreensao_projeto}
+\end_layout
+
+\end_inset
+
+.
+ Na [] se mostra o fluxograma das tarefas realizadas no projeto.
+\end_layout
+
+\begin_layout Standard
+A obtenção das regras lógicas será utilizando uma rede neural do tipo MLP
+ e em seguida, será aplicado o algoritmo RX modificado, disponível em [].
+\end_layout
+
+\begin_layout Standard
+As regras obtidas utilizando o algoritmo 
 \end_layout
 
 \begin_layout Subsection
@@ -545,7 +1058,7 @@ A massa de dados na qual vai ser aplicada a metodologia CRISP-DM está relaciona
 a com sensores químicos que podem detectar diferentes tipos de odor.
  No caso deste projeto, esses tipos de odores são dois: o de banana e o
  de vinho.
- Além desses dois odores, existe outro chamado de 
+ Existe também o tipo inodoro que é chamado de 
 \begin_inset Quotes eld
 \end_inset
 
@@ -557,11 +1070,302 @@ background
 \begin_inset Quotes erd
 \end_inset
 
- que é do tipo inodoro.
+.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:sub_compr_do_dados}
+\end_layout
+
+\end_inset
+
+ mostram-se os quatro subprocessos relacionados com compreensão dos dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Os subprocessos da 
+\begin_inset Quotes eld
+\end_inset
+
+Compreensão dos dados
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:sub_compr_do_dados}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/crispdm-02.pdf
+	scale 55
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Coletar dados iniciais
+\end_layout
+
+\begin_layout Standard
+O processo da coleta de dados já foi realizado pelos autores, em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ramon_2016"
+
+\end_inset
+
+.
+ A coleta foi feita durante 537 dias (desde 17 de fevereiro do ano 2013
+ até 5 de junho de 2015) em um ambiente fechado, logo após foi aplicada
+ uma subamostragem para uma amostra por minuto e por sensor.
+ Com a subamostragem obtiveram-se 919
+\begin_inset space \thinspace{}
+\end_inset
+
+438 tuplas, que representam os valores medidos pelos sensores em diferentes
+ intervalos de tempo para os três tipos de casos: odor de banana, odor de
+ vinho e inodoro.
+\end_layout
+
+\begin_layout Standard
+No caso deste trabalho, não se realiza a mineração de dados em tempo real,
+ ou seja, a massa de dados obtida pelo cliente é estática e não será alimentada
+ posteriormente com novos dados.
+\end_layout
+
+\begin_layout Subsubsection
+Descrever os dados
+\end_layout
+
+\begin_layout Standard
+O autor, em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ramon_2016"
+
+\end_inset
+
+, disponibiliza duas fontes de dados: os metadados e os dados em si.
+ Para poder visualizar as duas fontes de dados é necessário elaborar um
+ diagrama objeto relacional, tal como se mostra na [].
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama relacional para a massa de dados fornecida pelo cliente, disponível
+ em .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:sub_compr_do_dados}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/diagrama_ER_metadados_dados.pdf
+	scale 55
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Exploração dos dados
+\end_layout
+
+\begin_layout Subsubsection
+Verificação da qualidade dos dados
 \end_layout
 
 \begin_layout Subsection
 Preparação dos dados
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{subsec:preparacao_dos_dados}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Selecionar os dados
+\end_layout
+
+\begin_layout Subsubsection
+Limpar os dados
+\end_layout
+
+\begin_layout Subsubsection
+Construir dados
+\end_layout
+
+\begin_layout Subsubsection
+Integrar dados
+\end_layout
+
+\begin_layout Subsubsection
+Formatar os dados
 \end_layout
 
 \begin_layout Subsection
@@ -572,12 +1376,45 @@ Modelagem
 Rede Neural.
 \end_layout
 
+\begin_layout Subsubsection
+Selecionar a técnica de modelagem
+\end_layout
+
+\begin_layout Subsubsection
+Gerar um teste
+\end_layout
+
+\begin_layout Subsubsection
+Construir o modelo
+\end_layout
+
+\begin_layout Subsubsection
+Avaliar o modelo
+\end_layout
+
 \begin_layout Subsection
 Avaliação
 \end_layout
 
+\begin_layout Subsubsection
+Avaliar os resultados
+\end_layout
+
+\begin_layout Subsubsection
+Revisão do processo
+\end_layout
+
+\begin_layout Subsubsection
+Determinar os passos a seguir
+\end_layout
+
 \begin_layout Subsection
 Desenvolvimento
+\end_layout
+
+\begin_layout Standard
+Pôr em prática o modelo desenvolvido, não vai ser realizado no presente
+ trabalho
 \end_layout
 
 \end_body

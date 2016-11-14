@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -622,8 +624,8 @@ key "kunjal_2013"
 \end_layout
 
 \begin_layout Standard
-A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas,
- com algoritmo de treinamento Levemerk Marquard.
+A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas
+ (MLP), com algoritmo de treinamento Levemerk Marquard.
 \end_layout
 
 \begin_layout Subsection
@@ -1545,7 +1547,7 @@ label{tab:crisp-dm_pesquisa}
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="3">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="right" valignment="top" width="0pt">
 <column alignment="right" valignment="top" width="0pt">
@@ -1924,19 +1926,7 @@ O software WEKA
 \end_layout
 
 \begin_layout Subsection
-Termos relevantes
-\end_layout
-
-\begin_layout Subsubsection
-Analista de dados
-\end_layout
-
-\begin_layout Subsubsection
-Cientista de dados
-\end_layout
-
-\begin_layout Subsubsection
-Big Data
+Árvores de decisão
 \end_layout
 
 \begin_layout Subsection
@@ -1948,7 +1938,15 @@ O algoritmo RX
 \end_layout
 
 \begin_layout Subsubsection
-O lagoritmo C4.5
+O algoritmo 
+\begin_inset Quotes eld
+\end_inset
+
+neurorule
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \end_body
