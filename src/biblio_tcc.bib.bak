@@ -168,6 +168,17 @@
   Timestamp                = {2016.06.01}
 }
 
+@Electronic{weka_soft_2009,
+  Title                    = {The WEKA Data Mining Software: An Update. SIGKDD Explorations, Volume 11, Issue 1.},
+  Author                   = {Mark Hall, Eibe Frank, Geoffrey Holmes, Bernhard Pfahringer, Peter Reutemann, Ian H. Witten (2009);},
+  Url                      = {http://www.cs.waikato.ac.nz/ml/index.html},
+  Year                     = {2009},
+
+  Owner                    = {ken},
+  Timestamp                = {2016.11.14},
+  Urlaccessdate            = {23 set. 2016}
+}
+
 @Book{stephen_2015,
   Title                    = {Machine Learning: An Algorithmic Perspective},
   Author                   = {Stephen Marsland},
