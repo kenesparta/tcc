@@ -6545,10 +6545,6 @@ fonteProp{}
 \end_layout
 
 \begin_layout Standard
-Para fazer a seleção dos dados, seguem-se os seguintes passos:
-\end_layout
-
-\begin_layout Standard
 A partir da massa de dados e da análise estatística realizada na 
 \begin_inset ERT
 status open
@@ -6562,11 +6558,11 @@ cref{subsec:compreensao_dos_dados}
 
 \end_inset
 
-, é selecionada de forma aleatória uma amostra de 300
+, é selecionada uma amostra de 830
 \begin_inset space \thinspace{}
 \end_inset
 
-000 tuplas da tabela 
+901 tuplas da tabela 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6574,16 +6570,24 @@ Dados_sensor
 \begin_inset Quotes erd
 \end_inset
 
-, que representam o 32.63
+, que representam o 89.44
 \begin_inset space \thinspace{}
 \end_inset
 
 % do total dos dados.
- Dessa amostra selecionada, 100
+ A amostra selecionada contém 276
 \begin_inset space \thinspace{}
 \end_inset
 
-000 tuplas 
+967 tuplas de cada um dos três tipos: banana, vinho e 
+\begin_inset Quotes eld
+\end_inset
+
+background
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
