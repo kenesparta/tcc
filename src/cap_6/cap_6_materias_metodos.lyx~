@@ -6723,7 +6723,37 @@ Limpar os dados
 \end_layout
 
 \begin_layout Standard
-—
+Para poder dar equidade ao conjunto de dados
+\end_layout
+
+\begin_layout Standard
+A partir da massa de dados fornecida pelo usuário, é selecionada uma amostra
+ de 830
+\begin_inset space \thinspace{}
+\end_inset
+
+901 tuplas da tabela 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor
+\begin_inset Quotes erd
+\end_inset
+
+, que representam o 89.44
+\begin_inset space \thinspace{}
+\end_inset
+
+% do total dos dados.
+ A amostra selecionada contém 276
+\begin_inset space \thinspace{}
+\end_inset
+
+967 tuplas de cada um dos três tipos: banana, vinho e 
+\emph on
+background
+\emph default
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6822,7 +6852,7 @@ Dados_sensor
 .
  Podem-se juntar ambas tabelas e dessa forma facilitar o processo de extração
  de conhecimento da massa de dados.
- O processo de junção acontece da modo seguinte:
+ O processo de junção acontece do modo seguinte:
 \end_layout
 
 \begin_layout Enumerate
@@ -6843,7 +6873,7 @@ Metadados
 \end_inset
 
 .
- Sem descartar totalmente a informação do atributo 
+ Não se descarta totalmente a informação do atributo 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6880,29 +6910,11 @@ Dados_sensor
 \begin_inset Quotes erd
 \end_inset
 
- é modificado, como se mostra na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{tab:tuplas_modificadas}
+ é modificada.
 \end_layout
 
-\end_inset
-
-.
- A tabela 
-\begin_inset Quotes eld
-\end_inset
-
-Dados_sensor
-\begin_inset Quotes erd
-\end_inset
-
- será modificada e se criará uma nova tabela de nome 
+\begin_layout Enumerate
+A tabela 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6910,11 +6922,148 @@ Dados_sensor_modificado
 \begin_inset Quotes erd
 \end_inset
 
-, esta tabela terá como atributos os valores da condutância dos sensores
- R1 até R8 e a classe de odor.
+ é criada a partir da modificação da tabela 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esta nova tabela tem como atributos os valores da condutância dos sensores
+ R1 até R8 e classe (tipo de odor), como se pode observar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:DI_REL_JUNCAO}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.5
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela integrada, resultado da junção das tabelas 
+\begin_inset Quotes eld
+\end_inset
+
+Metadados
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:DI_REL_JUNCAO}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/diagrama_ER_juncao.pdf
+	scale 70
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Formatar os dados
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -6949,8 +7098,20 @@ Dados_sensor_modificado
 \begin_inset Quotes erd
 \end_inset
 
+, mostrada na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:DI_REL_JUNCAO}
+\end_layout
+
+\end_inset
+
 .
- 
 \begin_inset ERT
 status open
 
@@ -6974,14 +7135,12 @@ label{tab:tuplas_modificadas}
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="9">
+<lyxtabular version="3" rows="11" columns="7">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="right" valignment="top" width="0pt">
 <column alignment="right" valignment="top">
 <column alignment="right" valignment="top">
 <column alignment="right" valignment="top">
@@ -6992,7 +7151,7 @@ label{tab:tuplas_modificadas}
 \begin_layout Plain Layout
 
 \series bold
-CLASSE
+Classe
 \end_layout
 
 \end_inset
@@ -7040,54 +7199,6 @@ R2 (
 
 \begin_layout Plain Layout
 
-\series bold
-R3(
-\series default
-
-\begin_inset Formula $\Omega^{-1}$
-\end_inset
-
-
-\series bold
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-R4(
-\series default
-
-\begin_inset Formula $\Omega^{-1}$
-\end_inset
-
-
-\series bold
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-R5 (
-\series default
-
-\begin_inset Formula $\Omega^{-1}$
-\end_inset
-
-
-\series bold
-)
 \end_layout
 
 \end_inset
@@ -7194,6 +7305,15 @@ R8 (
 
 \end_inset
 </cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
@@ -7203,7 +7323,64 @@ R8 (
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7296,6 +7473,15 @@ R8 (
 
 \end_inset
 </cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
@@ -7305,7 +7491,64 @@ R8 (
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7398,6 +7641,15 @@ R8 (
 
 \end_inset
 </cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
@@ -7407,7 +7659,52 @@ R8 (
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7500,24 +7797,6 @@ R8 (
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -7602,114 +7881,6 @@ R8 (
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -7786,228 +7957,6 @@ R8 (
 \end_inset
 </cell>
 <cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8092,24 +8041,6 @@ R8 (
 \end_inset
 </cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8175,6 +8106,149 @@ status open
 
 
 \backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modelagem
+\end_layout
+
+\begin_layout Standard
+Nesta fase, várias técnicas de modelagem são selecionadas e aplicadas e
+ seus parâmetros são calibrados para valores ótimos.
+ Normalmente, existem várias técnicas para o mesmo tipo de problema de mineração
+ de dados.
+ Algumas técnicas têm requisitos específicos sobre a forma dos dados.
+ Portanto, voltar à fase de preparação de dados é muitas vezes necessário.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:sub_prep_molagem}
+\end_layout
+
+\end_inset
+
+ mostram-se os subprocessos da modelagem.
+\end_layout
+
+\begin_layout Standard
+Com a intenção de ver qual das técnicas de modelagem tem uma maior qualidade
+ de regras, aplicam-se duas técnicas diferentes: o algoritmo J48 e o algoritmo
+ RX.
+ Ambos algoritmos serão aplicados à massa de dados devidamente preparada
+ (tuplas que pertencem à tabela 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor_modificado
+\begin_inset Quotes erd
+\end_inset
+
+) como se fez na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:preparacao_dos_dados}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Os subprocessos da 
+\begin_inset Quotes eld
+\end_inset
+
+Modelagem
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:sub_prep_molagem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/crispdm-04.pdf
+	scale 47
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
 fonte{
 \end_layout
 
@@ -8183,7 +8257,7 @@ fonte{
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Flavia_2016"
+key "pete_2000"
 
 \end_inset
 
@@ -8204,49 +8278,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-A partir da massa de dados fornecida pelo usuário, é selecionada uma amostra
- de 830
-\begin_inset space \thinspace{}
-\end_inset
-
-901 tuplas da tabela 
-\begin_inset Quotes eld
-\end_inset
-
-Dados_sensor
-\begin_inset Quotes erd
-\end_inset
-
-, que representam o 89.44
-\begin_inset space \thinspace{}
-\end_inset
-
-% do total dos dados.
- A amostra selecionada contém 276
-\begin_inset space \thinspace{}
-\end_inset
-
-967 tuplas de cada um dos três tipos: banana, vinho e 
-\emph on
-background
-\emph default
-.
-\end_layout
-
-\begin_layout Subsubsection
-Formatar os dados
-\end_layout
-
-\begin_layout Subsection
-Modelagem
-\end_layout
-
-\begin_layout Standard
-Rede Neural.
 \end_layout
 
 \begin_layout Subsubsection

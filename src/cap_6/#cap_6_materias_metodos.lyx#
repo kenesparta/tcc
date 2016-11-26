@@ -6852,7 +6852,7 @@ Dados_sensor
 .
  Podem-se juntar ambas tabelas e dessa forma facilitar o processo de extração
  de conhecimento da massa de dados.
- O processo de junção acontece da modo seguinte:
+ O processo de junção acontece do modo seguinte:
 \end_layout
 
 \begin_layout Enumerate
@@ -6910,7 +6910,7 @@ Dados_sensor
 \begin_inset Quotes erd
 \end_inset
 
- é modificado, como se mostra na 
+ é modificada, como se mostra na 
 \begin_inset ERT
 status open
 
@@ -6928,23 +6928,147 @@ cref{tab:tuplas_modificadas}
 \begin_inset Quotes eld
 \end_inset
 
-Dados_sensor
-\begin_inset Quotes erd
-\end_inset
-
- será modificada e se criará uma nova tabela de nome 
-\begin_inset Quotes eld
-\end_inset
-
 Dados_sensor_modificado
 \begin_inset Quotes erd
 \end_inset
 
-, esta tabela terá como atributos os valores da condutância dos sensores
- R1 até R8 e a classe de odor.
+ é criada a partir da modificação da tabela 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esta nova tabela tem como atributos os valores da condutância dos sensores
+ R1 até R8 e a classe de odor como se pode observar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:DI_REL_JUNCAO}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.5
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela integrada, resultado da junção das tabelas 
+\begin_inset Quotes eld
+\end_inset
+
+Metadados
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:DI_REL_JUNCAO}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/diagrama_ER_juncao.pdf
+	scale 70
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -8246,7 +8370,126 @@ Modelagem
 \end_layout
 
 \begin_layout Standard
-Rede Neural.
+In this phase, various modeling techniques are selected and applied, and
+ their parameters are calibrated to optimal values.
+ Typically, there are several techniques for the same data mining problem
+ type.
+ Some techniques have specific requirements on the form of data.
+ Therefore, going back to the data preparation phase is often necessary.
+\end_layout
+
+\begin_layout Standard
+Nesta fase, várias técnicas de modelagem são selecionadas e aplicadas, e
+ seus parâmetros são calibrados para valores ótimos.
+ Normalmente, existem várias técnicas para o mesmo tipo de problema de mineração
+ de dados.
+ Algumas técnicas têm requisitos específicos sobre a forma dos dados.
+ Portanto, voltar à fase de preparação de dados é muitas vezes necessário.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Os subprocessos da 
+\begin_inset Quotes eld
+\end_inset
+
+Modelagem
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:sub_prep_molagem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/crispdm-04.pdf
+	scale 47
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
