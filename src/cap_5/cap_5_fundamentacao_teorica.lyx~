@@ -625,7 +625,16 @@ key "kunjal_2013"
 
 \begin_layout Standard
 A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas
- (MLP), com algoritmo de treinamento Levemerk Marquard.
+ (MLP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "FS"
+symbol "MLP"
+description "Multilayer Perceptron"
+
+\end_inset
+
+), com algoritmo de treinamento Levemerk Marquard.
 \end_layout
 
 \begin_layout Subsection
@@ -1280,7 +1289,7 @@ status open
 
 , SPSS
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 É um software para análise estatística de dados, disponível em 
@@ -1314,7 +1323,7 @@ status open
 
  e NCR
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 É uma empresa de tecnologia especializada em produtos para o varejo e setores
@@ -1931,22 +1940,6 @@ O software WEKA
 
 \begin_layout Subsection
 Extração de regras
-\end_layout
-
-\begin_layout Subsubsection
-O algoritmo RX
-\end_layout
-
-\begin_layout Subsubsection
-O algoritmo 
-\begin_inset Quotes eld
-\end_inset
-
-neurorule
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \end_body

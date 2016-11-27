@@ -104,7 +104,7 @@ key "ramon_2016"
 
  e disponível no site da UCI
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 É uma organização que dispõe, de forma gratuita, massas de dados com suas
@@ -140,7 +140,7 @@ status open
 .
  Em contrapartida, cumprindo o papel de analista de dados
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Um analista de dados é um profissional que coleta, processa e executa análises
@@ -183,7 +183,7 @@ status open
 Tendo em conta o exposto no parágrafo prévio, planteia-se a seguinte situação:
  o cliente deseja obter conhecimento relevante dos dados que possui
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Ressaltando que o cliente não é quem gerou os dados.
@@ -254,6 +254,20 @@ label{subsec:compreensao_projeto}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, o elemento-chave de um estudo de mineração de dados é saber para que serve
+ o estudo.
+ Isso começa com uma necessidade gerencial de novos conhecimentos e uma
+ expressão do objetivo do projeto com relação ao estudo a ser realizado.
 \end_layout
 
 \begin_layout Standard
@@ -1006,8 +1020,8 @@ Realizar um plano do projeto
 
 \begin_layout Standard
 O plano do projeto baseia-se no pedido do cliente.
- Vai-se extrair conhecimento relevante a partir da massa de dados extraída
- da medição dos sensores, como exposto na 
+ Se extrai conhecimento relevante a partir da massa de dados obtida da medição
+ dos sensores, como exposto na 
 \begin_inset ERT
 status open
 
@@ -7198,6 +7212,9 @@ R2 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -7300,6 +7317,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -7384,6 +7404,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -7468,6 +7491,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -7552,6 +7578,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -7636,6 +7665,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -7708,90 +7740,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Quotes eld
+\begin_inset Formula $\cdots$
 \end_inset
 
-
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -7876,6 +7827,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -7960,6 +7914,96 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -8044,6 +8088,9 @@ R8 (
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
 
 \end_layout
 
@@ -8150,8 +8197,8 @@ cref{fig:sub_prep_molagem}
 Com a intenção de ver qual das técnicas de modelagem tem uma maior qualidade
  de regras, aplicam-se duas técnicas diferentes: o algoritmo J48 e o algoritmo
  RX.
- Ambos algoritmos serão aplicados à massa de dados devidamente preparada
- (tuplas que pertencem à tabela 
+ Ambos algoritmos são aplicados à massa de dados devidamente preparada (tuplas
+ que pertencem à tabela 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8159,7 +8206,9 @@ Dados_sensor_modificado
 \begin_inset Quotes erd
 \end_inset
 
-) como se fez na 
+).
+ A massa de dados fornecida pelo cliente foi preparada seguindo os subprocessos
+ abordados na 
 \begin_inset ERT
 status open
 
@@ -8282,6 +8331,10 @@ status open
 
 \begin_layout Subsubsection
 Selecionar a técnica de modelagem
+\end_layout
+
+\begin_layout Standard
+O algoritmo J48 foi proposto por WEKA
 \end_layout
 
 \begin_layout Subsubsection

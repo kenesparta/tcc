@@ -104,7 +104,7 @@ key "ramon_2016"
 
  e disponível no site da UCI
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 É uma organização que dispõe, de forma gratuita, massas de dados com suas
@@ -140,7 +140,7 @@ status open
 .
  Em contrapartida, cumprindo o papel de analista de dados
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Um analista de dados é um profissional que coleta, processa e executa análises
@@ -183,7 +183,7 @@ status open
 Tendo em conta o exposto no parágrafo prévio, planteia-se a seguinte situação:
  o cliente deseja obter conhecimento relevante dos dados que possui
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Ressaltando que o cliente não é quem gerou os dados.
@@ -254,6 +254,20 @@ label{subsec:compreensao_projeto}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, o elemento-chave de um estudo de mineração de dados é saber para que serve
+ o estudo.
+ Isso começa com uma necessidade gerencial de novos conhecimentos e uma
+ expressão do objetivo do projeto com relação ao estudo a ser realizado.
 \end_layout
 
 \begin_layout Standard
@@ -688,7 +702,7 @@ Ano 2014 (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-CRISP-DM
+
 \end_layout
 
 \end_inset
@@ -697,7 +711,7 @@ CRISP-DM
 \begin_inset Text
 
 \begin_layout Plain Layout
-42.0
+
 \end_layout
 
 \end_inset
@@ -706,7 +720,7 @@ CRISP-DM
 \begin_inset Text
 
 \begin_layout Plain Layout
-43.0
+
 \end_layout
 
 \end_inset
@@ -717,7 +731,7 @@ CRISP-DM
 \begin_inset Text
 
 \begin_layout Plain Layout
-Criada por mim
+
 \end_layout
 
 \end_inset
@@ -726,7 +740,7 @@ Criada por mim
 \begin_inset Text
 
 \begin_layout Plain Layout
-19.0
+
 \end_layout
 
 \end_inset
@@ -735,7 +749,7 @@ Criada por mim
 \begin_inset Text
 
 \begin_layout Plain Layout
-27.5
+
 \end_layout
 
 \end_inset
@@ -746,7 +760,7 @@ Criada por mim
 \begin_inset Text
 
 \begin_layout Plain Layout
-SEMMA
+
 \end_layout
 
 \end_inset
@@ -755,7 +769,7 @@ SEMMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-13.0
+
 \end_layout
 
 \end_inset
@@ -764,7 +778,7 @@ SEMMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.5
+
 \end_layout
 
 \end_inset
@@ -775,7 +789,7 @@ SEMMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-Outra
+
 \end_layout
 
 \end_inset
@@ -784,7 +798,7 @@ Outra
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.0
+
 \end_layout
 
 \end_inset
@@ -793,7 +807,7 @@ Outra
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.0
+
 \end_layout
 
 \end_inset
@@ -804,7 +818,7 @@ Outra
 \begin_inset Text
 
 \begin_layout Plain Layout
-Processo KDD
+
 \end_layout
 
 \end_inset
@@ -813,7 +827,7 @@ Processo KDD
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.3
+
 \end_layout
 
 \end_inset
@@ -822,7 +836,7 @@ Processo KDD
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.5
+
 \end_layout
 
 \end_inset
@@ -833,7 +847,7 @@ Processo KDD
 \begin_inset Text
 
 \begin_layout Plain Layout
-Criada pela organização onde trabalho
+
 \end_layout
 
 \end_inset
@@ -842,7 +856,7 @@ Criada pela organização onde trabalho
 \begin_inset Text
 
 \begin_layout Plain Layout
-5.3
+
 \end_layout
 
 \end_inset
@@ -851,7 +865,7 @@ Criada pela organização onde trabalho
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.5
+
 \end_layout
 
 \end_inset
@@ -862,7 +876,7 @@ Criada pela organização onde trabalho
 \begin_inset Text
 
 \begin_layout Plain Layout
-Específica de domínio
+
 \end_layout
 
 \end_inset
@@ -871,7 +885,7 @@ Específica de domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.7
+
 \end_layout
 
 \end_inset
@@ -880,7 +894,7 @@ Específica de domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.0
+
 \end_layout
 
 \end_inset
@@ -891,7 +905,7 @@ Específica de domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nenhuma
+
 \end_layout
 
 \end_inset
@@ -900,7 +914,7 @@ Nenhuma
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.7
+
 \end_layout
 
 \end_inset
@@ -909,7 +923,7 @@ Nenhuma
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.0
+
 \end_layout
 
 \end_inset
@@ -1006,8 +1020,8 @@ Realizar um plano do projeto
 
 \begin_layout Standard
 O plano do projeto baseia-se no pedido do cliente.
- Vai-se extrair conhecimento relevante a partir da massa de dados extraída
- da medição dos sensores, como exposto na 
+ Se extrai conhecimento relevante a partir da massa de dados obtida da medição
+ dos sensores, como exposto na 
 \begin_inset ERT
 status open
 
@@ -8192,7 +8206,9 @@ Dados_sensor_modificado
 \begin_inset Quotes erd
 \end_inset
 
-) como se fez na 
+).
+ A massa de dados fornecida pelo cliente foi preparada seguindo os subprocessos
+ abordados na 
 \begin_inset ERT
 status open
 
@@ -8315,6 +8331,10 @@ status open
 
 \begin_layout Subsubsection
 Selecionar a técnica de modelagem
+\end_layout
+
+\begin_layout Standard
+O algoritmo J48 foi proposto por WEKA
 \end_layout
 
 \begin_layout Subsubsection
