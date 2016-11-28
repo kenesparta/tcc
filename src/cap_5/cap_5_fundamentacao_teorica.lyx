@@ -208,8 +208,15 @@ Soft computing
 \end_layout
 
 \begin_layout Standard
-Existem dois tipos de paradigmas computacionais, a Soft Computing (SC) e
- a Hard Computing (HC
+Existem dois tipos de paradigmas computacionais, a 
+\emph on
+Soft Computing
+\emph default
+ (SC) e a 
+\emph on
+Hard Computing
+\emph default
+ (HC
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "HC"
@@ -256,7 +263,11 @@ key "oded_2007"
 \end_layout
 
 \begin_layout Standard
-A SC é composta por técnicas como as Redes Neurais (Neural Networks
+A SC é composta por técnicas como as Redes Neurais (
+\emph on
+Neural Networks
+\emph default
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "NN"
@@ -265,7 +276,11 @@ description "Neural Networks"
 
 \end_inset
 
-), Computação Evolucionária (Evolutionary Computing
+), Computação Evolucionária (
+\emph on
+Evolutionary Computing
+\emph default
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "EC"
@@ -274,7 +289,11 @@ description "Evolutionary Computing"
 
 \end_inset
 
-), Sistemas Difusos (Fuzzy Systems
+), Sistemas Difusos (
+\emph on
+Fuzzy Systems
+\emph default
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "FS"
@@ -283,7 +302,11 @@ description "Fuzzy Systems"
 
 \end_inset
 
-) e Raciocínio Probabilístico (Probabilistic Reasoning
+) e Raciocínio Probabilístico (
+\emph on
+Probabilistic Reasoning
+\emph default
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "PR"
@@ -590,12 +613,478 @@ status open
 Computação Evolucionária
 \end_layout
 
+\begin_layout Standard
+O domínio da computação evolutiva envolve o estudo das fundações e das aplicaçõe
+s de técnicas computacionais baseadas nos princípios da evolução natural.
+ De um modo geral, as técnicas evolutivas podem ser vistas como métodos
+ de busca ou como técnicas de otimização, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kunjal_2013"
+
+\end_inset
+
+.
+ Uma tarefa abstrata pode ser resolvida de tal forma otimizada que a melhor
+ solução pode ser encontrada como resultado da busca através de um espaço
+ de soluções potenciais, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zibigniew_1996"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A computação evolucionária está ligada estreitamente a um Programa Evolutivo
+ (
+\emph on
+Evolution Program
+\emph default
+, EP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "EP"
+symbol "EP"
+description "Evolution Program"
+
+\end_inset
+
+).
+ O termo EP utiliza-se para todo o relacionado com sistemas baseados na
+ teoria da evolução natural, ou seja, que cada unidade do sistema possua
+ as propriedades de reprodução, mutação e seleção.
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zibigniew_1996"
+
+\end_inset
+
+, um EP é um algoritmo de probabilidade o qual mantém uma população de indivíduo
+s, 
+\begin_inset Formula $P\left(t\right)=\left\{ x_{1}^{t},\cdots,x_{n}^{t}\right\} $
+\end_inset
+
+ para cada iteração 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Cada indivíduo representa uma solução potencial ao problema em questão
+ e, em qualquer EP, é implementado como uma estrutura de dados 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Cada solução 
+\begin_inset Formula $x_{i}^{t}\in P\left(t\right)$
+\end_inset
+
+ é avaliada para poder obter alguma medição da sua 
+\begin_inset Quotes eld
+\end_inset
+
+capacidade
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Então, a nova população (iteração 
+\begin_inset Formula $t+1$
+\end_inset
+
+) é formada pela seleção dos indivíduos mais capazes.
+ Alguns membros da nova população sofrem transformações por meio dos operadores
+ 
+\begin_inset Quotes eld
+\end_inset
+
+genéticos
+\begin_inset Quotes erd
+\end_inset
+
+ para formar novas gerações.
+ Existem transformações unárias (como a mutação 
+\begin_inset Formula $m_{i}:S\rightarrow S$
+\end_inset
+
+), a qual criam novos indivíduos por uma mudança pequena em um único indivíduo.
+ Existem outros tipos e transformações de alta ordem (como o 
+\emph on
+crossover
+\emph default
+ 
+\begin_inset Formula $c_{j}:S\times\cdots\times S\rightarrow S$
+\end_inset
+
+), cuja função é gerar novos indivíduos pela combinação das partes de dois
+ ou mais indivíduos de uma geração.
+ A estrutura básica de um EP se pode observar no 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{alg:EP}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estrutura principal de um EP, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zibigniew_1996"
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{alg:EP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Procedure{Evolution Program}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $t 
+\backslash
+gets 0$
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State 
+\backslash
+textbf{inicializar} $P
+\backslash
+left(t
+\backslash
+right)$
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State 
+\backslash
+textbf{avaliar} $P
+\backslash
+left(t
+\backslash
+right)$
+\end_layout
+
+\begin_layout Plain Layout
+
+%	
+\backslash
+Comment{Call Recursion again}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{r}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State $t 
+\backslash
+gets t+1$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State 
+\backslash
+textbf{selecionar} $P
+\backslash
+left(t
+\backslash
+right)$ 
+\backslash
+textbf{de} $P
+\backslash
+left(t-1
+\backslash
+right)$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State 
+\backslash
+textbf{alterar} $P
+\backslash
+left(t
+\backslash
+right)$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State 
+\backslash
+textbf{avaliar} $P
+\backslash
+left(t
+\backslash
+right)$
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndWhile
+\end_layout
+
+\begin_layout Plain Layout
+
+	%
+\backslash
+State 
+\backslash
+textbf{return} $a$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndProcedure
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
-Sistemas Difusos
+Lógica Difusa
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kunjal_2013"
+
+\end_inset
+
+, a lógica difusa (ou lógica 
+\emph on
+fuzzy
+\emph default
+) é uma lógica de múltiplos valores introduzida por L.
+ Zadeh em 1965.
+ Os sistemas difusos são baseados na Lógica Difusa, uma generalização da
+ lógica convencional (booleano) que foi estendida para lidar com o conceito
+ de verdade parcial e valores de verdade entre "completamente verdadeiro"
+ e "completamente falso".
+ A lógica difusa fornece um mecanismo de inferência que permite que as capacidad
+es aproximadas de raciocínio humano sejam aplicadas a sistemas baseados
+ no conhecimento 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rajendra_2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zadeh_1996"
+
+\end_inset
+
+, algumas das caraterísticas principais da lógica difusa são as seguintes:
+\end_layout
+
+\begin_layout Itemize
+Extrair conhecimento é enxergado como um caso limitativo de conhecimento
+ aproximado.
+\end_layout
+
+\begin_layout Itemize
+Tudo é uma questão de gradação.
+\end_layout
+
+\begin_layout Itemize
+O conhecimento é interpretado como uma coleção de restrições 
+\emph on
+fuzzy
+\emph default
+ em uma coleção de variáveis.
+\end_layout
+
+\begin_layout Itemize
+A inferência é enxergada como um processo de propagação de restrições adaptáveis.
+\end_layout
+
+\begin_layout Itemize
+Qualquer sistema lógico pode ser tornado em um sistema 
+\emph on
+fuzzy
+\emph default
+ (
+\emph on
+fuzzificação
+\emph default
+).
 \end_layout
 
 \begin_layout Subsubsection
 Raciocínio Probabilístico
+\end_layout
+
+\begin_layout Standard
+O objetivo da lógica probabilística (também lógica de probabilidade e raciocínio
+ probabilístico) é combinar a capacidade da teoria de probabilidade de lidar
+ com a incerteza, com a capacidade da lógica dedutiva 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kunjal_2013"
+
+\end_inset
+
+.
+ O raciocínio probabilístico pode ser visto como uma maneira análoga ao
+ raciocínio 
+\emph on
+fuzzy
+\emph default
+, considerando a incerteza em lugar da 
+\emph on
+fuzzificação
+\emph default
+ como o conceito de aproximação que é aplicável.
+ A abordagem bayesiana é comumente utilizada.
+\end_layout
+
+\begin_layout Standard
+Os axiomas de probabilidade, combinados com o teorema de Bayes (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bayes"
+
+\end_inset
+
+), dão origem a um sistema de raciocínio completo, que inclui a lógica dedutiva
+ tradicional como um caso especial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P\left(B|A\right)=\frac{P\left(A|B\right)P\left(B\right)}{P\left(A\right)}\label{eq:bayes}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O paradigma central do raciocínio probabilístico é identificar todas as
+ variáveis relevantes do entorno e realizar um modelo probabilístico da
+ interação dessas variáveis.
+ O raciocínio (inferência) é então realizado através da introdução de evidências
+ que são atribuídas às variáveis (deixando-as em estados conhecidos) e em
+ seguida, são computadas as probabilidades de interesse que estão condicionadas
+ por aquelas evidências, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "David_2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -628,7 +1117,7 @@ A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas
  (MLP
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-prefix "FS"
+prefix "MLP"
 symbol "MLP"
 description "Multilayer Perceptron"
 
@@ -659,7 +1148,7 @@ label{sec:aprendizado_maquina}
 
 \begin_layout Standard
 A ficha encontra-se no seguinte estado, contendo já a teoria de uma rede
- neural.
+ neural artificial.
  Nesta seção trata-se sobre as técnicas que serão adotadas do aprendizado
  de máquina (Machine Learning, ou ML).
 \end_layout
@@ -766,11 +1255,242 @@ key "kevin_2012"
 \end_layout
 
 \begin_layout Standard
-A atividade de extrair conhecimento a partir do banco de dados 
-\begin_inset Note Note
+A atividade de extrair conhecimento a partir da massa de dados utilizada
+ neste trabalho, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Flavia_2016"
+
+\end_inset
+
+, justifica a escolha da utilização das ferramentas oferecidas pela abordagem
+ supervisionada do aprendizado de máquina.
+ Então, a ficha da rede de Petri passa para o seguinte estado sabendo que
+ até esta subseção, juntando os conceitos revisados, está sendo utilizada
+ uma rede neural com aprendizagem supervisionada.
+\end_layout
+
+\begin_layout Standard
+Até este ponto, foi escolhida a abordagem de uma rede neural artificial
+ de treinamento supervisionado.
+ Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marcio_2013"
+
+\end_inset
+
+, afirma-se que o modelo de treinamento supervisionado podem ser divididos
+ em dois grupos: o modelo de classificação e o modelo de regressão.
+\end_layout
+
+\begin_layout Subsubsection
+Modelo de classificação
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pang-Ning_2006"
+
+\end_inset
+
+, é a tarefa de aprendizado de uma função objetivo 
+\begin_inset Formula $\left(f\right)$
+\end_inset
+
+ que mapeia cada conjunto de atributos 
+\begin_inset Formula $\left(x\right)$
+\end_inset
+
+ para cada uma das classes predefinidas 
+\begin_inset Formula $\left(y\right)$
+\end_inset
+
+.
+ A função objetivo é chamada também como 
+\begin_inset Quotes eld
+\end_inset
+
+modelo de classificação
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A classificação tem dois significados distintos.
+ Podemos receber um conjunto de observações com o objetivo de estabelecer
+ a existência de classes ou 
+\emph on
+clusters
+\emph default
+ nos dados, conhecido como aprendizado não supervisionado.
+ Ou pode-se ter certeza de que há um número definido de classes, e o objetivo
+ é estabelecer uma regra segundo a qual possamos classificar uma nova observação
+ em uma das classes existentes, este método é conhecido aprendizado supervisiona
+do.
+ Na Estatística, a aprendizagem supervisionada geralmente é referida como
+ discriminação, isto é, o estabelecimento da regra de classificação a partir
+ de dados corretamente classificados 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Michie_1994"
+
+\end_inset
+
+.
+ Neste trabalho, quando se usa o termo classificação, refere-se à aprendizagem
+ supervisionada.
+\end_layout
+
+\begin_layout Standard
+Os processos de classificação é a separação de dados por meio de uma fronteira
+ do tipo linear ou não linear, como se argumenta em:
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "71col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textit{
+\backslash
+small{}
+\end_layout
+
+\end_inset
+
+Durante o processo de classificação, os métodos podem realizar a separação
+ dos dados de entrada através da determinação de uma fronteira representada
+ por uma reta, situação onde os dados serão considerados linearmente separáveis,
+ veja a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:lin_sep}
+\end_layout
+
+\end_inset
+
+.
+ Caso a fronteira não possa ser representada por uma reta, os dados serão
+ considerados como não linearmente separáveis e a fronteira será representada
+ por curvas na dimensão normal do problema, veja a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:não_lin_sep}
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marcio_2013"
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.4
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Processo de classificação de separação linear.
  
 \begin_inset ERT
 status open
@@ -779,7 +1499,7 @@ status open
 
 
 \backslash
-bdSensores
+label{fig:lin_sep}
 \end_layout
 
 \end_inset
@@ -789,11 +1509,337 @@ bdSensores
 
 \end_inset
 
- justifica a escolha da utilização das ferramentas oferecidas pela abordagem
- supervisionada do aprendizado de máquina.
- Então, a ficha da rede de Petri passa para o seguinte estado sabendo que
- até esta subseção, juntando os conceitos revisados, está sendo utilizada
- uma rede neural com aprendizagem supervisionada.
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/lin_sep.eps
+	scale 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marcio_2013"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Processo de classificação de separação não linear.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:não_lin_sep}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/nao_lin_sep.eps
+	scale 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marcio_2013"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Modelo de regressão
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dan_2008"
+
+\end_inset
+
+, afirma-se que a regressão é uma técnica estatística para determinar a
+ relação linear entre duas ou mais variáveis.
+ A regressão é usada principalmente para predição e inferência causal.
+ Em consequência, nos modelos de regressão mostra-se como a variação em
+ uma variável acontece em relação com a variação de outra variável.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marcio_2013"
+
+\end_inset
+
+, os modelos de regressão promovem o mapeamento do espaço de entrada em
+ um domínio de valor real.
+\end_layout
+
+\begin_layout Standard
+O modelo de regressão mais elementar é o modelo de regressão linear simples,
+ que pode ser expresso pela seguinte equação:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y_{t}=\beta_{1}+\beta_{2}X_{t}+\mu_{t}\label{eq:regressao}
+\end{equation}
+
+\end_inset
+
+de modo que o subíndice 
+\begin_inset Formula $t$
+\end_inset
+
+ indica as observações de uma amostra.
+ O total de observações é denotado por 
+\begin_inset Formula $n$
+\end_inset
+
+, então para uma a mostra de tamanho 
+\begin_inset Formula $n$
+\end_inset
+
+, o valor de 
+\begin_inset Formula $t$
+\end_inset
+
+ estará no intervalo 
+\begin_inset Formula $\left[1,\,n\right]$
+\end_inset
+
+.
+ Cada observação é definida através de uma variável dependente, denotada
+ como 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ e a observação para uma única variável independente (ou variável explicativa)
+ é denotada por 
+\begin_inset Formula $X_{t}$
+\end_inset
+
+, para uma observação 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Os valores dos parâmetros 
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta_{2}$
+\end_inset
+
+são chamadas de constantes da regressão e o valor to termo 
+\begin_inset Formula $\mu_{t}$
+\end_inset
+
+ é chamado de erro não observado.
+ Então, das cinco quantidades observadas em (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:regressao"
+
+\end_inset
+
+), duas são observadas (
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ e 
+\begin_inset Formula $X_{t}$
+\end_inset
+
+) e três não são ( 
+\begin_inset Formula $\beta_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\beta_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mu_{t}$
+\end_inset
+
+) .
+ Os valores dos parâmetros que possuem subíndice 
+\begin_inset Formula $t$
+\end_inset
+
+ são próprios de cada observação, entretanto, os valores dos parâmetros
+ que não possuem os subíndices são comuns a todas as 
+\begin_inset Formula $n$
+\end_inset
+
+ observações 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russell_2003"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Afirma-se em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dan_2008"
+
+\end_inset
+
+, que é importante reconhecer que a análise de regressão é fundamentalmente
+ diferente da constatação das correlações entre diferentes variáveis.
+ A correlação determina a força da relação entre as variáveis, enquanto
+ a regressão tenta descrever essa relação entre essas variáveis com mais
+ detalhes.
 \end_layout
 
 \begin_layout Subsection
@@ -1938,8 +2984,21 @@ cref{sec:materiais_metodos}
 O software WEKA
 \end_layout
 
+\begin_layout Subsubsection
+O algoritmo J48
+\end_layout
+
 \begin_layout Subsection
 Extração de regras
+\end_layout
+
+\begin_layout Standard
+As redes neurais artificiais representam modelos computacionais eficientes
+ que são amplamente utilizados para resolver problemas de difícil solução.
+ A maior dificuldade associada à utilização de redes neurais artificiais
+ se deve ao fato das mesmas serem, também, consideradas “caixas-pretas”,
+ devido à dificuldade de se obter conhecimento sobre o comportamento da
+ rede neural.
 \end_layout
 
 \end_body
