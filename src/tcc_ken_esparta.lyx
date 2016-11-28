@@ -318,8 +318,8 @@ ntcc{
 
 \end_inset
 
-Aplicação da extração de regras de uma rede neural no processo de mineração
- de dados utilizando a metodologia CRISP-DM
+Aplicação de um algoritmo para extração de regras de uma Rede Neural Artificial
+ no processo de mineração de dados
 \begin_inset ERT
 status open
 
@@ -995,8 +995,7 @@ small{}
 
 \end_inset
 
-Memorial de Monografia apresentado à disciplina de Seminário de Monografia
- do Curso Engenharia da Computação como requisito parcial para obtenção
+Trabalho de Conclusão de Curso apresentado como requisito parcial para obtenção
  do grau de Engenheiro da Computação na Universidade Federal do Ceará, 
 \emph on
 Campus
@@ -1482,7 +1481,7 @@ pagestyle{demas}
 \end_layout
 
 \begin_layout Section
-Introdução
+Introdução [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -1501,8 +1500,9 @@ Objetivo geral
 \end_layout
 
 \begin_layout Standard
-Mostrar a aplicação da extração de regras na mineração de dados utilizando
- redes neurais do tipo Backpropagation.
+Mostrar uma aplicação direta da extração de regras de redes neurais artificiais
+ de múltiplas camadas, com algoritmo de treinamento Levenberg–Marquard,
+ no processo de mineração de dados.
 \end_layout
 
 \begin_layout Subsection
@@ -1539,7 +1539,24 @@ item
 \end_inset
 
 Mostrar a base teórica sobre a metodologia de mineração de dados CRISP-DM
- e sua aplicação.
+ e sua aplicação em uma massa de dados fornecida pelo cliente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Comparar os métodos de classificação de árvore de decisões com o método
+ de extração de regras, aplicados na mineração de dados.
 \end_layout
 
 \begin_layout Standard
@@ -1567,6 +1584,10 @@ end{itemize}
 
 \begin_layout Section
 Justificativa
+\end_layout
+
+\begin_layout Standard
+S
 \end_layout
 
 \begin_layout Standard
@@ -1607,7 +1628,7 @@ key "cassio_2009"
  o software WEKA
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-prefix "ML"
+prefix "WEKA"
 symbol "WEKA"
 description "Waikato Environment for Knowledge Analysis"
 
@@ -1617,13 +1638,57 @@ description "Waikato Environment for Knowledge Analysis"
 \end_layout
 
 \begin_layout Standard
+Em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "jung_2014"
 
 \end_inset
 
+, o objetivo do estudo foi descobrir o conhecimento significativo entre
+ duas doenças complexas e sintomas em dados clínicos utilizando árvore de
+ decisão.
+ Foi utilizado o algoritmo C5.0 (que é uma versão melhorada do algoritmo
+ C4.5) para a modelagem de uma árvore de decisão a partir de dados de doenças
+ relacionadas ao pé.
+\end_layout
 
+\begin_layout Standard
+As redes neurais artificiais são consideradas caixas pretas e são consideradas
+ aproximadores universais.
+ No artigo intitulado 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Are Artificial Neural Networks Black Boxes?
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, referenciado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "benitez_1997"
+
+\end_inset
+
+, propõem-se métodos para extrair regras a partir uma rede neural artificial.
+ Nesse artigo, apresenta-se uma interpretação das redes neurais artificiais
+ para que elas não sejam mais vistas como caixas pretas.
+ Esta interpretação é construída com base nas regras 
+\emph on
+fuzzy
+\emph default
+, usando um novo operador de lógica 
+\emph on
+fuzzy
+\emph default
+.
+ Além disso, essa interpretação oferece um procedimento automatizado de
+ aquisição de conhecimento.
 \end_layout
 
 \begin_layout Standard
@@ -1635,7 +1700,11 @@ key "andrea_2005"
 \end_inset
 
  é um Sistema de Suporte de Decisões aplicado para o gerenciamento das hospitali
-zações e terapias, determinando o uso efetivo das.
+zações e terapias.
+ Um dos principais objetivos do projeto é a extração de regras e a identificação
+ das regras adequadas em termos de eficácia, qualidade e redução de custos,
+ especialmente na perspectiva de tecnologias e medicamentos em rápido desenvolvi
+mento.
 \end_layout
 
 \begin_layout Standard
@@ -1648,32 +1717,50 @@ key "Luo_2008"
 
 , as redes neurais possuem alta acurácia no processo de classificação na
  descoberta de conhecimento.
- Utiliza o algoritmo RX melhorado para poder extrair as regras de uma rede
- neural do tipo RBF 
+ Utiliza o algoritmo RX
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-prefix "ML"
+prefix "RX"
+symbol "RX"
+description "Rule Extraction"
+
+\end_inset
+
+ melhorado para poder extrair as regras de uma rede neural do tipo RBF 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "RBF"
 symbol "RBF"
 description "Radial Basis Function"
 
 \end_inset
 
- e o JOONE
+.
+ Utiliza também o JOONE
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-prefix "ML"
+prefix "JOONE"
 symbol "JOONE"
 description "Java Object Oriented Neural Network"
 
 \end_inset
 
- que é utilizado na otimização de entradas.
+ para otimizar as entradas da rede neural respectiva.
 \end_layout
 
 \begin_layout Standard
-Neural networks can make higher classification accuracy in the problem of
- rule extraction, for it has the capability of non-linear mapping and exact
- approaching mechanism
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, afirma-se que a principal limitação da utilização de redes neurais supervision
+adas em aplicações de mineração de dados, deve-se à dificuldade de entendimento
+ da representação do conhecimento incorporado por estes modelos.
+ Para superar tal limitação, faz-se uso de técnicas de extração de regras
+ de redes neurais.
 \end_layout
 
 \begin_layout Standard
@@ -1721,7 +1808,7 @@ filename "cap_7/cap_7_resultados.lyx"
 \end_layout
 
 \begin_layout Section
-Conclusões e recomendações
+Conclusões e recomendações [Incompleto]
 \end_layout
 
 \begin_layout Standard

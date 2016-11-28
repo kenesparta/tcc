@@ -583,7 +583,7 @@ cref{subsec:compreensao_dos_dados}
 \end_layout
 
 \begin_layout Subsubsection
-Avaliar a situação
+Avaliar a situação [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -702,7 +702,7 @@ Ano 2014 (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-CRISP-DM
+
 \end_layout
 
 \end_inset
@@ -711,7 +711,7 @@ CRISP-DM
 \begin_inset Text
 
 \begin_layout Plain Layout
-42.0
+
 \end_layout
 
 \end_inset
@@ -720,7 +720,7 @@ CRISP-DM
 \begin_inset Text
 
 \begin_layout Plain Layout
-43.0
+
 \end_layout
 
 \end_inset
@@ -731,7 +731,7 @@ CRISP-DM
 \begin_inset Text
 
 \begin_layout Plain Layout
-Criada por mim
+
 \end_layout
 
 \end_inset
@@ -740,7 +740,7 @@ Criada por mim
 \begin_inset Text
 
 \begin_layout Plain Layout
-19.0
+
 \end_layout
 
 \end_inset
@@ -749,7 +749,7 @@ Criada por mim
 \begin_inset Text
 
 \begin_layout Plain Layout
-27.5
+
 \end_layout
 
 \end_inset
@@ -760,7 +760,7 @@ Criada por mim
 \begin_inset Text
 
 \begin_layout Plain Layout
-SEMMA
+
 \end_layout
 
 \end_inset
@@ -769,7 +769,7 @@ SEMMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-13.0
+
 \end_layout
 
 \end_inset
@@ -778,7 +778,7 @@ SEMMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.5
+
 \end_layout
 
 \end_inset
@@ -789,7 +789,7 @@ SEMMA
 \begin_inset Text
 
 \begin_layout Plain Layout
-Outra
+
 \end_layout
 
 \end_inset
@@ -798,7 +798,7 @@ Outra
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.0
+
 \end_layout
 
 \end_inset
@@ -807,7 +807,7 @@ Outra
 \begin_inset Text
 
 \begin_layout Plain Layout
-8.0
+
 \end_layout
 
 \end_inset
@@ -818,7 +818,7 @@ Outra
 \begin_inset Text
 
 \begin_layout Plain Layout
-Processo KDD
+
 \end_layout
 
 \end_inset
@@ -827,7 +827,7 @@ Processo KDD
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.3
+
 \end_layout
 
 \end_inset
@@ -836,7 +836,7 @@ Processo KDD
 \begin_inset Text
 
 \begin_layout Plain Layout
-7.5
+
 \end_layout
 
 \end_inset
@@ -847,7 +847,7 @@ Processo KDD
 \begin_inset Text
 
 \begin_layout Plain Layout
-Criada pela organização onde trabalho
+
 \end_layout
 
 \end_inset
@@ -856,7 +856,7 @@ Criada pela organização onde trabalho
 \begin_inset Text
 
 \begin_layout Plain Layout
-5.3
+
 \end_layout
 
 \end_inset
@@ -865,7 +865,7 @@ Criada pela organização onde trabalho
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.5
+
 \end_layout
 
 \end_inset
@@ -876,7 +876,7 @@ Criada pela organização onde trabalho
 \begin_inset Text
 
 \begin_layout Plain Layout
-Específica de domínio
+
 \end_layout
 
 \end_inset
@@ -885,7 +885,7 @@ Específica de domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.7
+
 \end_layout
 
 \end_inset
@@ -894,7 +894,7 @@ Específica de domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-2.0
+
 \end_layout
 
 \end_inset
@@ -905,7 +905,7 @@ Específica de domínio
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nenhuma
+
 \end_layout
 
 \end_inset
@@ -914,7 +914,7 @@ Nenhuma
 \begin_inset Text
 
 \begin_layout Plain Layout
-4.7
+
 \end_layout
 
 \end_inset
@@ -923,7 +923,7 @@ Nenhuma
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.0
+
 \end_layout
 
 \end_inset
@@ -990,7 +990,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Determinar o objetivo da mineração de dados
+Determinar o objetivo da mineração de dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -4874,7 +4874,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Exploração dos dados
+Exploração dos dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -6558,7 +6558,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Selecionar os dados
+Selecionar os dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -6733,11 +6733,11 @@ fonteProp{}
 \end_layout
 
 \begin_layout Subsubsection
-Limpar os dados
+Limpar os dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
-Para poder dar equidade ao conjunto de dados
+Para poder dar equidade ao conjunto de dados...
 \end_layout
 
 \begin_layout Standard
@@ -6771,7 +6771,7 @@ background
 \end_layout
 
 \begin_layout Subsubsection
-Construir dados
+Construir dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -6779,7 +6779,7 @@ Construir dados
 \end_layout
 
 \begin_layout Subsubsection
-Integrar dados
+Integrar dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -7075,7 +7075,7 @@ fonteProp{}
 
 \end_deeper
 \begin_layout Subsubsection
-Formatar os dados
+Formatar os dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -8167,7 +8167,7 @@ fonteProp{}
 \end_layout
 
 \begin_layout Subsection
-Modelagem
+Modelagem [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -8346,7 +8346,7 @@ Avaliar o modelo
 \end_layout
 
 \begin_layout Subsection
-Avaliação
+Avaliação [Incompleto]
 \end_layout
 
 \begin_layout Subsubsection

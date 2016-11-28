@@ -583,7 +583,7 @@ cref{subsec:compreensao_dos_dados}
 \end_layout
 
 \begin_layout Subsubsection
-Avaliar a situação
+Avaliar a situação [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -990,7 +990,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Determinar o objetivo da mineração de dados
+Determinar o objetivo da mineração de dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -1015,7 +1015,7 @@ Outro objetivo da mineração será comparar as o método de extração de regra
 \end_layout
 
 \begin_layout Subsubsection
-Realizar um plano do projeto
+Realizar um plano do projeto [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -1272,7 +1272,7 @@ cref{fig:DI_REL}
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1452,7 +1452,7 @@ dt
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4874,7 +4874,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Exploração dos dados
+Exploração dos dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -6558,7 +6558,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Selecionar os dados
+Selecionar os dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -6733,11 +6733,11 @@ fonteProp{}
 \end_layout
 
 \begin_layout Subsubsection
-Limpar os dados
+Limpar os dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
-Para poder dar equidade ao conjunto de dados
+Para poder dar equidade ao conjunto de dados...
 \end_layout
 
 \begin_layout Standard
@@ -6771,7 +6771,7 @@ background
 \end_layout
 
 \begin_layout Subsubsection
-Construir dados
+Construir dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -6779,7 +6779,7 @@ Construir dados
 \end_layout
 
 \begin_layout Subsubsection
-Integrar dados
+Integrar dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -7075,7 +7075,7 @@ fonteProp{}
 
 \end_deeper
 \begin_layout Subsubsection
-Formatar os dados
+Formatar os dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -8167,7 +8167,7 @@ fonteProp{}
 \end_layout
 
 \begin_layout Subsection
-Modelagem
+Modelagem [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -8346,7 +8346,7 @@ Avaliar o modelo
 \end_layout
 
 \begin_layout Subsection
-Avaliação
+Avaliação [Incompleto]
 \end_layout
 
 \begin_layout Subsubsection

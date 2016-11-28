@@ -32,13 +32,23 @@
 }
 
 @Article{andrea_2005,
-  Title                    = {Research and Improvement of Splitting Rule Extraction Data Mining Algorithm Based on Neural Networks},
+  Title                    = {Health-Mining: a Disease Management Support Service based on Data Mining and Rule Extraction},
   Author                   = {Andrea Bei AND Stefano De Luca AND Giancarlo Ruscitti AND Diego Salamon},
   Journal                  = {Engineering in Medicine and Biology 27th Annual Conference},
   Year                     = {2005},
 
   Owner                    = {ken},
   Timestamp                = {2016.11.09}
+}
+
+@Article{benitez_1997,
+  Title                    = {Are Artificial Neural Networks Black Boxes?},
+  Author                   = {J. M. Ben\'itez and J. L. Castro and I. Requena},
+  Journal                  = {IEEE Transactions On Neural Networks},
+  Year                     = {1997},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.11.28}
 }
 
 @Electronic{binus_2014,
@@ -99,6 +109,16 @@
 
   Owner                    = {ken},
   Timestamp                = {2016.11.06}
+}
+
+@Book{ben_2004,
+  Title                    = {Intelig\^encia Artificial},
+  Author                   = {Ben Copin},
+  Publisher                = {gen LTC},
+  Year                     = {2004},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.11.28}
 }
 
 @Article{costa_2012,
@@ -162,6 +182,16 @@
 
   Owner                    = {papita},
   Timestamp                = {2016.06.08}
+}
+
+@Article{Eduardo_1999,
+  Title                    = {Extra\c{c}\~ao de Regras de Redes Neurais por meio do Algoritmo RX Modificado: Um Exemplo de Aplica\c{c}\~ao em Modelagem de Dados Meteorol\'ogicos.},
+  Author                   = {Eduardo R. Hruschka AND Nelson F. F. Ebecken},
+  Journal                  = {Proceedings of the IV Brazilian Conference on Neural Networks},
+  Year                     = {1999},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.11.28}
 }
 
 @Electronic{Flavia_2016,

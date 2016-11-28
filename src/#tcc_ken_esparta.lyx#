@@ -1,0 +1,1849 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%\usepackage{hyperref}
+%
+
+%%%%%%%%%%%%%%% MATRIX LABEL %%%%%%%%%%%%%%%%%%
+%\usepackage[algo2e,vlined,ruled,boxed]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{indentfirst}
+\usepackage{mathtools}
+\usepackage{nomencl}
+\usepackage{setspace}
+\usepackage{empheq}
+\usepackage{longtable}
+\usepackage{steinmetz,environ}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[table,usenames,dvipsnames]{xcolor}
+
+
+\definecolor{celeste1}{RGB}{0,154,205}
+\definecolor{verde5}{RGB}{0,150,0}
+\definecolor{verde1}{RGB}{0,200,0}
+\definecolor{firebrick}{RGB}{178,34,34}
+\definecolor{crimson}{RGB}{220,20,60}
+\definecolor{reda}{RGB}{220,20,70}
+\definecolor{sea}{RGB}{46,139,87}
+\definecolor{rosadito}{RGB}{255,192,203}
+\definecolor{naranjita}{RGB}{255,159,0}
+\definecolor{royalblue}{RGB}{0,35,102}
+\definecolor{azvi}{RGB}{148,0,211}
+
+%%%%%%%%%%%%% CORES
+\definecolor{titulo}{RGB}{60,76,148}
+\definecolor{section}{RGB}{148,0,211}
+\definecolor{refFig}{RGB}{120,120,120}
+
+%%%%%%%%%%%%%
+%HYFFF
+\PassOptionsToPackage{hyphens}{url}
+
+
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{multirow} 
+\setlength{\columnsep}{0.5cm}
+\usepackage[titletoc]{appendix}
+\usepackage{url}
+
+
+\usepackage{pgf}
+\usepackage{tikz}
+
+% tabela longa que quebra entre p\'aginas
+\usepackage{longtable}
+%identando
+%\usepackage{indentfirst}
+%imagen en negritas
+%\usepackage[labelfont={it,rm}, tableposition=top]{caption}
+%\usepackage[labelfont={it,rm}]{caption}
+%%%%%%%%%%%%%%%%
+%%%PACKEGE CAPTION
+%%%%%%%%%%%%%%%%
+
+
+
+\DeclareCaptionFont{colorFigure}{\color{refFig}{}}
+\DeclareCaptionFont{colorTable}{\color{refFig}{}}
+\captionsetup[figure]{labelfont={bf,footnotesize,colorFigure},textfont={it,footnotesize},format=hang}%%
+%labelsep=period}
+\captionsetup[table]{labelfont={bf,footnotesize,colorTable}, format=hang,textfont={it,footnotesize}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%Package SECTSTY
+%Para centrar el capitulo
+\usepackage{sectsty}
+%\chapterfont{\centering}
+%cambiar tamanho das fontes
+\sectionfont{\fontsize{14}{14}\selectfont\color{black}}
+\subsectionfont{\fontsize{13}{13}\selectfont\color{black}}
+\subsubsectionfont{\fontsize{12}{12}\selectfont\color{black}\em}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage[siunitx]{circuitikz}
+\usepackage[thinlines]{easytable}
+\setlength{\extrarowheight}{2pt}
+\renewcommand*\arraystretch{1}
+
+%\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\usepackage{varioref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+
+%\makeatletter
+%\renewcommand\thefigure{\mbox{\thechapter-\arabic{figure}}}
+%\makeatother
+%\crefformat{figure}{#2\color{Cyan!40!blue}{{[Fig.~#1#3]}}}
+%\crefformat{equation}{#2\color{Cyan!40!blue}{{[Eq.~#1#3]}}}
+%\crefformat{table}{#2\color{Cyan!40!blue}{{[Tab.~#1#3]}}}
+
+
+\crefname{section}{section}{sections}
+\crefname{subsection}{subsection}{subsections}
+\crefname{appendix}{appendix}{appendixes}
+\crefformat{figure}{\textcolor{refFig}{#2(FIGURA~#1#3)}}
+\crefformat{equation}{\textcolor{refFig}{#2(EQUAÇÃO~#1#3)}}
+\crefformat{table}{\textcolor{refFig}{#2(TABELA~#1#3)}}
+\crefformat{appendix}{\textcolor{refFig}{(#2ap.~#1#3)}}
+\crefformat{section}{\textcolor{refFig}{#2(SEÇÃO~#1#3)}}
+\crefformat{subsection}{\textcolor{refFig}{#2(SUBSEÇÃO~#1#3)}}
+\crefformat{algorithm}{\textcolor{refFig}{#2(ALGORITMO~#1#3)}}
+
+
+\usepackage{pstricks}
+
+%textCIRCLED
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+%SPACING
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+%======================================= FANCY HEADERS ===============================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+\fancypagestyle{solo}{
+\fancyhf{}
+\fancyhead[RO]{}
+\fancyhead[LO]{}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+}
+
+\fancypagestyle{demas}{
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{\color{black}{\textbf{\footnotesize \thepage}}}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{}
+}
+
+
+\usepackage[pages=some]{background}
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=0.4,
+angle=0,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{capa.png}
+  }%
+}
+
+
+%=================== TIKS set ===================
+
+\tikzset{
+  place/.style={
+    circle,
+    thick,
+    draw=blue!75,
+    fill=blue!20,
+    minimum size=6mm
+  },
+  transition/.style={
+    rectangle,
+    thick,
+    fill=black,
+    minimum width=8mm,
+    inner ysep=2pt
+    }
+  }
+%\usepackage{kbordermatrix, blkarray}
+%\renewcommand{\kbldelim}{[}
+%\renewcommand{\kbrdelim}{]}
+
+
+%\usepackage{pgf}
+%\usepackage{tikz}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%PARRAFO
+
+\setlength{\parindent}{1.9cm}
+\setlength{\parskip}{1.5pt}
+%\renewcommand{\baselinestretch}{1.5}
+
+
+
+%% NOMENCLATURA
+\usepackage{nomencl}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+\makenomenclature
+\makeatletter
+\patchcmd{\thenomenclature}{\section*}{\section*}{}{}
+\makeatother
+
+\usepackage[alf, abnt-verbatim-entry=no]{abntex2cite}
+\urlstyle{tt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "helvet" "default"
+\font_typewriter "cmtl" "default"
+\font_math "default" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 95 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\bullet 0 2 21 1
+\bullet 1 4 28 -1
+\bullet 2 4 24 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand
+\backslash
+ntcc{
+\end_layout
+
+\end_inset
+
+Aplicação de um algoritmo para extração de regras de uma Rede Neural Artificial
+ no processo de mineração de dados
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand
+\backslash
+nautor{
+\end_layout
+
+\end_inset
+
+Ken Esparta Ccorahua
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+fonteProp}{
+\end_layout
+
+\begin_layout Plain Layout
+
+				{
+\end_layout
+
+\begin_layout Plain Layout
+
+					
+\backslash
+scriptsize{
+\backslash
+em{Fonte: Autoria própria.
+\backslash
+
+\backslash
+
+\backslash
+vspace{0.2em}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+				}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+fonte}[1]{
+\end_layout
+
+\begin_layout Plain Layout
+
+				{
+\end_layout
+
+\begin_layout Plain Layout
+
+					
+\backslash
+scriptsize{
+\backslash
+em{Fonte:~Adaptado~de~#1.
+\backslash
+
+\backslash
+
+\backslash
+vspace{0.2em}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+				}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand
+\backslash
+tcc{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+textbf{
+\end_layout
+
+\begin_layout Plain Layout
+
+  		
+\backslash
+textcolor{black}{
+\end_layout
+
+\begin_layout Plain Layout
+
+			{
+\backslash
+Large{}
+\end_layout
+
+\begin_layout Plain Layout
+
+				
+\backslash
+ntcc
+\end_layout
+
+\begin_layout Plain Layout
+
+		  }}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img/LOGO_PNG.png
+	lyxscale 20
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\backslash
+textrm{
+\backslash
+color{black}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vspace{0.2cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\backslash
+textsc {
+\backslash
+normalsize{}Universidade Federal Do Ceará}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vspace{-0.3cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\backslash
+em {Campus de Sobral}}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\size large
+Curso de Engenharia da Computação
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+large{
+\backslash
+nautor}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\backslash
+textsc 	{
+\backslash
+textbf{
+\end_layout
+
+\begin_layout Plain Layout
+
+  		
+\backslash
+textcolor{black}{
+\end_layout
+
+\begin_layout Plain Layout
+
+			{
+\backslash
+Large{}
+\end_layout
+
+\begin_layout Plain Layout
+
+				
+\backslash
+ntcc
+\end_layout
+
+\begin_layout Plain Layout
+
+		  }}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Sobral $-$ CE
+\backslash
+
+\backslash
+2016
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Contra-capa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+nautor
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+ {
+\backslash
+textsc { 
+\backslash
+textbf {
+\backslash
+large{} 
+\backslash
+ntcc } }}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "48col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+small{}
+\end_layout
+
+\end_inset
+
+Trabalho de Conclusão de Curso apresentado como requisito parcial para obtenção
+ do grau de Engenheiro da Computação na Universidade Federal do Ceará, 
+\emph on
+Campus
+\emph default
+ Sobral.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Orientador
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Prof.
+ Me.
+ Fernando Rodrigues de Almeida Júnior
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Coorientador
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Prof.
+ Dr.
+ Márcio André Baima Amora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+small{} Sobral $-$ CE, dezembro de 2016}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList algorithm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+nomname}{Lista de abreviaturas e siglas} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "custom"
+width "2.5cm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{demas}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introdução [Incompleto]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Subsection
+Objetivo geral
+\end_layout
+
+\begin_layout Standard
+Mostrar uma aplicação direta da extração de regras de redes neurais artificiais
+ de múltiplas camadas, com algoritmo de treinamento Levenberg–Marquard,
+ no processo de mineração de dados.
+\end_layout
+
+\begin_layout Subsection
+Objetivos específicos
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=1.9cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.55cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Mostrar a base teórica sobre a metodologia de mineração de dados CRISP-DM
+ e sua aplicação em uma massa de dados fornecida pelo cliente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+Comparar os métodos de classificação de árvore de decisões com o método
+ de extração de regras, aplicados na mineração de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Justificativa
+\end_layout
+
+\begin_layout Standard
+S
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Trabalhos relacionados
+\end_layout
+
+\begin_layout Standard
+No relatório técnico intitulado 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Mineração de Dados: Conceitos, Tarefas, Métodos e Ferramentas
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, referenciado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cassio_2009"
+
+\end_inset
+
+, apresentam-se os conceitos chave, tarefas e métodos essenciais a serem
+ aplicados na mineração de dados.
+ Inclusive são mostradas ferramentas desenvolvidas para tornar o processo
+ de mineração de dados menos técnico; entre essas ferramentas encontra-se
+ o software WEKA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "WEKA"
+symbol "WEKA"
+description "Waikato Environment for Knowledge Analysis"
+
+\end_inset
+
+ que será utilizado no trabalho.
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jung_2014"
+
+\end_inset
+
+, o objetivo do estudo foi descobrir o conhecimento significativo entre
+ duas doenças complexas e sintomas em dados clínicos utilizando árvore de
+ decisão.
+ Foi utilizado o algoritmo C5.0 (que é uma versão melhorada do algoritmo
+ C4.5) para a modelagem de uma árvore de decisão a partir de dados de doenças
+ relacionadas ao pé.
+\end_layout
+
+\begin_layout Standard
+As redes neurais artificiais são consideradas caixas pretas e são consideradas
+ aproximadores universais.
+ No artigo intitulado 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Are Artificial Neural Networks Black Boxes?
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, referenciado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "benitez_1997"
+
+\end_inset
+
+, propõem-se métodos para extrair regras a partir uma rede neural artificial.
+ Nesse artigo, apresenta-se uma interpretação das redes neurais artificiais
+ para que elas não sejam mais vistas como caixas pretas.
+ Esta interpretação é construída com base nas regras 
+\emph on
+fuzzy
+\emph default
+, usando um novo operador de lógica 
+\emph on
+fuzzy
+\emph default
+.
+ Além disso, essa interpretação oferece um procedimento automatizado de
+ aquisição de conhecimento.
+\end_layout
+
+\begin_layout Standard
+O sistema proposto em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "andrea_2005"
+
+\end_inset
+
+ é um Sistema de Suporte de Decisões aplicado para o gerenciamento das hospitali
+zações e terapias.
+ Um dos principais objetivos do projeto é a extração de regras e a identificação
+ das regras adequadas em termos de eficácia, qualidade e redução de custos,
+ especialmente na perspectiva de tecnologias e medicamentos em rápido desenvolvi
+mento.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Luo_2008"
+
+\end_inset
+
+, as redes neurais possuem alta acurácia no processo de classificação na
+ descoberta de conhecimento.
+ Utiliza o algoritmo RX
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "RX"
+symbol "RX"
+description "Rule Extraction"
+
+\end_inset
+
+ melhorado para poder extrair as regras de uma rede neural do tipo RBF 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "RBF"
+symbol "RBF"
+description "Radial Basis Function"
+
+\end_inset
+
+.
+ Utiliza também o JOONE
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "JOONE"
+symbol "JOONE"
+description "Java Object Oriented Neural Network"
+
+\end_inset
+
+ para otimizar as entradas da rede neural respectiva.
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, afirma-se que a principal limitação da utilização de redes neurais supervision
+adas em aplicações de mineração de dados, deve-se à dificuldade de entendimento
+ da representação do conhecimento incorporado por estes modelos.
+ Para superar tal limitação, faz-se uso de técnicas de extração de regras
+ de redes neurais.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "cap_5/cap_5_fundamentacao_teorica.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "cap_6/cap_6_materias_metodos.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "cap_7/cap_7_resultados.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusões e recomendações [Incompleto]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "biblio_tcc"
+options "bibtotoc,abntex2-alf"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
