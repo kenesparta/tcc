@@ -1164,13 +1164,6 @@ phantomsection
 
 
 \backslash
-setcounter{page}{1}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
 thispagestyle{empty}
 \end_layout
 
@@ -1195,6 +1188,22 @@ phantomsection
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{solo}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -1230,14 +1239,7 @@ phantomsection
 
 
 \backslash
-setcounter{page}{1}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
+pagestyle{empty}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1261,6 +1263,22 @@ phantomsection
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{solo}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -1290,13 +1308,6 @@ cleardoublepage
 
 \backslash
 phantomsection
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{page}{1}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1501,8 +1512,11 @@ Objetivo geral
 
 \begin_layout Standard
 Mostrar uma aplicação direta da extração de regras de redes neurais artificiais
- de múltiplas camadas, com algoritmo de treinamento Levenberg–Marquard,
- no processo de mineração de dados.
+ de múltiplas camadas, com algoritmo de treinamento 
+\emph on
+Levenberg–Marquard
+\emph default
+, no processo de mineração de dados.
 \end_layout
 
 \begin_layout Subsection
@@ -1555,8 +1569,9 @@ item
 
 \end_inset
 
-Comparar os métodos de classificação de árvore de decisões com o método
- de extração de regras, aplicados na mineração de dados.
+Comparar os métodos de classificação de árvore de decisão com o método de
+ extração de regras chamado de algoritmo RX, ambos aplicados no contexto
+ da mineração de dados com a metodologia CRISP-DM.
 \end_layout
 
 \begin_layout Standard
@@ -1583,7 +1598,45 @@ end{itemize}
 \end_layout
 
 \begin_layout Section
-Justificativa [Incompleto]
+Justificativa
+\end_layout
+
+\begin_layout Standard
+Redes neurais artificiais supervisionadas não são amplamente utilizadas
+ em aplicações de mineração de dados devido à dificuldade de interpretação
+ de seus modelos, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+.
+ É sabido também que uma rede neural artificial é considerada uma caixa
+ preta, ou seja, é um sistema onde se conhece as entradas e as saídas, porém
+ não se conhece o seu funcionamento interno.
+\end_layout
+
+\begin_layout Standard
+Devido a que, o principal desafio no uso de redes neurais supervisionadas
+ em aplicações de mineração de dados significa obter conhecimento explícito
+ a partir desses modelos, neste trabalho desenvolve-se uma aplicação prática
+ onde se utiliza um algoritmo de extração de regras de uma rede neural artificia
+l.
+ A modelagem dessa rede neural artificial é parte de um dos processos da
+ metodologia CRISP-DM.
+ Esta metodologia é utilizada amplamente para resolver problemas de mineração
+ de dados.
+\end_layout
+
+\begin_layout Standard
+Em resumo, neste trabalho mostra-se uma situação prática onde a extração
+ de regras é aplicada diretamente no processo de mineração de dados.
+ Como produto final do processo, obtêm-se regras lógicas que podem ser interpret
+adas por um especialista.
+ As regras lógicas resultantes do algoritmo de extração de regras, serão
+ comparadas com as regras lógicas obtidas a partir do algoritmo de árvore
+ de decisão.
 \end_layout
 
 \begin_layout Standard

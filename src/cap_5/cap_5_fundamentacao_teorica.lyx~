@@ -118,7 +118,7 @@ status open
 
 
 \backslash
-captionsetup{width=0.7
+captionsetup{width=0.95
 \backslash
 textwidth}
 \end_layout
@@ -138,8 +138,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Estruturação do conhecimento para conseguir as ferramentas teóricas e técnicas
- relacionadas com o presente trabalho.
+Estrutura do modelo de adquisição do conhecimento das ferramentas teóricas
+ e técnicas relacionadas com o presente trabalho.
+ 
 \begin_inset ERT
 status open
 
@@ -159,9 +160,9 @@ label{fig:organ_teorica}
 
 
 \begin_inset Graphics
-	filename img/rede_petri_teoria.pdf
+	filename img/teoria_petri_01.pdf
 	lyxscale 50
-	scale 59
+	scale 60
 
 \end_inset
 
@@ -208,7 +209,26 @@ Soft computing
 \end_layout
 
 \begin_layout Standard
-Existem dois tipos de paradigmas computacionais, a 
+Observando a posição da ficha na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+, pode-se perceber que a primeira ferramente teórica é o relacionado com
+ a 
+\emph on
+Soft Computing
+\emph default
+.
+ Existem dois tipos de paradigmas computacionais, a 
 \emph on
 Soft Computing
 \emph default
@@ -746,7 +766,7 @@ cref{alg:EP}
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1140,7 +1160,7 @@ key "David_2010"
 \end_layout
 
 \begin_layout Subsubsection
-Rede Neural Artificial
+Rede Neural Artificial [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -1175,7 +1195,11 @@ description "Multilayer Perceptron"
 
 \end_inset
 
-), com algoritmo de treinamento Levemerk Marquard.
+), com algoritmo de treinamento 
+\emph on
+Levenberg–Marquard
+\emph default
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1199,10 +1223,146 @@ label{sec:aprendizado_maquina}
 \end_layout
 
 \begin_layout Standard
-A ficha encontra-se no seguinte estado, contendo já a teoria de uma rede
- neural artificial.
- Nesta seção trata-se sobre as técnicas que serão adotadas do aprendizado
+Nesta seção trata-se sobre as técnicas que serão adotadas do aprendizado
  de máquina (Machine Learning, ou ML).
+ Devido a que se utilizam duas abordagens para a comparação: árvore de decisão
+ e extração de regras, a posição da ficha vermelha na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_1}
+\end_layout
+
+\end_inset
+
+ pode estar em dois possíveis estados mutuamente exclusivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A ficha encontra-se no estado 
+\begin_inset Quotes eld
+\end_inset
+
+Aprendizado de máquina
+\begin_inset Quotes erd
+\end_inset
+
+.
+ As fichas vermelhas indicam que somente pode existir uma ficha ou no estado
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Usa Lógica 
+\emph on
+Fuzzy
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ ou no estado 
+\begin_inset Quotes eld
+\end_inset
+
+Usa Redes Neurais Artificiais
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_02.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1317,9 +1477,7 @@ key "Flavia_2016"
 
 , justifica a escolha da utilização das ferramentas oferecidas pela abordagem
  supervisionada do aprendizado de máquina.
- Então, a ficha da rede de Petri passa para o seguinte estado sabendo que
- até esta subseção, juntando os conceitos revisados, está sendo utilizada
- uma rede neural com aprendizagem supervisionada.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1924,6 +2082,136 @@ key "mohammed_2014"
 
 , como o processo de descoberta intuitiva de novos padrões de interesse,
  assim como modelos preditivos, descritivos e compreensíveis.
+ Até este ponto, tem-se as ferramentas teóricas ou da rede neural artificial
+ ou raciocínio probabilístico, juntamente com a abordagem de aprendizado
+ supervisionado, como se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_2}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A ficha encontra-se no estado 
+\begin_inset Quotes eld
+\end_inset
+
+Mineração de dados
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O significado das fichas de cor vermelha são explicados na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_1}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_03.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3032,6 +3320,108 @@ cref{sec:materiais_metodos}
 Árvores de decisão [Incompleto]
 \end_layout
 
+\begin_layout Standard
+Árvores de decisão são modelos estatísticos que utilizam um treinamento
+ supervisionado para a classificação e previsão de dados.
+ Em outras palavras, em sua construção é utilizado um conjunto de treinamento
+ formado por entradas e saídas.
+ Estas últimas são as classes na qual vão ser classificadas a massa de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Como resultado da construção teórica, chegou-se ao último estado.
+ Existem duas fichas porque o conhecimento é adquirido tanto do raciocínio
+ probabilístico como da mineração de dados.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_3}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_03.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 O software WEKA [Incompleto]
 \end_layout
@@ -3042,6 +3432,100 @@ O algoritmo J48 [Incompleto]
 
 \begin_layout Subsection
 Extração de regras [Incompleto]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Como resultado da construção teórica, chegou-se ao último estado.
+ Existem duas fichas porque o conhecimento é adquirido tanto da rede neural
+ artificial como da mineração de dados.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_03.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
