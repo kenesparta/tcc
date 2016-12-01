@@ -1160,7 +1160,7 @@ key "David_2010"
 \end_layout
 
 \begin_layout Subsubsection
-Rede Neural Artificial [Incompleto]
+Rede Neural Artificial
 \end_layout
 
 \begin_layout Standard
@@ -1185,7 +1185,7 @@ key "kunjal_2013"
 \end_layout
 
 \begin_layout Standard
-A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas
+A rede neural utilizada no trabalho é do tipo perceptron de múltiplas camadas
  (MLP
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1195,11 +1195,272 @@ description "Multilayer Perceptron"
 
 \end_inset
 
-), com algoritmo de treinamento 
+), com algoritmo de treinamento de 
 \emph on
-Levenberg–Marquard
+Levenberg–Marquardt
 \emph default
+ (LM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "LM"
+symbol "LM"
+description "Levenberg–Marquardt"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Paragraph
+Perceptron de múltiplas camadas
+\end_layout
+
+\begin_layout Standard
+Consiste em um conjunto de unidades sensoriais que constituem a camada de
+ entrada, uma ou mais camadas ocultas de nós computacionais e, por fim,
+ uma camada de saída.
+ O sinal de entrada se propaga através da rede camada por camada.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Simon_2008"
+
+\end_inset
+
+, uma MLP possui três caraterísticas importantes
+\end_layout
+
+\begin_layout Enumerate
+Alto grau de conectividade, isto que dizer que uma modificação na conectividade
+ da rede, requer uma mudança na população das conexões sinápticas o dos
+ seus valores de pesos correspondentes.
+\end_layout
+
+\begin_layout Enumerate
+A rede possui uma ou mais camadas de neurônios ocultos, na sua camada intermediá
+ria, os quais capacitam o aprendizado da rede.
+\end_layout
+
+\begin_layout Enumerate
+O modelo de cada neurônio da rede inclui uma função de ativação não linear
+ e diferenciável em todo o seu domínio.
+ Essa função de ativação comumente é a função logística definida em
+\begin_inset Formula 
+\begin{equation}
+y_{j}=\frac{1}{1+e^{-v_{j}}}\label{eq:logistica}
+\end{equation}
+
+\end_inset
+
+de modo que 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ é a soma ponderada de todas as entradas sinápticas mais o bias do neurônio
+ 
+\begin_inset Formula $j$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ é a saída do neurônio.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:rede_neural}
+\end_layout
+
+\end_inset
+
+ mostra-se a arquitetura básica de uma rede neural artificial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.75
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mostra-se a arquitetura básica de uma rede neural.
+ O símbolo 
+\begin_inset Formula $\sum$
+\end_inset
+
+ indica o somatório ponderado dos pesos com as entradas da rede neural (ou
+ as saídas de cada neurônio), o 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ é a função de ativação de cada neurônio e 
+\begin_inset Formula $\theta$
+\end_inset
+
+ é o valor de bias.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:rede_neural}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/redeNeural.eps
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Algoritmo de treinamento Levenberg-Marquardt
+\end_layout
+
+\begin_layout Standard
+O algoritmo de Levenberg-Marquardt (LM) é o algoritmo de otimização mais
+ utilizado.
+ Ele supera o método gradiente descendente simples e outros métodos de gradiente
+ conjugado em uma ampla variedade de problemas, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ananth_2004"
+
+\end_inset
+
 .
+ O algoritmo de LM é uma técnica iterativa que localiza o mínimo de uma
+ função que é expressa como a soma de quadrados de funções não-lineares,
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Manolis_2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O algoritmo de LM é rápido e tem convergência estável.
+ No campo de redes neurais artificiais, este algoritmo é adequado para o
+ treinamento de pequenos e médios problemas, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hao_2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como se afirma em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Henri_2016"
+
+\end_inset
+
+, os métodos de mínimos quadrados não lineares envolvem uma melhoria iterativa
+ dos valores dos parâmetros, a fim de reduzir a soma dos quadrados dos erros
+ entre a função e os pontos de dados medidos.
+ O método de ajuste de curva de LM é uma combinação de dois métodos de minimizaç
+ão: o método de gradiente descendente e o método de Gauss-Newton.
+\end_layout
+
+\begin_layout Enumerate
+Método gradiente descendente: É um método de minimização geral que atualiza
+ os valores dos parâmetros no sentido "descendente": direção oposta ao gradiente
+ da função objetivo.
+ Este método converge bem para problemas com funções objetivas simples porém,
+ para problemas com vários parâmetros não é um método viável.
+\end_layout
+
+\begin_layout Enumerate
+Método de Gauss-Newton: é um método para minimizar uma função objetivo de
+ soma de quadrados.
+ Presume-se que a função objetivo é aproximadamente quadrática nos parâmetros
+ próximos à solução ótima.
+ Para problemas de tamanho moderado, o método de Gauss-Newton converge tipicamen
+te muito mais rapidamente do que o método de gradiente descendente.
 \end_layout
 
 \begin_layout Subsection
@@ -1223,8 +1484,12 @@ label{sec:aprendizado_maquina}
 \end_layout
 
 \begin_layout Standard
-Nesta seção trata-se sobre as técnicas que serão adotadas do aprendizado
- de máquina (Machine Learning, ou ML).
+Nesta seção trata-se sobre as técnicas que são adotadas do aprendizado de
+ máquina (
+\emph on
+Machine Learning
+\emph default
+, ou ML).
  Devido a que se utilizam duas abordagens para a comparação: árvore de decisão
  e extração de regras, a posição da ficha vermelha na 
 \begin_inset ERT
@@ -1234,7 +1499,7 @@ status open
 
 
 \backslash
-label{fig:organ_teorica_1}
+cref{fig:organ_teorica_1}
 \end_layout
 
 \end_inset
@@ -1259,7 +1524,7 @@ textwidth}
 
 
 \begin_inset Float figure
-placement H
+placement h
 wide false
 sideways false
 status open
@@ -1985,7 +2250,7 @@ de modo que o subíndice
 \begin_inset Formula $\beta_{2}$
 \end_inset
 
-são chamadas de constantes da regressão e o valor to termo 
+ são chamadas de constantes da regressão e o valor to termo 
 \begin_inset Formula $\mu_{t}$
 \end_inset
 
@@ -2005,7 +2270,7 @@ reference "eq:regressao"
 \begin_inset Formula $X_{t}$
 \end_inset
 
-) e três não são ( 
+) e três não são (
 \begin_inset Formula $\beta_{1}$
 \end_inset
 
@@ -2376,7 +2641,7 @@ label{fig:KDD}
 \begin_inset Graphics
 	filename img/kdd.pdf
 	lyxscale 50
-	scale 50
+	scale 49
 
 \end_inset
 
@@ -2526,7 +2791,7 @@ textwidth}
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2556,7 +2821,7 @@ label{fig:SEMMA}
 \begin_inset Graphics
 	filename img/semma.pdf
 	lyxscale 50
-	scale 45
+	scale 44
 
 \end_inset
 
@@ -3299,21 +3564,6 @@ key "david_2008"
 , nas três metodologias que foram consideradas, não há obrigação de seguir
  de forma rígida seus respectivos passos.
  Afinal, optou-se por seguir a metodologia CRISP-DM.
- Na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{sec:materiais_metodos}
-\end_layout
-
-\end_inset
-
- vê-se a aplicação desta metodologia a partir do ponto de vista da proposta
- do trabalho.
 \end_layout
 
 \begin_layout Subsection
@@ -3378,7 +3628,7 @@ label{fig:organ_teorica_3}
 
 
 \begin_inset Graphics
-	filename img/teoria_petri_03.pdf
+	filename img/teoria_petri_04.pdf
 	lyxscale 50
 	scale 60
 
@@ -3484,7 +3734,7 @@ label{fig:organ_teorica_4}
 
 
 \begin_inset Graphics
-	filename img/teoria_petri_03.pdf
+	filename img/teoria_petri_05.pdf
 	lyxscale 50
 	scale 60
 

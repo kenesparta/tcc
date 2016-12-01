@@ -118,7 +118,7 @@ status open
 
 
 \backslash
-captionsetup{width=0.7
+captionsetup{width=0.95
 \backslash
 textwidth}
 \end_layout
@@ -138,8 +138,9 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Estruturação do conhecimento para conseguir as ferramentas teóricas e técnicas
- relacionadas com o presente trabalho.
+Estrutura do modelo de adquisição do conhecimento das ferramentas teóricas
+ e técnicas relacionadas com o presente trabalho.
+ 
 \begin_inset ERT
 status open
 
@@ -159,9 +160,9 @@ label{fig:organ_teorica}
 
 
 \begin_inset Graphics
-	filename img/rede_petri_teoria.pdf
+	filename img/teoria_petri_01.pdf
 	lyxscale 50
-	scale 59
+	scale 60
 
 \end_inset
 
@@ -208,7 +209,26 @@ Soft computing
 \end_layout
 
 \begin_layout Standard
-Existem dois tipos de paradigmas computacionais, a 
+Observando a posição da ficha na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+, pode-se perceber que a primeira ferramente teórica é o relacionado com
+ a 
+\emph on
+Soft Computing
+\emph default
+.
+ Existem dois tipos de paradigmas computacionais, a 
 \emph on
 Soft Computing
 \emph default
@@ -844,7 +864,9 @@ Comment{Call Recursion again}
 
 	
 \backslash
-While{r}
+While{(
+\backslash
+textbf{not} condição de terminação)}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1024,20 +1046,9 @@ Raciocínio Probabilístico
 \end_layout
 
 \begin_layout Standard
-The aim of a probabilistic logic (also probability logic and probabilistic
- reasoning) is to combine the capacity of probability theory to handle uncertain
-ty with the capacity of deductive logic to exploit structure.
- Probabilistic reasoning may be viewed as an analogous manner to fuzzy reasoning
-, considering uncertainty in place of fuzziness as the concept of approximation
- that is applicable.
- The Bayesian approach is commonly used [63, p.
- 44]
-\end_layout
-
-\begin_layout Standard
-O objetivo de uma lógica probabilística (também lógica de probabilidade
- e raciocínio probabilístico) é combinar a capacidade da teoria de probabilidade
- de lidar com a incerteza, com a capacidade da lógica dedutiva 
+O objetivo da lógica probabilística (também lógica de probabilidade e raciocínio
+ probabilístico) é combinar a capacidade da teoria de probabilidade de lidar
+ com a incerteza, com a capacidade da lógica dedutiva 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "kunjal_2013"
@@ -1059,34 +1070,97 @@ fuzzificação
 \end_layout
 
 \begin_layout Standard
-The axioms of probability, combined with Bayes' rule make for a complete
- reasoning system, one which includes traditional deductive logic as a special
- case.
-\end_layout
+Os axiomas de probabilidade, combinados com o teorema de Bayes (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bayes"
 
-\begin_layout Standard
-Os axiomas de probabilidade, combinados com o teorema de Bayes, dão origem
- a um sistema de raciocínio completo, que inclui a lógica dedutiva tradicional
- como um caso especial.
-\end_layout
+\end_inset
 
-\begin_layout Standard
+), dão origem a um sistema de raciocínio completo, que inclui a lógica dedutiva
+ tradicional como um caso especial.
+ Em seguida, mostra-se o teorema de Naive Bayes
 \begin_inset Formula 
 \begin{equation}
-P\left(B|A\right)=\frac{P\left(A|B\right)}{}\label{eq:bayes}
+P\left(B|A\right)=\frac{P\left(A|B\right)\centerdot P\left(B\right)}{P\left(A\right)}\label{eq:bayes}
 \end{equation}
 
 \end_inset
 
+de modo que 
+\begin_inset Formula $P\left(B|A\right)$
+\end_inset
 
+ lê-se como 
+\begin_inset Quotes eld
+\end_inset
+
+a probabilidade de 
+\begin_inset Formula $B$
+\end_inset
+
+, dado 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset Formula $P\left(B\right)$
+\end_inset
+
+ é chamada de probabilidade a 
+\emph on
+priori
+\emph default
+ de 
+\begin_inset Formula $B$
+\end_inset
+
+ e 
+\begin_inset Formula $P\left(B|A\right)$
+\end_inset
+
+ é chamada probabilidade a 
+\emph on
+posteriori
+\emph default
+ de 
+\begin_inset Formula $B$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ben_2004"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-O paradigma central do raciocínio probabilístico é identificar
+O paradigma central do raciocínio probabilístico é identificar todas as
+ variáveis relevantes do entorno e realizar um modelo probabilístico da
+ interação dessas variáveis.
+ O raciocínio (inferência) é então realizado através da introdução de evidências
+ que são atribuídas às variáveis (deixando-as em estados conhecidos) e em
+ seguida, são computadas as probabilidades de interesse que estão condicionadas
+ por aquelas evidências, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "David_2010"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
-Rede Neural Artificial
+Rede Neural Artificial [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -1111,7 +1185,7 @@ key "kunjal_2013"
 \end_layout
 
 \begin_layout Standard
-A rede neura utilizada no trabalho é do tipo perceptron de múltiplas camadas
+A rede neural utilizada no trabalho é do tipo perceptron de múltiplas camadas
  (MLP
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1121,7 +1195,287 @@ description "Multilayer Perceptron"
 
 \end_inset
 
-), com algoritmo de treinamento Levemerk Marquard.
+), com algoritmo de treinamento de 
+\emph on
+Levenberg–Marquardt
+\emph default
+ (LM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "LM"
+symbol "LM"
+description "Levenberg–Marquardt"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Paragraph
+Perceptron de múltiplas camadas
+\end_layout
+
+\begin_layout Standard
+Consiste em um conjunto de unidades sensoriais que constituem a camada de
+ entrada, uma ou mais camadas ocultas de nós computacionais e, por fim,
+ uma camada de saída.
+ O sinal de entrada se propaga através da rede camada por camada.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Simon_2008"
+
+\end_inset
+
+, uma MLP possui três caraterísticas importantes
+\end_layout
+
+\begin_layout Enumerate
+Alto grau de conectividade, isto que dizer que uma modificação na conectividade
+ da rede, requer uma mudança na população das conexões sinápticas o dos
+ seus valores de pesos correspondentes.
+\end_layout
+
+\begin_layout Enumerate
+A rede possui uma ou mais camadas de neurônios ocultos, na sua camada intermediá
+ria, os quais capacitam o aprendizado da rede.
+\end_layout
+
+\begin_layout Enumerate
+O modelo de cada neurônio da rede inclui uma função de ativação não linear
+ e diferenciável em todo o seu domínio.
+ Essa função de ativação comumente é a função logística definida em
+\begin_inset Formula 
+\begin{equation}
+y_{j}=\frac{1}{1+e^{-v_{j}}}\label{eq:logistica}
+\end{equation}
+
+\end_inset
+
+de modo que 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ é a soma ponderada de todas as entradas sinápticas mais o bias do neurônio
+ 
+\begin_inset Formula $j$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ é a saída do neurônio.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:rede_neural}
+\end_layout
+
+\end_inset
+
+ mostra-se a arquitetura básica de uma rede neural artificial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.75
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mostra-se a arquitetura básica de uma rede neural.
+ O símbolo 
+\begin_inset Formula $\sum$
+\end_inset
+
+ indica o somatório ponderado dos pesos com as entradas da rede neural (ou
+ as saídas de cada neurônio), o 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ é a função de ativação de cada neurônio e 
+\begin_inset Formula $\theta$
+\end_inset
+
+ é o valor de bias.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:rede_neural}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/redeNeural.eps
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Algoritmo de treinamento Levenberg-Marquardt
+\end_layout
+
+\begin_layout Standard
+O algoritmo de Levenberg-Marquardt (LM) é o algoritmo de otimização mais
+ utilizado.
+ Ele supera o método gradiente descendente simples e outros métodos de gradiente
+ conjugado em uma ampla variedade de problemas, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ananth_2004"
+
+\end_inset
+
+.
+ O algoritmo de LM é uma técnica iterativa que localiza o mínimo de uma
+ função que é expressa como a soma de quadrados de funções não-lineares,
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Manolis_2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O algoritmo de LM é rápido e tem convergência estável.
+ No campo de redes neurais artificiais, este algoritmo é adequado para o
+ treinamento de pequenos e médios problemas, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hao_2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como se afirma em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Henri_2016"
+
+\end_inset
+
+, os métodos de mínimos quadrados não lineares envolvem uma melhoria iterativa
+ dos valores dos parâmetros, a fim de reduzir a soma dos quadrados dos erros
+ entre a função e os pontos de dados medidos.
+ O método de ajuste de curva de LM é uma combinação de dois métodos de minimizaç
+ão: o método de gradiente descendente e o método de Gauss-Newton.
+\end_layout
+
+\begin_layout Enumerate
+Método gradiente descendente: É um método de minimização geral que atualiza
+ os valores dos parâmetros no sentido "descendente": direção oposta ao gradiente
+ da função objetivo.
+ Este método converge bem para problemas com funções objetivas simples porém,
+ para problemas com vários parâmetros não é um método viável, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Henri_2016"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Método de Gauss-Newton: É is a method is a method for minimizing a sum-of-square
+s objective func- tion.
+ It presumes that the objective function is approximately quadratic in the
+ parameters near the optimal solution [2].
+ For moderately-sized problems the Gauss-Newton method typically converges
+ much faster than gradient-descent methods [8]
+\end_layout
+
+\begin_layout Enumerate
+é um método para minimizar uma função objetivo de soma de quadrados.
+ Presume-se que a função objetivo é aproximadamente quadrática nos parâmetros
+ próximos à solução ótima.
+ Para problemas de tamanho moderado, o método de Gauss-Newton converge tipicamen
+te muito mais rapidamente do que o método de gradiente descendente.
 \end_layout
 
 \begin_layout Subsection
@@ -1145,10 +1499,150 @@ label{sec:aprendizado_maquina}
 \end_layout
 
 \begin_layout Standard
-A ficha encontra-se no seguinte estado, contendo já a teoria de uma rede
- neural artificial.
- Nesta seção trata-se sobre as técnicas que serão adotadas do aprendizado
- de máquina (Machine Learning, ou ML).
+Nesta seção trata-se sobre as técnicas que são adotadas do aprendizado de
+ máquina (
+\emph on
+Machine Learning
+\emph default
+, ou ML).
+ Devido a que se utilizam duas abordagens para a comparação: árvore de decisão
+ e extração de regras, a posição da ficha vermelha na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_1}
+\end_layout
+
+\end_inset
+
+ pode estar em dois possíveis estados mutuamente exclusivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A ficha encontra-se no estado 
+\begin_inset Quotes eld
+\end_inset
+
+Aprendizado de máquina
+\begin_inset Quotes erd
+\end_inset
+
+.
+ As fichas vermelhas indicam que somente pode existir uma ficha ou no estado
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Usa Lógica 
+\emph on
+Fuzzy
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ ou no estado 
+\begin_inset Quotes eld
+\end_inset
+
+Usa Redes Neurais Artificiais
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_02.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1263,9 +1757,7 @@ key "Flavia_2016"
 
 , justifica a escolha da utilização das ferramentas oferecidas pela abordagem
  supervisionada do aprendizado de máquina.
- Então, a ficha da rede de Petri passa para o seguinte estado sabendo que
- até esta subseção, juntando os conceitos revisados, está sendo utilizada
- uma rede neural com aprendizagem supervisionada.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1717,7 +2209,7 @@ key "marcio_2013"
 
 \begin_layout Standard
 O modelo de regressão mais elementar é o modelo de regressão linear simples,
- que pode ser expresso pela seguinte equação:
+ que pode ser expresso pela seguinte equação
 \end_layout
 
 \begin_layout Standard
@@ -1773,19 +2265,19 @@ de modo que o subíndice
 \begin_inset Formula $\beta_{2}$
 \end_inset
 
-são chamadas de constantes da regressão e o valor to termo 
+ são chamadas de constantes da regressão e o valor to termo 
 \begin_inset Formula $\mu_{t}$
 \end_inset
 
  é chamado de erro não observado.
- Então, das cinco quantidades observadas em 
+ Então, das cinco quantidades observadas em (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:regressao"
 
 \end_inset
 
-, duas são observadas (
+), duas são observadas (
 \begin_inset Formula $y_{t}$
 \end_inset
 
@@ -1793,7 +2285,7 @@ reference "eq:regressao"
 \begin_inset Formula $X_{t}$
 \end_inset
 
-) e três não são ( 
+) e três não são (
 \begin_inset Formula $\beta_{1}$
 \end_inset
 
@@ -1870,6 +2362,136 @@ key "mohammed_2014"
 
 , como o processo de descoberta intuitiva de novos padrões de interesse,
  assim como modelos preditivos, descritivos e compreensíveis.
+ Até este ponto, tem-se as ferramentas teóricas ou da rede neural artificial
+ ou raciocínio probabilístico, juntamente com a abordagem de aprendizado
+ supervisionado, como se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_2}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A ficha encontra-se no estado 
+\begin_inset Quotes eld
+\end_inset
+
+Mineração de dados
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O significado das fichas de cor vermelha são explicados na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_1}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_03.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2550,6 +3172,49 @@ status open
 \end_layout
 
 \begin_layout Standard
+Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
+ com a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+, é necessário adotar um tipo de processo de mineração de dados.
+ Como é mencionado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, nas três metodologias que foram consideradas, não há obrigação de seguir
+ de forma rígida seus respectivos passos.
+ Afinal, optou-se por seguir a metodologia CRISP-DM.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:materiais_metodos}
+\end_layout
+
+\end_inset
+
+ vê-se a aplicação desta metodologia a partir do ponto de vista da proposta
+ do trabalho.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2569,7 +3234,7 @@ textwidth}
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2931,9 +3596,19 @@ status open
 
 \end_layout
 
+\begin_layout Subsection
+Árvores de decisão [Incompleto]
+\end_layout
+
 \begin_layout Standard
-Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
- com a 
+Árvores de decisão são modelos estatísticos que utilizam um treinamento
+ supervisionado para a classificação e previsão de dados.
+ Em outras palavras, em sua construção é utilizado um conjunto de treinamento
+ formado por entradas e saídas.
+ Estas últimas são as classes na qual vão ser classificadas a massa de dados.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -2941,23 +3616,29 @@ status open
 
 
 \backslash
-cref{fig:organ_teorica}
+captionsetup{width=0.95
+\backslash
+textwidth}
 \end_layout
 
 \end_inset
 
-, é necessário adotar um tipo de processo de mineração de dados.
- Como é mencionado em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "david_2008"
 
-\end_inset
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
 
-, nas três metodologias que foram consideradas, não há obrigação de seguir
- de forma rígida seus respectivos passos.
- Afinal, optou-se por seguir a metodologia CRISP-DM.
- Na 
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Como resultado da construção teórica, chegou-se ao último estado.
+ Existem duas fichas porque o conhecimento é adquirido tanto do raciocínio
+ probabilístico como da mineração de dados.
 \begin_inset ERT
 status open
 
@@ -2965,29 +3646,166 @@ status open
 
 
 \backslash
-cref{sec:materiais_metodos}
+label{fig:organ_teorica_3}
 \end_layout
 
 \end_inset
 
- vê-se a aplicação desta metodologia a partir do ponto de vista da proposta
- do trabalho.
+
 \end_layout
 
-\begin_layout Subsection
-Árvores de decisão
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_04.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-O software WEKA
+O software WEKA [Incompleto]
 \end_layout
 
 \begin_layout Subsubsection
-O algoritmo J48
+O algoritmo J48 [Incompleto]
 \end_layout
 
 \begin_layout Subsection
-Extração de regras
+Extração de regras [Incompleto]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Como resultado da construção teórica, chegou-se ao último estado.
+ Existem duas fichas porque o conhecimento é adquirido tanto da rede neural
+ artificial como da mineração de dados.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_05.pdf
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2997,6 +3815,13 @@ As redes neurais artificiais representam modelos computacionais eficientes
  se deve ao fato das mesmas serem, também, consideradas “caixas-pretas”,
  devido à dificuldade de se obter conhecimento sobre o comportamento da
  rede neural.
+\end_layout
+
+\begin_layout Standard
+Dada uma rede neural treinada, o conjunto de exemplos de treinamento e um
+ nível de fidelidade entre o conjunto de regras e o modelo de rede neural,
+ deseja-se obter um conjunto de regras que modela a rede neural para um
+ dado nível de fidelidade.
 \end_layout
 
 \end_body

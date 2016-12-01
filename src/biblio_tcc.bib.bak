@@ -162,6 +162,16 @@
   Timestamp                = {2016.06.14}
 }
 
+@Article{Henri_2016,
+  Title                    = {The Levenberg-Marquardt method for nonlinear least squares curve-fitting problems},
+  Author                   = {Henri P. Gavin},
+  Journal                  = {Department of Civil and Environmental Engineering},
+  Year                     = {2016},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.12.01}
+}
+
 @Electronic{weka_soft_2009,
   Title                    = {The WEKA Data Mining Software: An Update. SIGKDD Explorations, Volume 11, Issue 1.},
   Author                   = {Mark Hall AND Eibe Frank AND Geoffrey Holmes AND Bernhard Pfahringer AND Peter Reutemann AND Ian H. Witten},
@@ -182,6 +192,16 @@
 
   Owner                    = {papita},
   Timestamp                = {2016.06.08}
+}
+
+@Book{Simon_2008,
+  Title                    = {Redes Neurais, Princ\'ipios e pr\'atica},
+  Author                   = {Simon Haykin},
+  Publisher                = {Pretince  Hall},
+  Year                     = {2008},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.11.30}
 }
 
 @Article{Eduardo_1999,
@@ -234,6 +254,16 @@
   __markedentry            = {[papita:3]},
   Owner                    = {papita},
   Timestamp                = {2016.06.12}
+}
+
+@Article{Manolis_2005,
+  Title                    = {A Brief Description of the Le venber g-Marquardt Algorithm Implemened},
+  Author                   = {Manolis I. A. Lourakis},
+  Journal                  = {Foundation for Research and Technology - Hellas},
+  Year                     = {2005},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.12.01}
 }
 
 @Book{oded_2007,
@@ -339,6 +369,15 @@
   Timestamp                = {2016.06.08}
 }
 
+@Article{Ananth_2004,
+  Title                    = {The Levenberg-Marquardt Algorithm},
+  Author                   = {Ananth Ranganathan},
+  Year                     = {2004},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.12.01}
+}
+
 @Book{Carlos_2002,
   Title                    = {Coevolutionary Fuzzy Modeling},
   Author                   = {Carlos Andr\'es Pe\~na-Reyes},
@@ -427,6 +466,17 @@
 
   Owner                    = {papita},
   Timestamp                = {2016.06.01}
+}
+
+@Book{Hao_2011,
+  Title                    = {IntellIgent systems},
+  Author                   = {Hao Yu AND Bogdan M. Wilamowsk},
+  Editor                   = {Bogdan M. Wilamowski AND J. david Irwin},
+  Publisher                = {CRC Press},
+  Year                     = {2011},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.12.01}
 }
 
 @Article{zadeh_1996,
