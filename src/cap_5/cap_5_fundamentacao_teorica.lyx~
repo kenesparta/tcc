@@ -3054,116 +3054,6 @@ status open
 
 
 \backslash
-captionsetup{width=0.7
-\backslash
-textwidth}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Metodologia CRISP-DM, utilizada no presente trabalho.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{fig:CRISP-DM}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename img/crisp-dm.pdf
-	lyxscale 50
-	scale 55
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\backslash
-vspace{-0.1em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fonte{
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "david_2008"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
 captionsetup{width=0.8
 \backslash
 textwidth}
@@ -3176,7 +3066,7 @@ textwidth}
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -3539,6 +3429,116 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metodologia CRISP-DM, utilizada no presente trabalho.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:CRISP-DM}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/crisp-dm.pdf
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
  com a 
 \begin_inset ERT
@@ -3571,11 +3571,124 @@ key "david_2008"
 \end_layout
 
 \begin_layout Standard
-Árvores de decisão são modelos estatísticos que utilizam um treinamento
- supervisionado para a classificação e previsão de dados.
- Em outras palavras, em sua construção é utilizado um conjunto de treinamento
- formado por entradas e saídas.
- Estas últimas são as classes na qual vão ser classificadas a massa de dados.
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ethem_2004"
+
+\end_inset
+
+, uma árvore de decisão é uma estrutura de dados implementando a estratégia
+ 
+\begin_inset Quotes eld
+\end_inset
+
+dividir e conquistar
+\begin_inset Quotes erd
+\end_inset
+
+.
+ É um método paramétrico eficiente o qual pode ser utilizado tanto para
+ classificação como para regressão.
+ Quando uma árvore de decisão é usada para tarefas de classificação, é mais
+ comumente referida como uma árvore de classificação.
+ Quando é usado para tarefas de regressão, é chamado uma árvore de regressão.
+ No presente trabalho se utilizará uma árvore de classificação.
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SAS_2006"
+
+\end_inset
+
+, afirma-se que as árvores de decisão são uma forma simples, mas poderosa,
+ de análise de variáveis múltiplas.
+ Eles oferecem capacidades únicas para suplementar, complementar ou substituir
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=1.9cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.55cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+formas estatísticas tradicionais de análise (como regressão linear múltipla)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+uma variedade de ferramentas e técnicas de mineração de dados (como redes
+ neurais)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+formas multidimensionais de relatórios e análises encontradas no campo da
+ inteligência de negócios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3598,7 +3711,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -3670,6 +3783,24 @@ fonteProp
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Árvores de decisão são modelos estatísticos que utilizam um treinamento
+ supervisionado para a classificação e previsão de dados.
+ Em outras palavras, em sua construção é utilizado um conjunto de treinamento
+ formado por entradas e saídas, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "puc_2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Como funciona uma árvore de decisão
 \end_layout
 
 \begin_layout Subsubsection
