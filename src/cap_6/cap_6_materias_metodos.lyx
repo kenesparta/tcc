@@ -6425,6 +6425,28 @@ label{subsec:preparacao_dos_dados}
 \end_layout
 
 \begin_layout Standard
+The purpose of data preprocessing is to clean selected data for better qual-
+ ity.
+ Some selected data may have different formats because they are chosen from
+ different data sources.
+ If selected data are from flat files, voice message, and web text, they
+ should be converted to a consistent electronic format.
+ In general, data cleaning means to filter, aggregate, and fill in missing
+ values (imputation).
+\end_layout
+
+\begin_layout Standard
+O objetivo do pré-processamento de dados é limpar os dados selecionados
+ para uma melhor qualidade.
+ Alguns dados selecionados podem ter formatos diferentes porque são escolhidos
+ de fontes de dados diferentes.
+ Se os dados selecionados forem de arquivos planos, mensagem de voz e texto
+ da Web, eles devem ser convertidos em um formato eletrônico consistente.
+ Em geral, a limpeza de dados significa filtrar, agregar e preencher valores
+ ausentes (imputação).
+\end_layout
+
+\begin_layout Standard
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite

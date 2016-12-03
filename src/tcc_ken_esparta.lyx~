@@ -1521,9 +1521,9 @@ Objetivo geral
 Mostrar uma aplicação direta da extração de regras de redes neurais artificiais
  de múltiplas camadas, com algoritmo de treinamento 
 \emph on
-Levenberg–Marquard
+Levenberg–Marquardt
 \emph default
-t, no processo de mineração de dados.
+, no processo de mineração de dados.
 \end_layout
 
 \begin_layout Subsection

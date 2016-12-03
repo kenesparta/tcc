@@ -1015,7 +1015,7 @@ Outro objetivo da mineração será comparar as o método de extração de regra
 \end_layout
 
 \begin_layout Subsubsection
-Realizar um plano do projeto
+Realizar um plano do projeto [Incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -1272,7 +1272,7 @@ cref{fig:DI_REL}
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1452,7 +1452,7 @@ dt
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
