@@ -92,7 +92,7 @@ label{sec:materiais_metodos}
 \end_layout
 
 \begin_layout Standard
-Se situando no contexto deste trabalho, o autor, cumpre dois papeis diferentes:
+Se situando no contexto deste trabalho, o autor cumpre dois papeis diferentes:
  um de cliente e outro de analista de dados.
  Cumprindo o papel de cliente, dispõe-se de uma massa de dados relacionada
  com o artigo referenciado em 
@@ -180,7 +180,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-Tendo em conta o exposto no parágrafo prévio, planteia-se a seguinte situação:
+Tendo em conta o exposto no parágrafo prévio, apresenta-se a seguinte situação:
  o cliente deseja obter conhecimento relevante dos dados que possui
 \begin_inset Foot
 status collapsed
@@ -271,8 +271,8 @@ key "david_2008"
 \end_layout
 
 \begin_layout Standard
-O primeiro objetivo do analista de dados é compreender, o que o cliente
- realmente deseja fazer com os dados que dispõe.
+O primeiro objetivo do analista de dados é compreender o que o cliente realmente
+ deseja fazer com os dados que dispõe.
  O objetivo do analista é descobrir, no início, fatores importantes que
  possam influenciar o resultado do projeto.
 \end_layout
@@ -411,11 +411,11 @@ Determinar os objetivos do projeto
 \begin_layout Standard
 Neste trabalho, o cliente possui uma massa de dados relacionada com sensores
  químicos que podem detectar diferentes tipos de odor.
- Esses sensores são oito e formam uma 
+ Esses sensores são oito e formam um 
 \begin_inset Quotes eld
 \end_inset
 
-nariz eletrônica
+nariz eletrônico
 \begin_inset Quotes erd
 \end_inset
 
@@ -433,7 +433,7 @@ cref{fig:arranjo_sensores}
 \end_inset
 
 .
- Utilizando a nariz eletrônica, coletaram-se dados durante 537 dias em um
+ Utilizando o nariz eletrônico, coletaram-se dados durante 537 dias em um
  ambiente fechado como mencionado em 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -544,8 +544,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-Em este caso particular, o cliente deseja saber se existe algum tipo de
- regra lógica que relacione os valores da condutância (em 
+Neste caso particular, o cliente deseja saber se existe algum tipo de regra
+ lógica que relacione os valores da condutância (em 
 \begin_inset Formula $\Omega^{-1}$
 \end_inset
 
@@ -583,7 +583,7 @@ cref{subsec:compreensao_dos_dados}
 \end_layout
 
 \begin_layout Subsubsection
-Avaliar a situação [Incompleto]
+Avaliar a situação
 \end_layout
 
 \begin_layout Standard
@@ -603,7 +603,7 @@ cref{tab:avaliar_situacao}
 
 \end_inset
 
- mostram-se os recurso utilizados para poder realizar a mineração de dados
+ mostram-se os recursos utilizados para poder realizar a mineração de dados
  do banco de dados fornecido pelo cliente.
 \end_layout
 
@@ -635,8 +635,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pesquisa realizada com 200 pessoas sobre qual é a metodologia favorita utilizada
- nos projetos de mineração de dados, nos anos 2007 e 2014.
+Recursos utilizados na mineração de dados.
  
 \begin_inset ERT
 status open
@@ -657,11 +656,10 @@ label{tab:avaliar_situacao}
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="3">
+<lyxtabular version="3" rows="4" columns="2">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="right" valignment="top" width="0pt">
-<column alignment="right" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="8cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
@@ -669,174 +667,18 @@ label{tab:avaliar_situacao}
 \begin_layout Plain Layout
 
 \series bold
-Metodologia
+Recurso
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
-Ano 2007 (%)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Ano 2014 (%)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Descrição
 \end_layout
 
 \end_inset
@@ -847,54 +689,24 @@ Ano 2014 (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Dados
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
+Massa de informação que foi fornecida pelo cliente do experimento de um
+ nariz eletrônico, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Flavia_2016"
 
 \end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+.
 \end_layout
 
 \end_inset
@@ -905,25 +717,38 @@ Ano 2014 (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Matlab
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+É utilizado na mineração de dados para treinar a rede neural e executar
+ o algoritmo RX.
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+WEKA
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+É um programa utilizado na mineração de dados para gerar uma árvore de decisão
+ a partir da massa de dados fornecida pelo cliente.
 \end_layout
 
 \end_inset
@@ -958,25 +783,7 @@ status open
 
 
 \backslash
-fonte{
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "gregory_2014"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
+fonteProp{}
 \end_layout
 
 \end_inset
@@ -987,35 +794,42 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Determinar o objetivo da mineração de dados [Incompleto]
 \end_layout
 
 \begin_layout Standard
-A mineração de dados tem como objetivo obter diversas regras lógicas que
- relacionem os oito sensores químicos utilizados na medição com as respectivas
- saídas: odor de banana, odor de vinho, e inodoro.
+A principal restrição da mineração de dados é que não será realizada em
+ tempo real, devido a que o experimento de onde se extraíram os dados no
+ nariz eletrônico já foi finalizado.
+\end_layout
+
+\begin_layout Subsubsection
+Determinar o objetivo da mineração de dados
+\end_layout
+
+\begin_layout Standard
+O objetivo principal da mineração de dados é mostrar a aplicação prática
+ do algoritmo RX (que é um método de extração de regras) na mineração.
+ 
+\end_layout
+
+\begin_layout Standard
+Outro objetivo é obter diversas regras lógicas que relacionem os oito sensores
+ químicos utilizados na medição com as respectivas saídas: odor de banana,
+ odor de vinho, e inodoro.
  As regras lógicas são da forma
 \begin_inset Formula 
 \[
-\mathrm{SE}\left\langle \mathrm{expressão\,lógica}\right\rangle \mathrm{ENTÃO}\left\langle \mathrm{conclusão}\right\rangle 
+\mathrm{SE}\,\left\langle \mathrm{expressão\,lógica}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{conclusão}\right\rangle 
 \]
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Outro objetivo da mineração será comparar as o método de extração de regras
- a partir de redes neurais, com o algoritmo J48, disponível em [], ou chamado
- também árvore de decisão.
+Depois de obter as regras lógicas utilizando o algoritmo RX, estas são comparada
+s com as obtidas pelo algoritmo J48.
 \end_layout
 
 \begin_layout Subsubsection
-Realizar um plano do projeto [Incompleto]
+Realizar um plano do projeto
 \end_layout
 
 \begin_layout Standard
@@ -1035,16 +849,111 @@ cref{subsec:compreensao_projeto}
 \end_inset
 
 .
- Na [] se mostra o fluxograma das tarefas realizadas no projeto.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:plano_projeto}
+\end_layout
+
+\end_inset
+
+ se mostra o fluxograma das tarefas realizadas no projeto.
 \end_layout
 
 \begin_layout Standard
 A obtenção das regras lógicas será utilizando uma rede neural do tipo MLP
- e em seguida, será aplicado o algoritmo RX modificado, disponível em [].
+ e em seguida, será aplicado o algoritmo RX modificado, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-As regras obtidas utilizando o algoritmo 
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fluxograma resumido do plano do projeto de mineração de dados.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:plano_projeto}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/planoPojeto.pdf
+	scale 47
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1099,6 +1008,38 @@ cref{fig:sub_compr_do_dados}
 \end_inset
 
  mostram-se os quatro subprocessos relacionados com compreensão dos dados.
+\end_layout
+
+\begin_layout Subsubsection
+Coletar dados iniciais
+\end_layout
+
+\begin_layout Standard
+O processo da coleta de dados já foi realizado pelos autores, em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ramon_2016"
+
+\end_inset
+
+.
+ A coleta foi feita durante 537 dias (desde 17 de fevereiro do ano 2013
+ até 5 de junho de 2015) em um ambiente fechado.
+ Logo após foi aplicada uma subamostragem para uma amostra por minuto e
+ por sensor.
+ Com a subamostragem obtiveram-se 919
+\begin_inset space \thinspace{}
+\end_inset
+
+438 tuplas, que representam os valores medidos pelos sensores em diferentes
+ intervalos de tempo para os três tipos de casos: odor de banana, odor de
+ vinho e inodoro.
+\end_layout
+
+\begin_layout Standard
+No caso deste trabalho, não se realiza a mineração de dados em tempo real,
+ ou seja, a massa de dados obtida pelo cliente é estática e não será alimentada
+ posteriormente com novos dados.
 \end_layout
 
 \begin_layout Standard
@@ -1204,37 +1145,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Coletar dados iniciais
-\end_layout
-
-\begin_layout Standard
-O processo da coleta de dados já foi realizado pelos autores, em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "ramon_2016"
-
-\end_inset
-
-.
- A coleta foi feita durante 537 dias (desde 17 de fevereiro do ano 2013
- até 5 de junho de 2015) em um ambiente fechado, logo após foi aplicada
- uma subamostragem para uma amostra por minuto e por sensor.
- Com a subamostragem obtiveram-se 919
-\begin_inset space \thinspace{}
-\end_inset
-
-438 tuplas, que representam os valores medidos pelos sensores em diferentes
- intervalos de tempo para os três tipos de casos: odor de banana, odor de
- vinho e inodoro.
-\end_layout
-
-\begin_layout Standard
-No caso deste trabalho, não se realiza a mineração de dados em tempo real,
- ou seja, a massa de dados obtida pelo cliente é estática e não será alimentada
- posteriormente com novos dados.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2835,7 +2745,7 @@ description "Foreign Key"
 
 \end_inset
 
-), representa as 
+) e representa as 
 \begin_inset Formula $n$
 \end_inset
 
@@ -2982,10 +2892,10 @@ textwidth}
 
 
 \begin_inset Float table
-placement H
+placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4874,7 +4784,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Exploração dos dados [Incompleto]
+Exploração dos dados
 \end_layout
 
 \begin_layout Standard
@@ -5003,7 +4913,7 @@ cref{subsec:preparacao_dos_dados}
 \end_layout
 
 \begin_layout Standard
-Utilizando o software WEKA, veja-se em 
+Utilizando o software WEKA, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "weka_soft_2009"
@@ -5019,7 +4929,7 @@ Dados_sensor
 \begin_inset Quotes erd
 \end_inset
 
-, veja-se na 
+, conforme a 
 \begin_inset ERT
 status open
 
@@ -5634,9 +5544,200 @@ cref{tab:stats_massa_dados}
 
 \end_inset
 
- são importantes para a mineração devido a função de ativação da rede neural
- que é utilizada...
- [ABERTO]
+ são importantes para a mineração de dados devido a função de ativação dos
+ neurônios da rede neural ser do tipo sigmoide.
+ A função sigmoide tem dois pontos de saturação e para que a rede neural
+ possa aprender sem convergir rapidamente, é necessário normalizar a massa
+ de dados.
+ Essa normalização pode ser utilizando o desvio padrão 
+\begin_inset Formula $\left(\sigma\right)$
+\end_inset
+
+ e a média populacional 
+\begin_inset Formula $\left(\mu\right)$
+\end_inset
+
+, ver equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:norm_norm"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+N\left(\zeta\right)=\frac{\zeta-\mu}{\sigma}\label{eq:norm_norm}
+\end{equation}
+
+\end_inset
+
+ou usando os valores medidos da condutância (mínimo e máximo) para cada
+ sensor, ver equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:norm_max_min"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+N\left(\zeta\right)=\frac{\zeta-R_{min}}{R_{max}-R_{min}}\label{eq:norm_max_min}
+\end{equation}
+
+\end_inset
+
+de modo que 
+\begin_inset Formula $\zeta$
+\end_inset
+
+ é o valor da condutância medida para o seu respectivo cada sensor.
+\end_layout
+
+\begin_layout Standard
+A função sigmoide permite uma transição gradual e não linear entre dois
+ estados, como se mostra na equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sigmoide"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+S\left(x\right)=\frac{1}{1+e^{-\alpha x}}\label{eq:sigmoide}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ é um real positivo.
+ Quanto maior o valor de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, mais detalhada será a transição de um estado a outro, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "andre_1994"
+
+\end_inset
+
+.
+ Para a atividade de mineração de dados neste trabalho, utiliza-se uma rede
+ neural com função de transferência do tipo sigmoide.
+ Os estados de saturação são entre 0 e 1, é dizer, a função possui assintotas
+ horizontais em 0 e 1, como se pode visualizar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:sigmoide_MLP}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função sigmoide da equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sigmoide"
+
+\end_inset
+
+, para diferentes valores de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Essa função será utilizada como função de ativação nos neurônios ocultos
+ da rede neural artificial.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:sigmoide_MLP}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/crispdm-02.pdf
+	scale 47
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6425,17 +6526,6 @@ label{subsec:preparacao_dos_dados}
 \end_layout
 
 \begin_layout Standard
-The purpose of data preprocessing is to clean selected data for better qual-
- ity.
- Some selected data may have different formats because they are chosen from
- different data sources.
- If selected data are from flat files, voice message, and web text, they
- should be converted to a consistent electronic format.
- In general, data cleaning means to filter, aggregate, and fill in missing
- values (imputation).
-\end_layout
-
-\begin_layout Standard
 O objetivo do pré-processamento de dados é limpar os dados selecionados
  para uma melhor qualidade.
  Alguns dados selecionados podem ter formatos diferentes porque são escolhidos
@@ -6443,7 +6533,14 @@ O objetivo do pré-processamento de dados é limpar os dados selecionados
  Se os dados selecionados forem de arquivos planos, mensagem de voz e texto
  da Web, eles devem ser convertidos em um formato eletrônico consistente.
  Em geral, a limpeza de dados significa filtrar, agregar e preencher valores
- ausentes (imputação).
+ ausentes, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6625,8 +6722,8 @@ dt
 \begin_inset Quotes erd
 \end_inset
 
- não serão necessários porque o cliente deseja somente ver a relação entre
- a classe e Da 
+ não serão necessários porque o cliente somente deseja ver a relação entre
+ a classe e da 
 \begin_inset ERT
 status open
 
@@ -6639,7 +6736,7 @@ cref{fig:DI_REL}
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -6835,7 +6932,7 @@ ID
 \end_inset
 
  correspondentes.
- Por exemplo para a classe 
+ Por exemplo, para a classe 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8216,37 +8313,6 @@ cref{fig:sub_prep_molagem}
 \end_layout
 
 \begin_layout Standard
-Com a intenção de ver qual das técnicas de modelagem tem uma maior qualidade
- de regras, aplicam-se duas técnicas diferentes: o algoritmo J48 e o algoritmo
- RX.
- Ambos algoritmos são aplicados à massa de dados devidamente preparada (tuplas
- que pertencem à tabela 
-\begin_inset Quotes eld
-\end_inset
-
-Dados_sensor_modificado
-\begin_inset Quotes erd
-\end_inset
-
-).
- A massa de dados fornecida pelo cliente foi preparada seguindo os subprocessos
- abordados na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{subsec:preparacao_dos_dados}
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -8351,16 +8417,85 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+Com a intenção de ver qual das técnicas de modelagem tem uma maior qualidade
+ de regras, aplicam-se duas técnicas diferentes: o algoritmo J48 e o algoritmo
+ RX.
+ Ambos algoritmos são aplicados à massa de dados devidamente preparada (tuplas
+ que pertencem à tabela 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor_modificado
+\begin_inset Quotes erd
+\end_inset
+
+).
+ A massa de dados fornecida pelo cliente foi preparada seguindo os subprocessos
+ abordados na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:preparacao_dos_dados}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsubsection
 Selecionar a técnica de modelagem
 \end_layout
 
 \begin_layout Standard
-O algoritmo J48 foi proposto por WEKA
+A modo de comparação de técnicas, neste trabalho utilizam-se duas técnicas
+ de modelagem: o algoritmo J48 e o algoritmo RX.
+\end_layout
+
+\begin_layout Standard
+O algoritmo J48 é baseado em uma árvore de decisão, ver 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:algoritmo_j48}
+\end_layout
+
+\end_inset
+
+.
+ O algoritmo RX é um algoritmo de extração de regras que utiliza os valores
+ dos pesos e dos bias dos neurônios da camada oculta de uma rede neural
+ artificial, ver 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:extracao_de_regras}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
 Construir o modelo
+\end_layout
+
+\begin_layout Standard
+O algoritmo J48
 \end_layout
 
 \begin_layout Subsubsection

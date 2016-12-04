@@ -5544,12 +5544,9 @@ cref{tab:stats_massa_dados}
 
 \end_inset
 
- são importantes para a mineração de dados devido a função de ativação dos
- neurônios da rede neural ser do tipo sigmoide.
- A função sigmoide tem dois pontos de saturação e para que a rede neural
- possa aprender sem convergir rapidamente, é necessário normalizar a massa
- de dados.
- Essa normalização pode ser utilizando o desvio padrão 
+ são importantes para a mineração de dados por dois motivos: primeiro, devido
+ a função de ativação dos neurônios da rede neural ser do tipo sigmoide,
+ é necessário normalizar a massa de dados utilizando o desvio padrão 
 \begin_inset Formula $\left(\sigma\right)$
 \end_inset
 
@@ -5557,54 +5554,12 @@ cref{tab:stats_massa_dados}
 \begin_inset Formula $\left(\mu\right)$
 \end_inset
 
-, ver equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:norm_norm"
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-N\left(\zeta\right)=\frac{\zeta-\mu}{\sigma}\label{eq:norm_norm}
-\end{equation}
-
-\end_inset
-
-ou usando os valores medidos da condutância (mínimo e máximo) para cada
- sensor, ver equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:norm_max_min"
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-N\left(\zeta\right)=\frac{\zeta-R_{min}}{R_{max}-R_{min}}\label{eq:norm_max_min}
-\end{equation}
-
-\end_inset
-
-de modo que 
-\begin_inset Formula $\zeta$
-\end_inset
-
- é o valor da condutância medida para o seu respectivo cada sensor.
+ ou usando os valores mínimo e máximo medidos da condutância para cada sensor.
 \end_layout
 
 \begin_layout Standard
 A função sigmoide permite uma transição gradual e não linear entre dois
- estados, como se mostra na equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:sigmoide"
-
-\end_inset
-
-
+ estados, como a equação
 \begin_inset Formula 
 \begin{equation}
 S\left(x\right)=\frac{1}{1+e^{-\alpha x}}\label{eq:sigmoide}
@@ -5629,7 +5584,10 @@ key "andre_1994"
 \end_inset
 
 .
- Para a atividade de mineração de dados neste trabalho, utiliza-se uma rede
+\end_layout
+
+\begin_layout Standard
+Para a atividade de mineração de dados neste trabalho, utiliza-se uma rede
  neural com função de transferência do tipo sigmoide.
  Os estados de saturação são entre 0 e 1, é dizer, a função possui assintotas
  horizontais em 0 e 1, como se pode visualizar na 

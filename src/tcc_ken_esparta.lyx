@@ -1555,11 +1555,11 @@ key "Eduardo_1999"
 \end_layout
 
 \begin_layout Standard
-Devido a que, o principal desafio no uso de redes neurais supervisionadas
+Desta forma, o principal desafio no uso de redes neurais supervisionadas
  em aplicações de mineração de dados significa obter conhecimento explícito
- a partir desses modelos, neste trabalho desenvolve-se uma aplicação prática
- onde se utiliza um algoritmo de extração de regras de uma rede neural artificia
-l.
+ a partir desses modelos.
+ Neste trabalho, desenvolve-se uma aplicação prática onde se utiliza um
+ algoritmo de extração de regras de uma rede neural artificial.
  A modelagem dessa rede neural artificial é parte de um dos processos da
  metodologia CRISP-DM.
  Esta metodologia é utilizada amplamente para resolver problemas de mineração
@@ -1571,7 +1571,7 @@ Em resumo, neste trabalho mostra-se uma situação prática onde a extração
  de regras é aplicada diretamente no processo de mineração de dados.
  Como produto final do processo, obtêm-se regras lógicas que podem ser interpret
 adas por um especialista.
- As regras lógicas resultantes do algoritmo de extração de regras, serão
+ As regras lógicas, resultantes do algoritmo de extração de regras, serão
  comparadas com as regras lógicas obtidas a partir do algoritmo de árvore
  de decisão.
 \end_layout
@@ -1610,7 +1610,7 @@ key "cassio_2009"
 , apresentam-se os conceitos chave, tarefas e métodos essenciais a serem
  aplicados na mineração de dados.
  Inclusive são mostradas ferramentas desenvolvidas para tornar o processo
- de mineração de dados menos técnico; entre essas ferramentas encontra-se
+ de mineração de dados menos técnico; entre essas ferramentas, encontra-se
  o software WEKA
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1620,7 +1620,7 @@ description "Waikato Environment for Knowledge Analysis"
 
 \end_inset
 
- que será utilizado no trabalho.
+, que será utilizado no trabalho.
 \end_layout
 
 \begin_layout Standard
@@ -1635,8 +1635,7 @@ key "jung_2014"
  duas doenças complexas e sintomas em dados clínicos utilizando árvore de
  decisão.
  Foi utilizado o algoritmo C5.0 (que é uma versão melhorada do algoritmo
- C4.5) para a modelagem de uma árvore de decisão a partir de dados de doenças
- relacionadas ao pé.
+ C4.5) para a modelagem de uma árvore de decisão a partir de dados de doenças.
 \end_layout
 
 \begin_layout Standard
@@ -1722,7 +1721,7 @@ description "Radial Basis Function"
 \end_inset
 
 .
- Utiliza também o JOONE
+ O software JOONE (Java Object Oriented Neural Network)
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "JOONE"
@@ -1731,7 +1730,7 @@ description "Java Object Oriented Neural Network"
 
 \end_inset
 
- para otimizar as entradas da rede neural respectiva.
+ também é utilizado para otimizar as entradas da rede neural respectiva.
 \end_layout
 
 \begin_layout Standard

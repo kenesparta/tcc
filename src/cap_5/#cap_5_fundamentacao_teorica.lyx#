@@ -81,7 +81,7 @@ s com a monografia, utilizando-se uma abordagem
 \emph on
 top-down
 \emph default
- como pode-se observar na 
+, como pode-se observar na 
 \begin_inset ERT
 status open
 
@@ -222,10 +222,10 @@ cref{fig:organ_teorica}
 
 \end_inset
 
-, pode-se perceber que a primeira ferramente teórica é o relacionado com
- a 
+, pode-se perceber que a primeira ferramenta teórica é a relacionada com
+ a
 \emph on
-Soft Computing
+ Soft Computing
 \emph default
 .
  Existem dois tipos de paradigmas computacionais, a 
@@ -673,8 +673,8 @@ description "Evolution Program"
 \end_inset
 
 ).
- O termo EP utiliza-se para todo o relacionado com sistemas baseados na
- teoria da evolução natural, ou seja, que cada unidade do sistema possua
+ O termo EP utiliza-se para tudo que é relacionado com sistemas baseados
+ na teoria da evolução natural, ou seja, que cada unidade do sistema possua
  as propriedades de reprodução, mutação e seleção.
 \end_layout
 
@@ -983,8 +983,8 @@ fuzzy
  Zadeh em 1965.
  Os sistemas difusos são baseados na Lógica Difusa, uma generalização da
  lógica convencional (booleano) que foi estendida para lidar com o conceito
- de verdade parcial e valores de verdade entre "completamente verdadeiro"
- e "completamente falso".
+ de verdade parcial e valores verdade entre "completamente verdadeiro" e
+ "completamente falso".
  A lógica difusa fornece um mecanismo de inferência que permite que as capacidad
 es aproximadas de raciocínio humano sejam aplicadas a sistemas baseados
  no conhecimento 
@@ -1490,8 +1490,9 @@ Nesta seção trata-se sobre as técnicas que são adotadas do aprendizado de
 Machine Learning
 \emph default
 , ou ML).
- Devido a que se utilizam duas abordagens para a comparação: árvore de decisão
- e extração de regras, a posição da ficha vermelha na 
+ Utilizam-se duas abordagens para a comparação: árvore de decisão e extração
+ de regras.
+ A posição da ficha vermelha na 
 \begin_inset ERT
 status open
 
@@ -1755,7 +1756,7 @@ key "marcio_2013"
 
 \end_inset
 
-, afirma-se que o modelo de treinamento supervisionado podem ser divididos
+, afirma-se que o modelo de treinamento supervisionado pode ser dividido
  em dois grupos: o modelo de classificação e o modelo de regressão.
 \end_layout
 
@@ -1805,8 +1806,7 @@ clusters
  nos dados, conhecido como aprendizado não supervisionado.
  Ou pode-se ter certeza de que há um número definido de classes, e o objetivo
  é estabelecer uma regra segundo a qual possamos classificar uma nova observação
- em uma das classes existentes, este método é conhecido aprendizado supervisiona
-do.
+ em uma das classes existentes,ste método é conhecido aprendizado supervisionado.
  Na Estatística, a aprendizagem supervisionada geralmente é referida como
  discriminação, isto é, o estabelecimento da regra de classificação a partir
  de dados corretamente classificados 
@@ -3801,10 +3801,6 @@ key "puc_2005"
 
 \begin_layout Subsubsection
 Como funciona uma árvore de decisão
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Subsubsection
