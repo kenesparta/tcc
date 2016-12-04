@@ -1,5 +1,5 @@
 <img src="src_memorial/img/LOGO_PNG.png" width="100px"/>
-<h1>"Em Produção"</h1>
+<h1>"Aplicação de um algoritmo para extração de regras de uma Rede Neural Artificial no processo de mineração de dados"</h1>
 ## 1. Trabalho de Conclusão de Curso
 ### Autores
 <table>
