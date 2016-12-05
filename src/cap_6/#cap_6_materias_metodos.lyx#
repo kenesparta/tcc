@@ -11507,7 +11507,16 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Para colocar .
+Janela para colocar o numero de exemplos para a primeira classe (
+\begin_inset Quotes eld
+\end_inset
+
+banana
+\begin_inset Quotes erd
+\end_inset
+
+).
+ É a primeira das três janelas.
  
 \begin_inset ERT
 status open
@@ -11591,6 +11600,11 @@ fonteProp{}
 \end_deeper
 \begin_layout Subsubsection
 Avaliar o modelo
+\end_layout
+
+\begin_layout Standard
+Summarize results of this task, list qualities of generated models (e.g.,
+ in terms of accuracy), and rank their quality in relation to each other.
 \end_layout
 
 \begin_layout Subsection

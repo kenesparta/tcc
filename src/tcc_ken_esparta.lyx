@@ -1730,7 +1730,8 @@ description "Java Object Oriented Neural Network"
 
 \end_inset
 
- também é utilizado para otimizar as entradas da rede neural respectiva.
+ também é utilizado, nesse artigo, para otimizar as entradas da rede neural
+ respectiva.
 \end_layout
 
 \begin_layout Standard
@@ -1776,20 +1777,14 @@ filename "cap_6/cap_6_materias_metodos.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "cap_7/cap_7_resultados.lyx"
-
+\begin_inset Newpage clearpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
+\begin_layout Section
+Resultados [Incompleto]
 \end_layout
 
 \begin_layout Section

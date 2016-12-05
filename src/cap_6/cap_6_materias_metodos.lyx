@@ -11602,20 +11602,31 @@ fonteProp{}
 Avaliar o modelo
 \end_layout
 
+\begin_layout Standard
+Neste item, resumem-se os resultados, listam-se as qualidades dos modelos
+ gerados (por exemplo, em termos de precisão) e classificam-se a sua qualidade
+ em relação uns aos outros.
+\end_layout
+
+\begin_layout Standard
+Utilizando o algoritmo J48 do WEKA, disponível em , a partir da massa de
+ dados fornecida pelo cliente, 
+\end_layout
+
 \begin_layout Subsection
-Avaliação [Incompleto]
+Avaliação
 \end_layout
 
-\begin_layout Subsubsection
-Avaliar os resultados [Incompleto]
-\end_layout
-
-\begin_layout Subsubsection
-Revisão do processo [Incompleto]
-\end_layout
-
-\begin_layout Subsubsection
-Determinar os passos a seguir [Incompleto]
+\begin_layout Standard
+At this stage in the project, you have built a model (or models) that appears
+ to have high quality from a data analysis perspective.
+ Before proceeding to final deployment of the model, it is important to
+ thoroughly evaluate it and review the steps executed to create it, to be
+ certain the model properly achieves the business objectives.
+ A key objective is to determine if there is some important business issue
+ that has not been sufficiently considered.
+ At the end of this phase, a decision on the use of the data mining results
+ should be reached.
 \end_layout
 
 \begin_layout Standard
