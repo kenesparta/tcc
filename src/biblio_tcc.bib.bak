@@ -388,6 +388,17 @@
   Timestamp                = {2016.12.02}
 }
 
+@Electronic{weka_1993,
+  Title                    = {C4.5: Programs for Machine Learning},
+  Author                   = {Ross Quinlan},
+  Organization             = {Morgan Kaufmann Publishers},
+  Url                      = {http://weka.sourceforge.net/doc.dev/weka/classifiers/trees/J48.html},
+  Year                     = {1993},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.12.05}
+}
+
 @Book{anand_2012,
   Title                    = {Mining of Massive Datasets},
   Author                   = {Anand Rajaraman AND Jure Leskovec AND Jeffrey D. Ullman},

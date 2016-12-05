@@ -223,14 +223,14 @@ contents={%
 \fontencoding global
 \font_roman "times" "default"
 \font_sans "helvet" "default"
-\font_typewriter "cmtl" "default"
+\font_typewriter "beramono" "default"
 \font_math "default" "auto"
 \font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100 100
-\font_tt_scale 95 100
+\font_tt_scale 85 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -1721,7 +1721,7 @@ description "Radial Basis Function"
 \end_inset
 
 .
- O software JOONE
+ O software JOONE (Java Object Oriented Neural Network)
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "JOONE"

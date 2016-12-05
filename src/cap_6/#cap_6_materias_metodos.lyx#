@@ -342,6 +342,19 @@ label{fig:sub_compr_do_proj}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/crispdm-01.pdf
 	scale 47
@@ -480,6 +493,19 @@ label{fig:arranjo_sensores}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/GasSensorArray_picture.png
 	lyxscale 20
@@ -650,6 +676,19 @@ label{tab:avaliar_situacao}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
 \end_layout
 
 \end_inset
@@ -912,6 +951,19 @@ label{fig:plano_projeto}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/planoPojeto.pdf
 	scale 47
@@ -1085,6 +1137,19 @@ label{fig:sub_compr_do_dados}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/crispdm-02.pdf
 	scale 47
@@ -1182,7 +1247,7 @@ cref{fig:DI_REL}
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1220,6 +1285,19 @@ label{fig:DI_REL}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/diagrama_ER_metadados_dados.pdf
 	scale 65
@@ -1362,7 +1440,7 @@ dt
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1400,6 +1478,19 @@ label{tab:10_tuplas_metadados}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="5">
 <features booktabs="true" tabularvalignment="middle">
@@ -2933,6 +3024,19 @@ label{tab:10_tuplas_dados_sensor}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="13" columns="7">
 <features booktabs="true" tabularvalignment="middle">
@@ -4946,6 +5050,21 @@ cref{tab:stats_massa_dados}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Float table
 placement H
 wide false
@@ -4998,6 +5117,19 @@ label{tab:stats_massa_dados}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="9">
 <features booktabs="true" tabularvalignment="middle">
@@ -5522,7 +5654,7 @@ cref{fig:histograma_r8}
 
 \end_inset
 
-, mostram-se a distribuição dos dados da tabela 
+, mostra-se a distribuição dos dados da tabela 
 \begin_inset Quotes eld
 \end_inset
 
@@ -5544,9 +5676,12 @@ cref{tab:stats_massa_dados}
 
 \end_inset
 
- são importantes para a mineração de dados por dois motivos: primeiro, devido
- a função de ativação dos neurônios da rede neural ser do tipo sigmoide,
- é necessário normalizar a massa de dados utilizando o desvio padrão 
+ são importantes para a mineração de dados devido a função de ativação dos
+ neurônios da rede neural ser do tipo sigmoide.
+ A função sigmoide tem dois pontos de saturação e para que a rede neural
+ possa aprender sem convergir rapidamente, é necessário normalizar a massa
+ de dados.
+ Essa normalização pode ser utilizando o desvio padrão 
 \begin_inset Formula $\left(\sigma\right)$
 \end_inset
 
@@ -5554,12 +5689,54 @@ cref{tab:stats_massa_dados}
 \begin_inset Formula $\left(\mu\right)$
 \end_inset
 
- ou usando os valores mínimo e máximo medidos da condutância para cada sensor.
+, ver equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:norm_norm"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+N\left(\zeta\right)=\frac{\zeta-\mu}{\sigma}\label{eq:norm_norm}
+\end{equation}
+
+\end_inset
+
+ou usando os valores medidos da condutância (mínimo e máximo) para cada
+ sensor, ver equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:norm_max_min"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+N\left(\zeta\right)=\frac{\zeta-R_{min}}{R_{max}-R_{min}}\label{eq:norm_max_min}
+\end{equation}
+
+\end_inset
+
+de modo que 
+\begin_inset Formula $\zeta$
+\end_inset
+
+ é o valor da condutância medida para o seu respectivo cada sensor.
 \end_layout
 
 \begin_layout Standard
 A função sigmoide permite uma transição gradual e não linear entre dois
- estados, como a equação
+ estados, como se mostra na equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sigmoide"
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 S\left(x\right)=\frac{1}{1+e^{-\alpha x}}\label{eq:sigmoide}
@@ -5584,10 +5761,7 @@ key "andre_1994"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Para a atividade de mineração de dados neste trabalho, utiliza-se uma rede
+ Para a atividade de mineração de dados neste trabalho, utiliza-se uma rede
  neural com função de transferência do tipo sigmoide.
  Os estados de saturação são entre 0 e 1, é dizer, a função possui assintotas
  horizontais em 0 e 1, como se pode visualizar na 
@@ -5654,9 +5828,23 @@ label{fig:sigmoide_MLP}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
-	filename img/crispdm-02.pdf
-	scale 47
+	filename img/sigmoide.eps
+	lyxscale 50
+	scale 25
 
 \end_inset
 
@@ -6572,6 +6760,19 @@ label{fig:sub_prep_dados}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/crispdm-03.pdf
 	scale 47
@@ -6635,7 +6836,7 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-Selecionar os dados [Incompleto]
+Selecionar os dados
 \end_layout
 
 \begin_layout Standard
@@ -6695,10 +6896,7 @@ cref{fig:DI_REL}
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Como resultado, tem-se o diagrama relacional da 
+ Como resultado, tem-se o diagrama relacional da 
 \begin_inset ERT
 status open
 
@@ -6765,6 +6963,19 @@ label{fig:DI_REL_DIM}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/diagrama_ER_resumido.pdf
 	scale 70
@@ -6810,20 +7021,16 @@ fonteProp{}
 \end_layout
 
 \begin_layout Subsubsection
-Limpar os dados [Incompleto]
-\end_layout
-
-\begin_layout Standard
-Para poder dar equidade ao conjunto de dados...
+Limpar os dados
 \end_layout
 
 \begin_layout Standard
 A partir da massa de dados fornecida pelo usuário, é selecionada uma amostra
- de 830
+ de 90
 \begin_inset space \thinspace{}
 \end_inset
 
-901 tuplas da tabela 
+000 tuplas da tabela 
 \begin_inset Quotes eld
 \end_inset
 
@@ -6831,32 +7038,37 @@ Dados_sensor
 \begin_inset Quotes erd
 \end_inset
 
-, que representam o 89.44
+, que representam o 9,79
 \begin_inset space \thinspace{}
 \end_inset
 
 % do total dos dados.
- A amostra selecionada contém 276
+ A amostra selecionada contém 30
 \begin_inset space \thinspace{}
 \end_inset
 
-967 tuplas de cada um dos três tipos: banana, vinho e 
+000 tuplas de cada um dos três tipos: banana, vinho e 
 \emph on
 background
 \emph default
 .
+ Se selecionaram o mesmo número de tuplas para cada classe para que a rede
+ neural artificial não seja tendenciosa.
 \end_layout
 
 \begin_layout Subsubsection
-Construir dados [Incompleto]
+Construir dados
 \end_layout
 
 \begin_layout Standard
-—
+Essa tarefa inclui operações construtivas de preparação de dados, como a
+ produção de atributos derivados ou novos registros inteiros, ou valores
+ transformados para atributos existentes.
+ Neste trabalho não se utiliza nenhuma das operações mencionadas.
 \end_layout
 
 \begin_layout Subsubsection
-Integrar dados [Incompleto]
+Integrar dados
 \end_layout
 
 \begin_layout Standard
@@ -7106,6 +7318,19 @@ label{fig:DI_REL_JUNCAO}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/diagrama_ER_juncao.pdf
 	scale 70
@@ -7152,7 +7377,190 @@ fonteProp{}
 
 \end_deeper
 \begin_layout Subsubsection
-Formatar os dados [Incompleto]
+Formatar os dados
+\end_layout
+
+\begin_layout Standard
+A formatação dos dados serão feitas de dois tipos: uma delas será utilizada
+ pelo algoritmo J48 e a outra, pelo algoritmo RX.
+ Os dois tipos de formatação estão normalizadas utilizando a equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:norm_max_min"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Formatação para o algoritmo J48
+\end_layout
+
+\begin_layout Standard
+As tuplas do atributo 
+\begin_inset Quotes eld
+\end_inset
+
+Classe
+\begin_inset Quotes erd
+\end_inset
+
+ serão substituídas pelos nomes 
+\begin_inset Quotes eld
+\end_inset
+
+banana
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+vinho
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+background
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+, ou seja serão dados do tipo 
+\emph on
+String
+\emph default
+.
+ Um exemplo desse tipo de formatação se pode ver na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:tuplas_modificadas_J48}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Formatação para o algoritmo RX
+\end_layout
+
+\begin_layout Standard
+As tuplas do atributo 
+\begin_inset Quotes eld
+\end_inset
+
+Classe
+\begin_inset Quotes erd
+\end_inset
+
+ serão substituídas pelos vetores 
+\begin_inset Formula $\left[1\:0\:0\right]$
+\end_inset
+
+ para banana, 
+\begin_inset Formula $\left[0\:0\:1\right]$
+\end_inset
+
+ para vinho e 
+\begin_inset Formula $\left[0\:1\:0\right]$
+\end_inset
+
+ para 
+\emph on
+background
+\emph default
+, ou seja os dados serão do tipo 
+\emph on
+Array
+\emph default
+.
+ Um exemplo desse tipo de formatação se pode ver na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:tupla_modificada_RX}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Modelagem
+\end_layout
+
+\begin_layout Standard
+Nesta fase, várias técnicas de modelagem são selecionadas e aplicadas e
+ seus parâmetros são calibrados para valores ótimos.
+ Normalmente, existem várias técnicas para o mesmo tipo de problema de mineração
+ de dados.
+ Algumas técnicas têm requisitos específicos sobre a forma dos dados.
+ Portanto, voltar à fase de preparação de dados é muitas vezes necessário.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:sub_prep_molagem}
+\end_layout
+
+\end_inset
+
+ mostram-se os subprocessos da modelagem.
+\end_layout
+
+\begin_layout Standard
+Com a intenção de ver qual das técnicas de modelagem tem uma maior qualidade
+ de regras, aplicam-se duas técnicas diferentes: o algoritmo J48 e o algoritmo
+ RX.
+ Ambos algoritmos são aplicados à massa de dados devidamente preparada (tuplas
+ que pertencem à tabela 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor_modificado
+\begin_inset Quotes erd
+\end_inset
+
+).
+ A massa de dados fornecida pelo cliente foi preparada seguindo os subprocessos
+ abordados na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:preparacao_dos_dados}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7181,7 +7589,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Dez tuplas aleatórias da tabela 
+Nove tuplas aleatórias da tabela 
 \begin_inset Quotes eld
 \end_inset
 
@@ -7202,7 +7610,7 @@ cref{fig:DI_REL_JUNCAO}
 
 \end_inset
 
-.
+, para ser utilizada pelo algoritmo J48.
 \begin_inset ERT
 status open
 
@@ -7210,7 +7618,7 @@ status open
 
 
 \backslash
-label{tab:tuplas_modificadas}
+label{tab:tuplas_modificadas_J48}
 \end_layout
 
 \end_inset
@@ -7225,8 +7633,21 @@ label{tab:tuplas_modificadas}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="7">
+<lyxtabular version="3" rows="10" columns="7">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="0pt">
 <column alignment="center" valignment="top">
@@ -7363,7 +7784,7 @@ R8 (
 \begin_inset Quotes eld
 \end_inset
 
-
+banana
 \begin_inset Quotes erd
 \end_inset
 
@@ -7377,6 +7798,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,896340
 \end_layout
 
 \end_inset
@@ -7386,6 +7819,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,864204
 \end_layout
 
 \end_inset
@@ -7407,6 +7852,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,106250
 \end_layout
 
 \end_inset
@@ -7416,6 +7873,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,042064
 \end_layout
 
 \end_inset
@@ -7425,6 +7894,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,045797
 \end_layout
 
 \end_inset
@@ -7451,6 +7932,30 @@ R8 (
 \end_inset
 
 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+banana
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -7464,6 +7969,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,878452
 \end_layout
 
 \end_inset
@@ -7473,6 +7990,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,912125
 \end_layout
 
 \end_inset
@@ -7494,6 +8023,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,148516
 \end_layout
 
 \end_inset
@@ -7503,6 +8044,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,024761
 \end_layout
 
 \end_inset
@@ -7512,6 +8065,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,024682
 \end_layout
 
 \end_inset
@@ -7538,6 +8103,30 @@ R8 (
 \end_inset
 
 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+banana
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -7551,6 +8140,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,649617
 \end_layout
 
 \end_inset
@@ -7560,6 +8161,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,415504
 \end_layout
 
 \end_inset
@@ -7581,6 +8194,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,199481
 \end_layout
 
 \end_inset
@@ -7590,6 +8215,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,030146
 \end_layout
 
 \end_inset
@@ -7599,6 +8236,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,045352
 \end_layout
 
 \end_inset
@@ -7624,7 +8273,7 @@ R8 (
 \begin_inset Quotes eld
 \end_inset
 
-
+vinho
 \begin_inset Quotes erd
 \end_inset
 
@@ -7638,6 +8287,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,593568
 \end_layout
 
 \end_inset
@@ -7647,6 +8308,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,314689
 \end_layout
 
 \end_inset
@@ -7668,6 +8341,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,108995
 \end_layout
 
 \end_inset
@@ -7677,6 +8362,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,008386
 \end_layout
 
 \end_inset
@@ -7686,6 +8383,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,008141
 \end_layout
 
 \end_inset
@@ -7711,7 +8420,7 @@ R8 (
 \begin_inset Quotes eld
 \end_inset
 
-
+vinho
 \begin_inset Quotes erd
 \end_inset
 
@@ -7725,6 +8434,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,757291
 \end_layout
 
 \end_inset
@@ -7734,6 +8455,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,565973
 \end_layout
 
 \end_inset
@@ -7755,6 +8488,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,152908
 \end_layout
 
 \end_inset
@@ -7764,6 +8509,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,004955
 \end_layout
 
 \end_inset
@@ -7773,6 +8530,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,010631
 \end_layout
 
 \end_inset
@@ -7787,6 +8556,30 @@ R8 (
 \end_inset
 
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+vinho
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -7800,6 +8593,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,855587
 \end_layout
 
 \end_inset
@@ -7809,6 +8614,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,867998
 \end_layout
 
 \end_inset
@@ -7830,6 +8647,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,172288
 \end_layout
 
 \end_inset
@@ -7839,6 +8668,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,038788
 \end_layout
 
 \end_inset
@@ -7848,6 +8689,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,041255
 \end_layout
 
 \end_inset
@@ -7873,7 +8726,7 @@ R8 (
 \begin_inset Quotes eld
 \end_inset
 
-
+background
 \begin_inset Quotes erd
 \end_inset
 
@@ -7887,6 +8740,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,786858
 \end_layout
 
 \end_inset
@@ -7896,6 +8761,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,742969
 \end_layout
 
 \end_inset
@@ -7917,6 +8794,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,167254
 \end_layout
 
 \end_inset
@@ -7926,6 +8815,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,038589
 \end_layout
 
 \end_inset
@@ -7935,6 +8836,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,039787
 \end_layout
 
 \end_inset
@@ -7960,7 +8873,7 @@ R8 (
 \begin_inset Quotes eld
 \end_inset
 
-
+background
 \begin_inset Quotes erd
 \end_inset
 
@@ -7969,65 +8882,6 @@ R8 (
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\cdots$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -8044,14 +8898,7 @@ R8 (
 \uwave off
 \noun off
 \color none
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-
+0,758460
 \end_layout
 
 \end_inset
@@ -8061,15 +8908,18 @@ R8 (
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,795414
 \end_layout
 
 \end_inset
@@ -8091,6 +8941,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,138567
 \end_layout
 
 \end_inset
@@ -8100,6 +8962,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,040692
 \end_layout
 
 \end_inset
@@ -8109,6 +8983,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,050395
 \end_layout
 
 \end_inset
@@ -8134,7 +9020,7 @@ R8 (
 \begin_inset Quotes eld
 \end_inset
 
-
+background
 \begin_inset Quotes erd
 \end_inset
 
@@ -8148,6 +9034,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,838362
 \end_layout
 
 \end_inset
@@ -8157,6 +9055,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,890991
 \end_layout
 
 \end_inset
@@ -8178,6 +9088,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,165994
 \end_layout
 
 \end_inset
@@ -8187,6 +9109,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,053878
 \end_layout
 
 \end_inset
@@ -8196,6 +9130,18 @@ R8 (
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,052771
 \end_layout
 
 \end_inset
@@ -8243,18 +9189,7 @@ fonteProp{}
 
 \end_layout
 
-\begin_layout Subsection
-Modelagem [Incompleto]
-\end_layout
-
 \begin_layout Standard
-Nesta fase, várias técnicas de modelagem são selecionadas e aplicadas e
- seus parâmetros são calibrados para valores ótimos.
- Normalmente, existem várias técnicas para o mesmo tipo de problema de mineração
- de dados.
- Algumas técnicas têm requisitos específicos sobre a forma dos dados.
- Portanto, voltar à fase de preparação de dados é muitas vezes necessário.
- Na 
 \begin_inset ERT
 status open
 
@@ -8262,12 +9197,1430 @@ status open
 
 
 \backslash
-cref{fig:sub_prep_molagem}
+captionsetup{width=0.83
+\backslash
+textwidth}
 \end_layout
 
 \end_inset
 
- mostram-se os subprocessos da modelagem.
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nove tuplas aleatórias da tabela 
+\begin_inset Quotes eld
+\end_inset
+
+Dados_sensor_modificado
+\begin_inset Quotes erd
+\end_inset
+
+, mostrada na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:DI_REL_JUNCAO}
+\end_layout
+
+\end_inset
+
+, para ser utilizada pelo algoritmo RX.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:tupla_modificada_RX}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="7">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="0pt">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Classe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+R1(
+\series default
+
+\begin_inset Formula $\Omega^{-1}$
+\end_inset
+
+
+\series bold
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+R2 (
+\series default
+
+\begin_inset Formula $\Omega^{-1}$
+\end_inset
+
+
+\series bold
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+R6 (
+\series default
+
+\begin_inset Formula $\Omega^{-1}$
+\end_inset
+
+
+\series bold
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+R7 (
+\series default
+
+\begin_inset Formula $\Omega^{-1}$
+\end_inset
+
+
+\series bold
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+R8 (
+\series default
+
+\begin_inset Formula $\Omega^{-1}$
+\end_inset
+
+
+\series bold
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[1\:0\:0\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,896340
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,864204
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,106250
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,042064
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,045797
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[1\:0\:0\right]$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,878452
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,912125
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,148516
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,024761
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,024682
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[1\:0\:0\right]$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,649617
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,415504
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,199481
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,030146
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,045352
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[0\:0\:1\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,593568
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,314689
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,108995
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,008386
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,008141
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[0\:0\:1\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,757291
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,565973
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,152908
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,004955
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,010631
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[0\:0\:1\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,855587
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,867998
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,172288
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,038788
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,041255
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[0\:1\:0\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,786858
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,742969
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,167254
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,038589
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,039787
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[0\:1\:0\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,758460
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,795414
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,138567
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,040692
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,050395
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left[0\:1\:0\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,838362
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,890991
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,165994
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,053878
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0,052771
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8304,6 +10657,19 @@ label{fig:sub_prep_molagem}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
 \end_layout
 
 \end_inset
@@ -8375,44 +10741,16 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-Com a intenção de ver qual das técnicas de modelagem tem uma maior qualidade
- de regras, aplicam-se duas técnicas diferentes: o algoritmo J48 e o algoritmo
- RX.
- Ambos algoritmos são aplicados à massa de dados devidamente preparada (tuplas
- que pertencem à tabela 
-\begin_inset Quotes eld
-\end_inset
-
-Dados_sensor_modificado
-\begin_inset Quotes erd
-\end_inset
-
-).
- A massa de dados fornecida pelo cliente foi preparada seguindo os subprocessos
- abordados na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{subsec:preparacao_dos_dados}
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Subsubsection
 Selecionar a técnica de modelagem
 \end_layout
 
 \begin_layout Standard
-A modo de comparação de técnicas, neste trabalho utilizam-se duas técnicas
- de modelagem: o algoritmo J48 e o algoritmo RX.
+Como primeiro passo na modelagem, seleciona-se a técnica de modelagem que
+ será usada.
+ Neste trabalho utilizam-se duas técnicas de modelagem: o algoritmo J48
+ e o algoritmo RX, para depois comparar a qualidade das regras lógicas obtidas
+ de cada uma dessas técnicas.
 \end_layout
 
 \begin_layout Standard
@@ -8449,13 +10787,808 @@ cref{subsec:extracao_de_regras}
 \end_layout
 
 \begin_layout Subsubsection
-Construir o modelo
+Construir o modelo [Incompleto]
+\end_layout
+
+\begin_layout Paragraph
+Modelagem do algoritmo J48
 \end_layout
 
 \begin_layout Standard
-O algoritmo J48
+O algoritmo J48 será aplicado diretamente à massa de dados da 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:tuplas_modificadas_J48}
 \end_layout
 
+\end_inset
+
+, sem utilizar uma rede neural artificial, utilizando o comando:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 1
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{
+\end_layout
+
+\end_inset
+
+weka.classifiers.trees.J48 -R -N 3 -Q 5 -M 50 -num-decimal-places 4
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+no software WEKA, como se pode verificar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:weka_j48}
+\end_layout
+
+\end_inset
+
+.
+ O argumento 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+-R
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ significa usar uma redução de erro na poda da árvore, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+-N 3
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ define o número de dobras para reduzir a poda de erros, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+-Q 5
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ semente para aleatorização dos dados, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+-M 50
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ define o número mínimo de instâncias por folha e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+-num-decimal-places 4
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ define o número de casas decimais.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Captura de tela do WEKA, utilizando o algoritmo J48.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:weka_j48}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/captura_wekaj48.PNG
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Modelagem do algoritmo RX
+\end_layout
+
+\begin_layout Standard
+O algoritmo RX foi utilizado tendo em conta o artigo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+.
+ Primeiramente projetou-se uma rede neural artificial de oito entradas (uma
+ para cada valor de condutância), uma camada escondida de três neurônios
+ e uma camada de saída de três neurônios.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:tupla_modificada_RX}
+\end_layout
+
+\end_inset
+
+ mostra-se um exemplo da amostra de dados coletada para o treinamento da
+ rede neural artificial.
+ Para treinar a rede neural utilizou-se o algoritmo LM, na caixa de ferramentas
+ de Redes Neurais do software Matlab.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:rede_nueral_RX}
+\end_layout
+
+\end_inset
+
+ mostra-se a rede neural projetada, onde a função de ativação 
+\begin_inset Formula $\left(\sigma\right)$
+\end_inset
+
+ é a função sigmoide da equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sigmoide"
+
+\end_inset
+
+, com 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquitetura da rede neural artificial projetada para a mineração da massa
+ de dados fornecida pelo cliente.
+ É a partir desta rede neural artificial que se utiliza o algoritmo RX.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:rede_nueral_RX}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/passo_1.PNG
+	scale 50
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois de projetada e treinada a rede neural artificial, obtém-se os valores
+ de pesos e bias para poder introduzi-los nas entradas do algoritmo RX.
+ O algoritmo RX foi implementado no software Matlab pelos autores do artigo
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+.
+ Para poder utilizar o algoritmo segue-se os passos seguintes:
+\end_layout
+
+\begin_layout Enumerate
+Inserir o fator multiplicador do desvio padrão da massa dedados e o número
+ de classes, como se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:RX_passo1}
+\end_layout
+
+\end_inset
+
+.
+ Os autores do artigo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+ recomendam colocar o valor do fator multiplicador do desvio igual a 2.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Primeira janela de interação com o usuário.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:RX_passo1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/passo_1.PNG
+	scale 70
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em seguida, se inserem o número de tuplas relacionadas com as três classes
+ relacionadas: 
+\begin_inset Quotes eld
+\end_inset
+
+banana
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+vinho
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+background
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+, como se pode verificar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:RX_passo2}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Para colocar .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:RX_passo2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/passo_2.PNG
+	scale 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Avaliar o modelo
 \end_layout
@@ -8465,15 +11598,49 @@ Avaliação [Incompleto]
 \end_layout
 
 \begin_layout Subsubsection
-Avaliar os resultados
+Avaliar os resultados [Incompleto]
 \end_layout
 
 \begin_layout Subsubsection
-Revisão do processo
+Revisão do processo [Incompleto]
 \end_layout
 
 \begin_layout Subsubsection
-Determinar os passos a seguir
+Determinar os passos a seguir [Incompleto]
+\end_layout
+
+\begin_layout Standard
+Para mais tarde:
+\end_layout
+
+\begin_layout Standard
+1.
+ Terminar com o Arvore de decisão
+\end_layout
+
+\begin_layout Standard
+2.
+ Terminar com a parte de construir o modelo
+\end_layout
+
+\begin_layout Standard
+3.
+ Terminar a parte de avaliação e Resultados e conclusões
+\end_layout
+
+\begin_layout Standard
+4.
+ Terminar a parte de Algoritmo RX
+\end_layout
+
+\begin_layout Standard
+5.
+ Fazer a introdução
+\end_layout
+
+\begin_layout Standard
+6.
+ Estudar pra apresentação na terça
 \end_layout
 
 \begin_layout Subsection
