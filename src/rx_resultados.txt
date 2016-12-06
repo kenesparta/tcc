@@ -1,0 +1,256 @@
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* Algoritmo RX Modificado *
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+Calculo das Ativacoes das Unidades Ocultas
+--------------------------------------------
+a1 = 3.212 +-1.101 x1 + 0.154 x2 +-0.933 x3 + 1.886 x4 + 1.395 x5 + 1.610 x6 +-0.315 x7 +-0.135 x8
+a2 = 0.000 +-0.132 x1 +-1.859 x2 +-1.156 x3 + 1.183 x4 + 0.796 x5 +-0.489 x6 +-1.723 x7 + 0.521 x8
+a3 =-3.212 +-0.793 x1 + 1.120 x2 + 0.802 x3 +-1.665 x4 + 0.883 x5 +-1.646 x6 +-0.771 x7 + 0.969 x8
+
+Clusterizacao
+-------------
+
+Classe associada: 1 
+
+Unidade de ativacao: 1 
+Cluster: 1 
+No de elementos: 28857 	Valor maximo:   3.74 	Valor minimo:   3.07 
+Cluster: 2 
+No de elementos: 1143 	Valor maximo:   4.47 	Valor minimo:   2.98 
+ans =
+   NaN
+ans =
+   NaN
+Cluster: 3 
+No de elementos: 0 	Valor maximo:  	Valor minimo:  
+
+
+Unidade de ativacao: 2 
+Cluster: 1 
+No de elementos: 28363 	Valor maximo:  -0.91 	Valor minimo:  -2.22 
+Cluster: 2 
+No de elementos: 1590 	Valor maximo:  -0.43 	Valor minimo:  -0.91 
+Cluster: 3 
+No de elementos: 42 	Valor maximo:  -2.33 	Valor minimo:  -2.65 
+
+
+Unidade de ativacao: 3 
+Cluster: 1 
+No de elementos: 28493 	Valor maximo:  -3.65 	Valor minimo:  -4.03 
+Cluster: 2 
+No de elementos: 1456 	Valor maximo:  -3.24 	Valor minimo:  -4.13 
+Cluster: 3 
+No de elementos: 48 	Valor maximo:  -2.99 	Valor minimo:  -3.07 
+
+
+Classe associada: 2 
+
+Unidade de ativacao: 1 
+Cluster: 1 
+No de elementos: 28698 	Valor maximo:   3.83 	Valor minimo:   2.98 
+Cluster: 2 
+No de elementos: 1302 	Valor maximo:   4.87 	Valor minimo:   2.67 
+ans =
+   NaN
+ans =
+   NaN
+Cluster: 3 
+No de elementos: 0 	Valor maximo:  	Valor minimo:  
+
+
+Unidade de ativacao: 2 
+Cluster: 1 
+No de elementos: 28455 	Valor maximo:  -0.63 	Valor minimo:  -2.27 
+Cluster: 2 
+No de elementos: 1410 	Valor maximo:   0.19 	Valor minimo:  -0.63 
+Cluster: 3 
+No de elementos: 131 	Valor maximo:  -2.30 	Valor minimo:  -2.42 
+
+
+Unidade de ativacao: 3 
+Cluster: 1 
+No de elementos: 28631 	Valor maximo:  -3.57 	Valor minimo:  -4.18 
+Cluster: 2 
+No de elementos: 1234 	Valor maximo:  -2.87 	Valor minimo:  -4.73 
+Cluster: 3 
+No de elementos: 132 	Valor maximo:  -4.86 	Valor minimo:  -5.17 
+
+
+Classe associada: 3 
+
+Unidade de ativacao: 1 
+Cluster: 1 
+No de elementos: 28259 	Valor maximo:   3.60 	Valor minimo:   3.33 
+Cluster: 2 
+No de elementos: 1741 	Valor maximo:   3.63 	Valor minimo:   3.13 
+ans =
+   NaN
+ans =
+   NaN
+Cluster: 3 
+No de elementos: 0 	Valor maximo:  	Valor minimo:  
+
+
+Unidade de ativacao: 2 
+Cluster: 1 
+No de elementos: 28833 	Valor maximo:  -1.49 	Valor minimo:  -1.98 
+Cluster: 2 
+No de elementos: 1108 	Valor maximo:  -1.30 	Valor minimo:  -1.49 
+Cluster: 3 
+No de elementos: 56 	Valor maximo:  -1.19 	Valor minimo:  -1.29 
+
+
+Unidade de ativacao: 3 
+Cluster: 1 
+No de elementos: 28735 	Valor maximo:  -3.80 	Valor minimo:  -3.99 
+Cluster: 2 
+No de elementos: 1155 	Valor maximo:  -3.53 	Valor minimo:  -4.10 
+Cluster: 3 
+No de elementos: 110 	Valor maximo:  -3.52 	Valor minimo:  -4.14 
+
+
+
+Multiplicador de desvio padrao : 2
+------------- -- ------ ------ - --
+
+
+Numero Minimo de Elementos nos Clusters
+------ ------ -- --------- --- --------
+
+O limite para cada classe e:
+
+24000 elementos para a classe 1.
+
+24000 elementos para a classe 2.
+
+24000 elementos para a classe 3.
+
+
+Clusters Significativos
+-------- --------------
+
+Regras para a classe: 1	Unidade de ativacao: 1
+Numero do cluster: 1
+Numero de elementos: 28857.00 	Limite minimo:   3.07 	e limite maximo:   3.74 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 1	Unidade de ativacao: 2
+Numero do cluster: 1
+Numero de elementos: 28363.00 	Limite minimo:  -2.22 	e limite maximo:  -0.91 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 1	Unidade de ativacao: 3
+Numero do cluster: 1
+Numero de elementos: 28493.00 	Limite minimo:  -4.03 	e limite maximo:  -3.65 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 2	Unidade de ativacao: 1
+Numero do cluster: 1
+Numero de elementos: 28698.00 	Limite minimo:   2.98 	e limite maximo:   3.83 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 2	Unidade de ativacao: 2
+Numero do cluster: 1
+Numero de elementos: 28455.00 	Limite minimo:  -2.27 	e limite maximo:  -0.63 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 2	Unidade de ativacao: 3
+Numero do cluster: 1
+Numero de elementos: 28631.00 	Limite minimo:  -4.18 	e limite maximo:  -3.57 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 3	Unidade de ativacao: 1
+Numero do cluster: 1
+Numero de elementos: 28259.00 	Limite minimo:   3.33 	e limite maximo:   3.60 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 3	Unidade de ativacao: 2
+Numero do cluster: 1
+Numero de elementos: 28833.00 	Limite minimo:  -1.98 	e limite maximo:  -1.49 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+Regras para a classe: 3	Unidade de ativacao: 3
+Numero do cluster: 1
+Numero de elementos: 28735.00 	Limite minimo:  -3.99 	e limite maximo:  -3.80 
+
+O cluster 2 nao sera considerada por ter poucos elementos.
+
+O cluster 3 nao sera considerada por ter poucos elementos.
+
+
+Regras para cada Classe
+------ ---- ---- ------
+
+Regra para a classe: 1	
+Se(  3.07 <= a1 <=   3.74)
+e( -2.22 <= a2 <=  -0.91)
+e( -4.03 <= a3 <=  -3.65)
+Entao CLASSE	1
+
+Regra para a classe: 2	
+Se(  2.98 <= a1 <=   3.83)
+e( -2.27 <= a2 <=  -0.63)
+e( -4.18 <= a3 <=  -3.57)
+Entao CLASSE	2
+
+Regra para a classe: 3	
+Se(  3.33 <= a1 <=   3.60)
+e( -1.98 <= a2 <=  -1.49)
+e( -3.99 <= a3 <=  -3.80)
+Entao CLASSE	3
+
+
+Teste das Regras e Estatisticas
+----- --- ------ - ------------
+
+Para exemplos da CLASSE 1 :	
+
+89.3933% classificados como CLASSE 1.
+96.8933% classificados como CLASSE 2.
+47.7833% classificados como CLASSE 3.
+
+Para exemplos da CLASSE 2 :	
+
+78.1567% classificados como CLASSE 1.
+90.0067% classificados como CLASSE 2.
+41.79% classificados como CLASSE 3.
+
+Para exemplos da CLASSE 3 :	
+
+99.1467% classificados como CLASSE 1.
+99.72% classificados como CLASSE 2.
+89.95% classificados como CLASSE 3.
+
+A taxa de classificacao correta e de 89.78%
+
+Numero de premissas do conjunto e 3.00.
+
+A complexidade deste conjunto de regras e igual a 3.00.
+>> 

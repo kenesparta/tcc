@@ -802,10 +802,6 @@ nautor
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 end{center}
@@ -853,7 +849,7 @@ textsc {
 \backslash
 textbf {
 \backslash
-large{} 
+normalsize{} 
 \backslash
 ntcc } }}
 \end_layout
@@ -861,10 +857,6 @@ ntcc } }}
 \begin_layout Plain Layout
 
 %%%%%
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -1777,20 +1769,14 @@ filename "cap_6/cap_6_materias_metodos.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "cap_7/cap_7_resultados.lyx"
-
+\begin_inset Newpage clearpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
+\begin_layout Section
+Resultados [Incompleto]
 \end_layout
 
 \begin_layout Section

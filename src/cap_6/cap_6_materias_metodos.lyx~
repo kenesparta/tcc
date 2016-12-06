@@ -5724,7 +5724,7 @@ de modo que
 \begin_inset Formula $\zeta$
 \end_inset
 
- é o valor da condutância medida para o seu respectivo cada sensor.
+ é o valor da condutância medida para cada sensor.
 \end_layout
 
 \begin_layout Standard
@@ -11266,6 +11266,16 @@ vspace{-0.8em}
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FAZERR!!!!!!!!!!!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -11326,7 +11336,7 @@ key "Eduardo_1999"
 \end_inset
 
 .
- Para poder utilizar o algoritmo segue-se os passos seguintes:
+ Para poder utilizar o algoritmo seguem-se os passos:
 \end_layout
 
 \begin_layout Enumerate
@@ -11353,6 +11363,7 @@ key "Eduardo_1999"
 \end_inset
 
  recomendam colocar o valor do fator multiplicador do desvio igual a 2.
+ Fixa-se o número de classes igual a 3.
 \end_layout
 
 \begin_deeper
@@ -11501,7 +11512,7 @@ cref{fig:RX_passo2}
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -11598,6 +11609,451 @@ fonteProp{}
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Por fim, escolhe-se a porcentagem mínima de elementos que conterão o 
+\emph on
+cluster
+\emph default
+, como se indica em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+.
+ O algoritmo de agrupamento (
+\emph on
+clustering
+\emph default
+) que se utiliza em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+ é o 
+\emph on
+Leader Algorithm
+\emph default
+.
+ Neste algoritmo se constrói uma partição a partir de 
+\emph on
+clusters, 
+\emph default
+com um diâmetro especificado no espaço e no tempo, depende da ordem de apresenta
+ção dos elementos que vão ser agrupados, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hartigan_1973"
+
+\end_inset
+
+.
+ No 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{alg:leader_algorithm}
+\end_layout
+
+\end_inset
+
+ explica-se de forma resumida o 
+\emph on
+Leader Algorithm
+\emph default
+.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:RX_passo3}
+\end_layout
+
+\end_inset
+
+ mostra-se a janela de interação onde o usuário insere a porcentagem mínima
+ de elementos do 
+\emph on
+cluster
+\emph default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, recomenda-se utilizar o 80
+\begin_inset space \thinspace{}
+\end_inset
+
+% dos elementos do 
+\emph on
+cluster
+\emph default
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:RX_passo3}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/passo_3.PNG
+	scale 90
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Leader Algorithm, líder disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zibigniew_1996"
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{alg:leader_algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Procedure{Leader Algorithm}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $I 
+\backslash
+gets 1$ 
+\backslash
+Comment{$I$ indica a posição do objeto}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $L(1) 
+\backslash
+gets 1$ 
+\backslash
+Comment{$L(I)$ é o objeto líder}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{($I<N$)} 
+\backslash
+Comment{$N$ indica o número de elementos do conjunto}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State $I 
+\backslash
+gets I + 1$ 
+\backslash
+Comment{$d
+\backslash
+left(I,J
+\backslash
+right)$ indica a distância entre $I$ e o possível líder $J$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State 
+\backslash
+textbf{Procure o objeto} $J$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+				
+\backslash
+textbf{entre}
+\end_layout
+
+\begin_layout Plain Layout
+
+				$L
+\backslash
+left(1
+\backslash
+right),
+\backslash
+cdots,L
+\backslash
+left(I-1
+\backslash
+right)$, 
+\backslash
+textbf{para que cada} $d
+\backslash
+left(I,J
+\backslash
+right)$ 
+\backslash
+textbf{seja mínima.}	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%   
+\backslash
+Comment{Call Recursion again}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)
+\backslash
+leq D$)} 
+\backslash
+Comment{$D$ é o limiar de distância}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets J$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)>D$)}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets I$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndWhile
+\end_layout
+
+\begin_layout Plain Layout
+
+	%
+\backslash
+State 
+\backslash
+textbf{return} $a$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndProcedure
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Avaliar o modelo
 \end_layout
@@ -11608,54 +12064,359 @@ Neste item, resumem-se os resultados, listam-se as qualidades dos modelos
  em relação uns aos outros.
 \end_layout
 
+\begin_layout Standard
+Utilizando o algoritmo J48 do WEKA, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "weka_soft_2009"
+
+\end_inset
+
+, a partir da massa de dados fornecida pelo cliente, obtém-se o seguinte
+ resultado:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Número de folhas da árvore
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+217
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tamanho da árvore
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+433
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias corretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+84
+\begin_inset space \thinspace{}
+\end_inset
+
+057 (93,40
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias incorretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\begin_inset space \thinspace{}
+\end_inset
+
+943 (6,60
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando o algoritmo RX proposto em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, a partir da rede neural artificial treinada com a massa de dados normalizada,
+ obtém-se o seguinte resultado:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias corretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\begin_inset space \thinspace{}
+\end_inset
+
+802 (89,78
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias incorretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\begin_inset space \thinspace{}
+\end_inset
+
+198 (10,22
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A correta avaliação da classificação das instâncias (tuplas) são feitas
+ por procedimentos internos a cada algoritmo (J48 e RX).
+ As regras lógicas extraídas e a árvore de decisão são mostradas na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:Resultados}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Avaliação
 \end_layout
 
 \begin_layout Standard
-At this stage in the project, you have built a model (or models) that appears
- to have high quality from a data analysis perspective.
- Before proceeding to final deployment of the model, it is important to
- thoroughly evaluate it and review the steps executed to create it, to be
- certain the model properly achieves the business objectives.
- A key objective is to determine if there is some important business issue
- that has not been sufficiently considered.
- At the end of this phase, a decision on the use of the data mining results
- should be reached.
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+, antes de proceder à implantação final do modelo, é importante avaliá-lo
+ cuidadosamente e rever as etapas executadas para criá-lo, para ter certeza
+ de que o modelo atinge adequadamente os objetivos de negócios.
+ Um dos principais objetivos é determinar se existe alguma questão comercial
+ importante que não tenha sido suficientemente considerada.
+ No final desta fase, uma decisão sobre o uso dos resultados de mineração
+ de dados deve ser alcançada.
 \end_layout
 
 \begin_layout Standard
-Para mais tarde:
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, a fase de interpretação dos dados é muito crítica.
+ Duas questões são essenciais.
+ Uma delas é como reconhecer o valor comercial dos padrões de conhecimento
+ descobertos no estágio de mineração de dados.
+ Outro problema é qual ferramenta de visualização deve ser usada para mostrar
+ os resultados de mineração de dados.
+ No presente trabalho não é desenvolvida uma ferramenta para visualizar
+ os dados minerados, porém, na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:Resultados}
 \end_layout
 
-\begin_layout Standard
-1.
- Terminar com o Arvore de decisão
-\end_layout
+\end_inset
 
-\begin_layout Standard
-2.
- Terminar com a parte de construir o modelo
-\end_layout
-
-\begin_layout Standard
-3.
- Terminar a parte de avaliação e Resultados e conclusões
-\end_layout
-
-\begin_layout Standard
-4.
- Terminar a parte de Algoritmo RX
-\end_layout
-
-\begin_layout Standard
-5.
- Fazer a introdução
-\end_layout
-
-\begin_layout Standard
-6.
- Estudar pra apresentação na terça
+, mostram-se a árvore de decisão resultante e as regras lógicas extraídas.
 \end_layout
 
 \begin_layout Subsection

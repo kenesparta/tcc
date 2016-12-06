@@ -802,10 +802,6 @@ nautor
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 end{center}
@@ -853,7 +849,7 @@ textsc {
 \backslash
 textbf {
 \backslash
-large{} 
+normalsize{} 
 \backslash
 ntcc } }}
 \end_layout
@@ -861,10 +857,6 @@ ntcc } }}
 \begin_layout Plain Layout
 
 %%%%%
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -1785,6 +1777,22 @@ filename "cap_6/cap_6_materias_metodos.lyx"
 
 \begin_layout Section
 Resultados [Incompleto]
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{sec:Resultados}
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Section
