@@ -7510,6 +7510,22 @@ Modelagem
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{subsec:modelagem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Nesta fase, várias técnicas de modelagem são selecionadas e aplicadas e
  seus parâmetros são calibrados para valores ótimos.
  Normalmente, existem várias técnicas para o mesmo tipo de problema de mineração
@@ -10787,7 +10803,7 @@ cref{subsec:extracao_de_regras}
 \end_layout
 
 \begin_layout Subsubsection
-Construir o modelo [Incompleto]
+Construir o modelo
 \end_layout
 
 \begin_layout Paragraph
@@ -11189,7 +11205,10 @@ cref{tab:tupla_modificada_RX}
  rede neural artificial.
  Para treinar a rede neural utilizou-se o algoritmo LM, na caixa de ferramentas
  de Redes Neurais do software Matlab.
- Na 
+\end_layout
+
+\begin_layout Standard
+Na 
 \begin_inset ERT
 status open
 
@@ -11215,6 +11234,37 @@ reference "eq:sigmoide"
 
 , com 
 \begin_inset Formula $\alpha=1$
+\end_inset
+
+; os valores de 
+\begin_inset Formula $\theta_{ci}$
+\end_inset
+
+ e 
+\begin_inset Formula $\theta_{si}$
+\end_inset
+
+ são os valores de bias para a camada oculta e de saída respectivamente
+ e os valores 
+\begin_inset Formula $O_{i}$
+\end_inset
+
+ (com 
+\begin_inset Formula $i\in\left\{ 1,2,3\right\} $
+\end_inset
+
+) são as saídas no formato de Array, como se pode verificar na coluna Classe
+ da 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:tupla_modificada_RX}
+\end_layout
+
 \end_inset
 
 .
@@ -11266,23 +11316,13 @@ vspace{-0.8em}
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-FAZERR!!!!!!!!!!!!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename img/passo_1.PNG
-	scale 50
+	filename img/redeneuralprojetada_rx.pdf
+	scale 60
 
 \end_inset
 
@@ -11798,261 +11838,6 @@ fonteProp{}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float algorithm
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Leader Algorithm, líder disponível em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zibigniew_1996"
-
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{alg:leader_algorithm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{algorithmic}[1]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-Procedure{Leader Algorithm}{}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-State $I 
-\backslash
-gets 1$ 
-\backslash
-Comment{$I$ indica a posição do objeto}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-State $L(1) 
-\backslash
-gets 1$ 
-\backslash
-Comment{$L(I)$ é o objeto líder}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-While{($I<N$)} 
-\backslash
-Comment{$N$ indica o número de elementos do conjunto}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-State $I 
-\backslash
-gets I + 1$ 
-\backslash
-Comment{$d
-\backslash
-left(I,J
-\backslash
-right)$ indica a distância entre $I$ e o possível líder $J$}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-State 
-\backslash
-textbf{Procure o objeto} $J$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-				
-\backslash
-textbf{entre}
-\end_layout
-
-\begin_layout Plain Layout
-
-				$L
-\backslash
-left(1
-\backslash
-right),
-\backslash
-cdots,L
-\backslash
-left(I-1
-\backslash
-right)$, 
-\backslash
-textbf{para que cada} $d
-\backslash
-left(I,J
-\backslash
-right)$ 
-\backslash
-textbf{seja mínima.}	
-\end_layout
-
-\begin_layout Plain Layout
-
-	%   
-\backslash
-Comment{Call Recursion again}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{($d
-\backslash
-left(I,J
-\backslash
-right)
-\backslash
-leq D$)} 
-\backslash
-Comment{$D$ é o limiar de distância}
-\end_layout
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State $L
-\backslash
-left(I
-\backslash
-right) 
-\backslash
-gets J$
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-EndIf
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{($d
-\backslash
-left(I,J
-\backslash
-right)>D$)}
-\end_layout
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State $L
-\backslash
-left(I
-\backslash
-right) 
-\backslash
-gets I$
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-EndIf
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-EndWhile
-\end_layout
-
-\begin_layout Plain Layout
-
-	%
-\backslash
-State 
-\backslash
-textbf{return} $a$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-EndProcedure
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{algorithmic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \begin_layout Subsubsection
 Avaliar o modelo
@@ -12367,6 +12152,265 @@ cref{sec:Resultados}
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Leader Algorithm
+\emph default
+, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zibigniew_1996"
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{alg:leader_algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Procedure{Leader Algorithm}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $I 
+\backslash
+gets 1$ 
+\backslash
+Comment{$I$ indica a posição do objeto}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $L(1) 
+\backslash
+gets 1$ 
+\backslash
+Comment{$L(I)$ é o objeto líder}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{($I<N$)} 
+\backslash
+Comment{$N$ indica o número de elementos do conjunto}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State $I 
+\backslash
+gets I + 1$ 
+\backslash
+Comment{$d
+\backslash
+left(I,J
+\backslash
+right)$ indica a distância entre $I$ e o possível líder $J$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State 
+\backslash
+textbf{Procure o objeto} $J$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+				
+\backslash
+textbf{entre}
+\end_layout
+
+\begin_layout Plain Layout
+
+				$L
+\backslash
+left(1
+\backslash
+right),
+\backslash
+cdots,L
+\backslash
+left(I-1
+\backslash
+right)$, 
+\backslash
+textbf{para que cada} $d
+\backslash
+left(I,J
+\backslash
+right)$ 
+\backslash
+textbf{seja mínima.}	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%   
+\backslash
+Comment{Call Recursion again}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)
+\backslash
+leq D$)} 
+\backslash
+Comment{$D$ é o limiar de distância}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets J$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)>D$)}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets I$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndWhile
+\end_layout
+
+\begin_layout Plain Layout
+
+	%
+\backslash
+State 
+\backslash
+textbf{return} $a$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndProcedure
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Avaliação
 \end_layout
@@ -12381,7 +12425,7 @@ key "pete_2000"
 
 , antes de proceder à implantação final do modelo, é importante avaliá-lo
  cuidadosamente e rever as etapas executadas para criá-lo, para ter certeza
- de que o modelo atinge adequadamente os objetivos de negócios.
+ de que o modelo atinge adequadamente os objetivos.
  Um dos principais objetivos é determinar se existe alguma questão comercial
  importante que não tenha sido suficientemente considerada.
  No final desta fase, uma decisão sobre o uso dos resultados de mineração

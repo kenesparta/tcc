@@ -11,6 +11,10 @@
 
 %%%%%%%%%%%%%%% MATRIX LABEL %%%%%%%%%%%%%%%%%%
 %\usepackage[algo2e,vlined,ruled,boxed]{algorithm2e}
+
+\usepackage{listings,lstautogobble}
+\usepackage{pdfpages}
+
 \usepackage{algpseudocode}
 \usepackage{titlesec}
 \usepackage{amsmath}
@@ -25,7 +29,7 @@
 \usepackage{colortbl}
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage[table,usenames,dvipsnames]{xcolor}
+\usepackage{xcolor}
 
 
 \definecolor{celeste1}{RGB}{0,154,205}
@@ -203,6 +207,76 @@ contents={%
 
 
 
+%########### LISTINGS ################
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\newcommand{\SimCod}[1]{\textcolor{mygreen}{#1}\ttfamily\bfseries}
+\newcommand{\ColorNum}[1]{\textcolor{mygreen}{#1}\ttfamily\bfseries}
+
+
+\lstset{
+ % backgroundcolor=\color{azvi!4},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\scriptsize\ttfamily,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=top,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{mygreen}\ttfamily\bfseries,   % keyword style
+  language=Python,                 % the language of the code
+  otherkeywords={@,&&,^,-,+,*,...,r1,r2,r3,r4,r5,r6,r7,r8,properties,methods,logsig},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  %numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\ttfamily\color{gray}\scriptsize, % the style that is used for the line-numbers
+  rulecolor=\color{mygreen},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=4,	                   % sets default tabsize to 2 spaces
+  title=\lstname,                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+  literate=*%{\{}{{\SimCod{\{}}}1
+               %{(}{{\SimCod{(}}}1
+               %{;}{{\SimCod{;}}}1
+               %{,}{{\SimCod{,}}}1            
+               {>}{{\SimCod{$>$}}}1
+               {<}{{\SimCod{$<$}}}1
+               {=}{{\SimCod{$=$}}}1
+               %{.}{{\SimCod{$\centerdot$}}}1
+               %{0}{{{\ColorNum{0}}}}1
+               %{.0}{{{\ColorNum{.0}}}}1
+               %{1}{{{\ColorNum{1}}}}1
+               %{2}{{{\ColorNum{2}}}}1
+               %{3}{{{\ColorNum{3}}}}1
+               %{4}{{{\ColorNum{4}}}}1
+               %{5}{{{\ColorNum{5}}}}1
+               %{6}{{{\ColorNum{6}}}}1
+               %{7}{{{\ColorNum{7}}}}1
+               %{8}{{{\ColorNum{8}}}}1
+               %{9}{{{\ColorNum{9}}}}1
+             % {)}{{\SimCod{)}}}1
+,
+%xleftmargin=5pt,
+%framexleftmargin=5pt,
+%autogobble=true
+linewidth=\textwidth,
+%xleftmargin=0.28\textwidth,
+%xrightmargin=0.28\textwidth,
+}
+
+
+
+
+
+
+
 %% NOMENCLATURA
 \usepackage{nomencl}
 \usepackage{etoolbox}
@@ -230,7 +304,7 @@ contents={%
 \font_sc false
 \font_osf false
 \font_sf_scale 100 100
-\font_tt_scale 80 100
+\font_tt_scale 75 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -1779,6 +1853,249 @@ filename "cap_6/cap_6_materias_metodos.lyx"
 Resultados [Incompleto]
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{sec:Resultados}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os resultados são mostrados como resultado do processo de modelagem da metodolog
+ia CRISP-DM, ver 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{subsec:modelagem}
+\end_layout
+
+\end_inset
+
+.
+ Uma árvore de decisão e um conjunto de regras lógicas sãos construídos
+ a partir da massa de dados fornecida pelo cliente, como se explica na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:materiais_metodos}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Utilizando o algoritmo J48
+\end_layout
+
+\begin_layout Standard
+Aplicando o algoritmo J48 na massa de dados, utilizando o software WEKA
+ versão 3.8.0, obteve-se que o 93,40
+\begin_inset space \thinspace{}
+\end_inset
+
+% de tuplas foram classificadas corretamente.
+ Criou-se uma árvore de decisão de tamanho 432 e 217 folhas.
+ Relembrando que os valores que se mostram na árvore de decisão estão normalizad
+os.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=Python, caption={}]{arv_dec.py}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Utilizando o algoritmo RX
+\end_layout
+
+\begin_layout Standard
+Aplicando o algoritmo RX na rede neural artificial projetada, ver 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:rede_nueral_RX}
+\end_layout
+
+\end_inset
+
+.
+ Conforme os procedimentos realizados em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, obtiveram-se as seguintes equações de ativação das unidades ocultas (neurônios
+ da camada escondida) da rede neural artificial:
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+N_{1} & = & 3.212-1.101R_{1}+0.154R_{2}-0.933R_{3}+1.886R_{4}+\ldots\\
+ &  & \ldots+1.395R_{5}+1.610R_{6}-0.315R_{7}-0.135R_{8}\\
+N_{2} & = & 0.000-0.132R_{1}-1.859R_{2}-1.156R_{3}+1.183R_{4}+\ldots\\
+ &  & \ldots+0.796R_{5}-0.489R_{6}-1.723R_{7}+0.521R_{8}\\
+N_{3} & = & -3.212-0.793R_{1}+1.120x2+0.802R_{3}-1.665R_{4}+\ldots\\
+ &  & \ldots+0.883R_{5}-1.646R_{6}-0.771R_{7}+0.969R_{8}
+\end{array}
+\]
+
+\end_inset
+
+de tal forma que 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+, para 
+\begin_inset Formula $i=\left\{ 1,2,\ldots,8\right\} $
+\end_inset
+
+ são os valores da condutância dos sensores normalizados, estes valores
+ são inseridos na camada de entrada da rede neural artificial.
+ Os valores de 
+\begin_inset Formula $N_{j}$
+\end_inset
+
+, para 
+\begin_inset Formula $j=\left\{ 1,2,3\right\} $
+\end_inset
+
+ são os valores relacionados aos três neurônios da camada escondida da rede
+ neural artificial, ver 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:rede_nueral_RX}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Uma vez que se têm as equações de ativação, geram-se as regras lógicas para
+ cada classe especificada no treinamento da rede neural artificial projetada.
+ As regras lógicas para a classe 
+\begin_inset Quotes eld
+\end_inset
+
+banana
+\begin_inset Quotes erd
+\end_inset
+
+ são
+\begin_inset Formula 
+\[
+\begin{array}{rclcc}
+\mathrm{SE} & 3.07\leq N_{1}\leq3.74 & \mathrm{E}\\
+ & -2.22\leq N_{2}\leq-0.91 & \mathrm{E}\\
+ & -4.03\leq N_{3}\leq-3.65 & \mathrm{ENTÃO} & \mathrm{banana}
+\end{array}
+\]
+
+\end_inset
+
+para a classe 
+\begin_inset Quotes eld
+\end_inset
+
+vinho
+\begin_inset Quotes erd
+\end_inset
+
+ são
+\begin_inset Formula 
+\[
+\begin{array}{rclcc}
+\mathrm{SE} & 2.98\leq N_{1}\leq3.83 & \mathrm{E}\\
+ & -2.27\leq N_{2}\leq-0.63 & \mathrm{E}\\
+ & -4.18\leq N_{3}\leq-3.57 & \mathrm{ENTÃO} & \mathrm{vinho}
+\end{array}
+\]
+
+\end_inset
+
+e para a classe 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+background
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ são
+\begin_inset Formula 
+\[
+\begin{array}{rclcc}
+\mathrm{SE} & 3.33\leq N_{1}\leq3.60 & \mathrm{E}\\
+ & -1.98\leq N_{2}\leq-1.49 & \mathrm{E}\\
+ & -3.99\leq N_{3}\leq-3.80 & \mathrm{ENTÃO} & \mathrm{background}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O algoritmo RX proposto em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+ classificou corretamente o 89,78
+\begin_inset space \thinspace{}
+\end_inset
+
+% das tuplas da massa de dados.
+\end_layout
+
 \begin_layout Section
 Conclusões e recomendações [Incompleto]
 \end_layout
@@ -1812,6 +2129,13 @@ LatexCommand bibtex
 bibfiles "biblio_tcc"
 options "bibtotoc,abntex2-alf"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 

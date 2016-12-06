@@ -7510,6 +7510,22 @@ Modelagem
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{subsec:modelagem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Nesta fase, várias técnicas de modelagem são selecionadas e aplicadas e
  seus parâmetros são calibrados para valores ótimos.
  Normalmente, existem várias técnicas para o mesmo tipo de problema de mineração
@@ -10787,7 +10803,7 @@ cref{subsec:extracao_de_regras}
 \end_layout
 
 \begin_layout Subsubsection
-Construir o modelo [Incompleto]
+Construir o modelo
 \end_layout
 
 \begin_layout Paragraph
@@ -11189,7 +11205,10 @@ cref{tab:tupla_modificada_RX}
  rede neural artificial.
  Para treinar a rede neural utilizou-se o algoritmo LM, na caixa de ferramentas
  de Redes Neurais do software Matlab.
- Na 
+\end_layout
+
+\begin_layout Standard
+Na 
 \begin_inset ERT
 status open
 
@@ -11215,6 +11234,37 @@ reference "eq:sigmoide"
 
 , com 
 \begin_inset Formula $\alpha=1$
+\end_inset
+
+; os valores de 
+\begin_inset Formula $\theta_{ci}$
+\end_inset
+
+ e 
+\begin_inset Formula $\theta_{si}$
+\end_inset
+
+ são os valores de bias para a camada oculta e de saída respectivamente
+ e os valores 
+\begin_inset Formula $O_{i}$
+\end_inset
+
+ (com 
+\begin_inset Formula $i\in\left\{ 1,2,3\right\} $
+\end_inset
+
+) são as saídas no formato de Array, como se pode verificar na coluna Classe
+ da 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:tupla_modificada_RX}
+\end_layout
+
 \end_inset
 
 .
@@ -11266,23 +11316,13 @@ vspace{-0.8em}
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-FAZERR!!!!!!!!!!!!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename img/passo_1.PNG
-	scale 50
+	filename img/redeneuralprojetada_rx.pdf
+	scale 60
 
 \end_inset
 
@@ -11798,9 +11838,323 @@ fonteProp{}
 
 \end_layout
 
+\end_deeper
+\begin_layout Subsubsection
+Avaliar o modelo
+\end_layout
+
+\begin_layout Standard
+Neste item, resumem-se os resultados, listam-se as qualidades dos modelos
+ gerados (por exemplo, em termos de precisão) e classificam-se a sua qualidade
+ em relação uns aos outros.
+\end_layout
+
+\begin_layout Standard
+Utilizando o algoritmo J48 do WEKA, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "weka_soft_2009"
+
+\end_inset
+
+, a partir da massa de dados fornecida pelo cliente, obtém-se o seguinte
+ resultado:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Número de folhas da árvore
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+217
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tamanho da árvore
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+432
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias corretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+84
+\begin_inset space \thinspace{}
+\end_inset
+
+057 (93,40
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias incorretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\begin_inset space \thinspace{}
+\end_inset
+
+943 (6,60
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando o algoritmo RX proposto em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, a partir da rede neural artificial treinada com a massa de dados normalizada,
+ obtém-se o seguinte resultado:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias corretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\begin_inset space \thinspace{}
+\end_inset
+
+802 (89,78
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instâncias incorretamente classificadas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\begin_inset space \thinspace{}
+\end_inset
+
+198 (10,22
+\begin_inset space \thinspace{}
+\end_inset
+
+%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A correta avaliação da classificação das instâncias (tuplas) são feitas
+ por procedimentos internos a cada algoritmo (J48 e RX).
+ As regras lógicas extraídas e a árvore de decisão são mostradas na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:Resultados}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float algorithm
-placement H
+placement h
 wide false
 sideways false
 status open
@@ -11809,7 +12163,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Leader Algorithm, líder disponível em 
+
+\emph on
+Leader Algorithm
+\emph default
+, disponível em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zibigniew_1996"
@@ -12051,320 +12409,6 @@ end{algorithmic}
 \end_inset
 
 
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection
-Avaliar o modelo
-\end_layout
-
-\begin_layout Standard
-Neste item, resumem-se os resultados, listam-se as qualidades dos modelos
- gerados (por exemplo, em termos de precisão) e classificam-se a sua qualidade
- em relação uns aos outros.
-\end_layout
-
-\begin_layout Standard
-Utilizando o algoritmo J48 do WEKA, disponível em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "weka_soft_2009"
-
-\end_inset
-
-, a partir da massa de dados fornecida pelo cliente, obtém-se o seguinte
- resultado:
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Número de folhas da árvore
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-217
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Tamanho da árvore
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-433
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Instâncias corretamente classificadas
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-84
-\begin_inset space \thinspace{}
-\end_inset
-
-057 (93,40
-\begin_inset space \thinspace{}
-\end_inset
-
-%)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Instâncias incorretamente classificadas
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
-\begin_inset space \thinspace{}
-\end_inset
-
-943 (6,60
-\begin_inset space \thinspace{}
-\end_inset
-
-%)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Utilizando o algoritmo RX proposto em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Eduardo_1999"
-
-\end_inset
-
-, a partir da rede neural artificial treinada com a massa de dados normalizada,
- obtém-se o seguinte resultado:
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="3">
-<features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Instâncias corretamente classificadas
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-80
-\begin_inset space \thinspace{}
-\end_inset
-
-802 (89,78
-\begin_inset space \thinspace{}
-\end_inset
-
-%)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Instâncias incorretamente classificadas
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9
-\begin_inset space \thinspace{}
-\end_inset
-
-198 (10,22
-\begin_inset space \thinspace{}
-\end_inset
-
-%)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A correta avaliação da classificação das instâncias (tuplas) são feitas
- por procedimentos internos a cada algoritmo (J48 e RX).
- As regras lógicas extraídas e a árvore de decisão são mostradas na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{sec:Resultados}
-\end_layout
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Subsection
