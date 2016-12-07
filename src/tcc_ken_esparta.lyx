@@ -246,9 +246,9 @@ contents={%
                %{(}{{\SimCod{(}}}1
                %{;}{{\SimCod{;}}}1
                %{,}{{\SimCod{,}}}1            
-               {>}{{\SimCod{$>$}}}1
-               {<}{{\SimCod{$<$}}}1
-               {=}{{\SimCod{$=$}}}1
+               %{>}{{\SimCod{$>$}}}1
+               %{<}{{\SimCod{$<$}}}1
+               %{=}{{\SimCod{$=$}}}1
                %{.}{{\SimCod{$\centerdot$}}}1
                %{0}{{{\ColorNum{0}}}}1
                %{.0}{{{\ColorNum{.0}}}}1
@@ -1555,8 +1555,15 @@ item
 
 \end_inset
 
-Mostrar a base teórica sobre a metodologia de mineração de dados CRISP-DM
- e sua aplicação em uma massa de dados fornecida pelo cliente.
+Mostrar a base teórica sobre a metodologia de mineração de dados CRISP-DM,
+ proposta em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+, e sua aplicação em uma massa de dados conhecida.
 \end_layout
 
 \begin_layout Standard
@@ -1573,8 +1580,14 @@ item
 \end_inset
 
 Comparar os métodos de classificação de árvore de decisão com o método de
- extração de regras chamado de algoritmo RX, ambos aplicados no contexto
- da mineração de dados com a metodologia CRISP-DM.
+ extração de regras chamado de algoritmo RX, proposto em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, ambos aplicados no contexto da mineração de dados com a metodologia CRISP-DM.
 \end_layout
 
 \begin_layout Standard
@@ -1913,25 +1926,9 @@ Aplicando o algoritmo J48 na massa de dados, utilizando o software WEKA
 \end_inset
 
 % de tuplas foram classificadas corretamente.
- Criou-se uma árvore de decisão de tamanho 432 e 217 folhas.
+ Criou-se uma árvore de decisão de tamanho 432 e 217 folhas, ver [ANEXO].
  Relembrando que os valores que se mostram na árvore de decisão estão normalizad
 os.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstinputlisting[language=Python, caption={}]{arv_dec.py}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -2096,8 +2093,81 @@ key "Eduardo_1999"
 % das tuplas da massa de dados.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Conclusões e recomendações [Incompleto]
+Conclusões e recomendações
+\end_layout
+
+\begin_layout Subsection
+Conclusões
+\end_layout
+
+\begin_layout Standard
+A metodologia CRISP-DM, abordada neste trabalho, é fundamental na hora de
+ fazer a mineração de dados porque fornece as ferramentas necessárias para
+ poder tratar uma grande massa de dados e extrair conhecimento dela.
+\end_layout
+
+\begin_layout Standard
+A compreensão do projeto é o primeiro passo da metodologia CRISP-DM e ajuda
+ a construir uma base sólida para realizar todo o processo de mineração
+ de dados; a realização das tarefas como planejamento, determinação de objetivos
+ e avaliação de contextos é necessária para o projeto de extração de conheciment
+o a partir de uma massa de dados.
+\end_layout
+
+\begin_layout Standard
+Compreender os dados fornecidos pelo cliente é o seguinte passo da metodologia
+ CRISP-DM, conhecer os metadados e as variáveis estatísticas envolvidas
+ é essencial para realizar a modelagem e o treinamento da rede neural artificial.
+ Selecionar, limpar, construir e integrar os dados são os subprocessos da
+ preparação dos dados e são essenciais para que a rede neural projetada
+ convirja no menor tempo possível.
+\end_layout
+
+\begin_layout Standard
+A modelagem da metodologia adotada é a parte mais importante do processo
+ CRISP-DM.
+ Utilizar o algoritmo RX, aplicado a uma rede neural artificial, para o
+ processo de classificação de dados é uma das formas mais diretas de extrair
+ conhecimento.
+\end_layout
+
+\begin_layout Standard
+Os processos de avaliação e de desenvolvimento da metodologia CRISP-DM são
+ dinâmicos, é dizer, os métodos abordados (extração de regras e árvore de
+ decisão) têm que ser avaliados com dados que sejam gerados em tempo real
+ e desenvolvidos com métodos que se adaptem aos novos dados gerados.
+ Isto quer dizer que os métodos descritos neste trabalho podem não ser eficiente
+s para novos dados.
+ A eficiência dos modelos se mede justamente no processo de avaliação, onde
+ se descartam alguns métodos e se propões outros novos.
+\end_layout
+
+\begin_layout Standard
+Fazendo uma comparação dos resultados do método de extração de regras (algoritmo
+ RX) e o método de árvore de decisão (algoritmo J48), pode-se concluir que
+ o algoritmo RX (89,78
+\begin_inset space \thinspace{}
+\end_inset
+
+% de classificações corretas) tem menos acurácia que o algoritmo J48 (93,40
+\begin_inset space \thinspace{}
+\end_inset
+
+% de classificações corretas).
+ Conclui-se também que o algoritmo RX possui visivelmente menor número de
+ regras lógicas com relação ao algoritmo J48.
+\end_layout
+
+\begin_layout Subsection
+Recomendações
 \end_layout
 
 \begin_layout Standard
@@ -2136,6 +2206,22 @@ options "bibtotoc,abntex2-alf"
 
 \begin_layout Standard
 \begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=Python, caption={}]{arv_dec.py}
+\end_layout
+
 \end_inset
 
 

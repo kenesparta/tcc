@@ -2140,30 +2140,10 @@ A modelagem da metodologia adotada é a parte mais importante do processo
 \end_layout
 
 \begin_layout Standard
-Os processos de avaliação e de desenvolvimento da metodologia CRISP-DM são
+Os processos de Avaliação e de Desenvolvimento da metodologia CRISP-DM são
  dinâmicos, é dizer, os métodos abordados (extração de regras e árvore de
  decisão) têm que ser avaliados com dados que sejam gerados em tempo real
  e desenvolvidos com métodos que se adaptem aos novos dados gerados.
- Isto quer dizer que os métodos descritos neste trabalho podem não ser eficiente
-s para novos dados.
- A eficiência dos modelos se mede justamente no processo de avaliação, onde
- se descartam alguns métodos e se propões outros novos.
-\end_layout
-
-\begin_layout Standard
-Fazendo uma comparação dos resultados do método de extração de regras (algoritmo
- RX) e o método de árvore de decisão (algoritmo J48), pode-se concluir que
- o algoritmo RX (89,78
-\begin_inset space \thinspace{}
-\end_inset
-
-% de classificações corretas) tem menos acurácia que o algoritmo J48 (93,40
-\begin_inset space \thinspace{}
-\end_inset
-
-% de classificações corretas).
- Conclui-se também que o algoritmo RX possui visivelmente menor número de
- regras lógicas com relação ao algoritmo J48.
 \end_layout
 
 \begin_layout Subsection

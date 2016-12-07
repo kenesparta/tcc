@@ -22,6 +22,16 @@
   Timestamp                = {2016.12.02}
 }
 
+@Article{marcio_2007,
+  Title                    = {Extra\c{c}\~ao de conhecimento de redes neurais artificiais e aplica\c{c}\~ao na an\'alise de transformadores},
+  Author                   = {M\'arcio A . B. Amora AND Otacílio M. Almeida AND Arthur P. S. Braga AND F\'abio R. Barbosa AND S\'ergio S. Lima AND Vitor B. L. Benigno AND Luciano A. C. Lisboa},
+  Journal                  = {Sociedade Brasileira de Autom\'atica},
+  Year                     = {2007},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.12.07}
+}
+
 @PhdThesis{marcio_2013,
   Title                    = {Extra\c{c}\~ao de regras interpret\'aveis para o diagn\'ostico eficiente de transformadores de pot\^encia isolados a \'oleo a partir do aumento do espa\c{c}o de atributos},
   Author                   = {M\'arcio Andr\'e Baima Amora},
@@ -216,6 +226,7 @@
 @Article{Hartigan_1973,
   Title                    = {Clustering},
   Author                   = {J. A. Hartigan},
+  Journal                  = {Journal of the Royal Statistical Society. Series C (Applied Statistics), Vol. 28, No. 1},
   Year                     = {1973},
 
   Owner                    = {papit},
@@ -446,6 +457,16 @@
   Owner                    = {ken},
   Timestamp                = {2016.12.02},
   Urlaccessdate            = {05 set. 2016}
+}
+
+@Article{Rudy_1997,
+  Title                    = {NeuroLinear: From neural networks to oblique decision rules},
+  Author                   = {Rudy Setiono AND Huan Liu},
+  Journal                  = {Neurocomputing},
+  Year                     = {1997},
+
+  Owner                    = {papit},
+  Timestamp                = {2016.12.07}
 }
 
 @Article{umair_2014,

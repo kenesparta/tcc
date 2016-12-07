@@ -837,8 +837,8 @@ fonteProp{}
 
 \begin_layout Standard
 A principal restrição da mineração de dados é que não será realizada em
- tempo real, devido a que o experimento de onde se extraíram os dados no
- nariz eletrônico já foi finalizado.
+ tempo real, devido a que o experimento de onde se extraíram os dados já
+ foi finalizado.
 \end_layout
 
 \begin_layout Subsubsection
@@ -855,7 +855,7 @@ O objetivo principal da mineração de dados é mostrar a aplicação prática
 Outro objetivo é obter diversas regras lógicas que relacionem os oito sensores
  químicos utilizados na medição com as respectivas saídas: odor de banana,
  odor de vinho, e inodoro.
- As regras lógicas são da forma
+ As regras lógicas são da forma oblíqua
 \begin_inset Formula 
 \[
 \mathrm{SE}\,\left\langle \mathrm{expressão\,lógica}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{conclusão}\right\rangle 
@@ -5681,15 +5681,15 @@ cref{tab:stats_massa_dados}
  A função sigmoide tem dois pontos de saturação e para que a rede neural
  possa aprender sem convergir rapidamente, é necessário normalizar a massa
  de dados.
- Essa normalização pode ser utilizando o desvio padrão 
+ A normalização pode ser efetuada utilizando o desvio padrão 
 \begin_inset Formula $\left(\sigma\right)$
 \end_inset
 
- e a média populacional 
-\begin_inset Formula $\left(\mu\right)$
+ e a média amostral 
+\begin_inset Formula $\left(\overline{x}\right)$
 \end_inset
 
-, ver equação 
+, como se mostra na equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:norm_norm"
@@ -5699,13 +5699,13 @@ reference "eq:norm_norm"
 
 \begin_inset Formula 
 \begin{equation}
-N\left(\zeta\right)=\frac{\zeta-\mu}{\sigma}\label{eq:norm_norm}
+N_{d}\left(r\right)=\frac{r-\overline{x}}{\sigma}\label{eq:norm_norm}
 \end{equation}
 
 \end_inset
 
-ou usando os valores medidos da condutância (mínimo e máximo) para cada
- sensor, ver equação 
+ou também pode ser efetuada utilizando os valores da condutância máximo
+ e mínimo medidos para cada sensor, como se mostra na equação 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:norm_max_min"
@@ -5715,13 +5715,13 @@ reference "eq:norm_max_min"
 
 \begin_inset Formula 
 \begin{equation}
-N\left(\zeta\right)=\frac{\zeta-R_{min}}{R_{max}-R_{min}}\label{eq:norm_max_min}
+N_{m}\left(r\right)=\frac{r-R_{min}}{R_{max}-R_{min}}\label{eq:norm_max_min}
 \end{equation}
 
 \end_inset
 
 de modo que 
-\begin_inset Formula $\zeta$
+\begin_inset Formula $r$
 \end_inset
 
  é o valor da condutância medida para cada sensor.
@@ -5748,7 +5748,7 @@ onde
 \begin_inset Formula $\alpha$
 \end_inset
 
- é um real positivo.
+ é um número real positivo.
  Quanto maior o valor de 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -5844,7 +5844,7 @@ vspace{-0.8em}
 \begin_inset Graphics
 	filename img/sigmoide.eps
 	lyxscale 50
-	scale 25
+	scale 31
 
 \end_inset
 
@@ -11865,7 +11865,7 @@ key "weka_soft_2009"
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
-<features booktabs="true" tabularvalignment="middle">
+<features booktabs="true" islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top">
@@ -12018,6 +12018,19 @@ Instâncias incorretamente classificadas
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-3.5em}
+\end_layout
 
 \end_inset
 
@@ -12464,7 +12477,11 @@ cref{sec:Resultados}
 \end_layout
 
 \begin_layout Subsection
-Desenvolvimento
+Desenvolvimento [Imcompleto]
+\end_layout
+
+\begin_layout Standard
+Colocar mais do livro
 \end_layout
 
 \begin_layout Standard

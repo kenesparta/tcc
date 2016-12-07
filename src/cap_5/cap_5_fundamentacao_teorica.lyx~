@@ -159,6 +159,19 @@ label{fig:organ_teorica}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/teoria_petri_01.pdf
 	lyxscale 50
@@ -398,6 +411,19 @@ label{fig:sc_comp}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/soft_computing_family.pdf
 	lyxscale 50
@@ -561,6 +587,19 @@ label{fig:top_down_abordagem}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
 \end_layout
 
 \end_inset
@@ -982,9 +1021,9 @@ fuzzy
 ) é uma lógica de múltiplos valores introduzida por L.
  Zadeh em 1965.
  Os sistemas difusos são baseados na Lógica Difusa, uma generalização da
- lógica convencional (booleano) que foi estendida para lidar com o conceito
- de verdade parcial e valores verdade entre "completamente verdadeiro" e
- "completamente falso".
+ lógica convencional que foi estendida para lidar com o conceito de verdade
+ parcial e valores verdade entre "completamente verdadeiro" e "completamente
+ falso".
  A lógica difusa fornece um mecanismo de inferência que permite que as capacidad
 es aproximadas de raciocínio humano sejam aplicadas a sistemas baseados
  no conhecimento 
@@ -1011,10 +1050,6 @@ key "zadeh_1996"
 \begin_layout Itemize
 Extrair conhecimento é enxergado como um caso limitativo de conhecimento
  aproximado.
-\end_layout
-
-\begin_layout Itemize
-Tudo é uma questão de gradação.
 \end_layout
 
 \begin_layout Itemize
@@ -1341,6 +1376,19 @@ label{fig:rede_neural}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/redeNeural.eps
 	lyxscale 50
@@ -1378,10 +1426,6 @@ fonteProp
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1447,16 +1491,22 @@ key "Henri_2016"
 \end_layout
 
 \begin_layout Enumerate
-Método gradiente descendente: É um método de minimização geral que atualiza
- os valores dos parâmetros no sentido "descendente": direção oposta ao gradiente
- da função objetivo.
+
+\emph on
+Método gradiente descendente
+\emph default
+: É um método de minimização geral que atualiza os valores dos parâmetros
+ no sentido "descendente": direção oposta ao gradiente da função objetivo.
  Este método converge bem para problemas com funções objetivas simples porém,
  para problemas com vários parâmetros não é um método viável.
 \end_layout
 
 \begin_layout Enumerate
-Método de Gauss-Newton: é um método para minimizar uma função objetivo de
- soma de quadrados.
+
+\emph on
+Método de Gauss-Newton:
+\emph default
+ é um método para minimizar uma função objetivo de soma de quadrados.
  Presume-se que a função objetivo é aproximadamente quadrática nos parâmetros
  próximos à solução ótima.
  Para problemas de tamanho moderado, o método de Gauss-Newton converge tipicamen
@@ -1581,6 +1631,19 @@ label{fig:organ_teorica_1}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
 \end_layout
 
 \end_inset
@@ -1990,6 +2053,19 @@ label{fig:lin_sep}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/lin_sep.eps
 	scale 90
@@ -2087,6 +2163,19 @@ label{fig:não_lin_sep}
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/nao_lin_sep.eps
 	scale 90
@@ -2386,7 +2475,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2430,6 +2519,19 @@ label{fig:organ_teorica_2}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
 \end_layout
 
 \end_inset
@@ -2612,7 +2714,7 @@ textwidth}
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2639,10 +2741,23 @@ label{fig:KDD}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/kdd.pdf
 	lyxscale 50
-	scale 49
+	scale 40
 
 \end_inset
 
@@ -2792,7 +2907,7 @@ textwidth}
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2819,10 +2934,23 @@ label{fig:SEMMA}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/semma.pdf
 	lyxscale 50
-	scale 44
+	scale 42
 
 \end_inset
 
@@ -3094,10 +3222,23 @@ label{fig:CRISP-DM}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/crisp-dm.pdf
 	lyxscale 50
-	scale 35
+	scale 43
 
 \end_inset
 
@@ -3158,6 +3299,34 @@ status open
 \end_layout
 
 \begin_layout Standard
+Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
+ com a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica}
+\end_layout
+
+\end_inset
+
+, é necessário adotar um tipo de processo de mineração de dados.
+ Como é mencionado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, nas três metodologias que foram consideradas, não há obrigação de seguir
+ de forma rígida seus respectivos passos.
+ Afinal, optou-se por seguir a metodologia CRISP-DM.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -3174,7 +3343,7 @@ textwidth}
 
 
 \begin_inset Float table
-placement H
+placement h
 wide false
 sideways false
 status collapsed
@@ -3201,6 +3370,19 @@ label{tab:crisp-dm_pesquisa}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
 \end_layout
 
 \end_inset
@@ -3539,34 +3721,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
- com a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:organ_teorica}
-\end_layout
-
-\end_inset
-
-, é necessário adotar um tipo de processo de mineração de dados.
- Como é mencionado em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "david_2008"
-
-\end_inset
-
-, nas três metodologias que foram consideradas, não há obrigação de seguir
- de forma rígida seus respectivos passos.
- Afinal, optou-se por seguir a metodologia CRISP-DM.
-\end_layout
-
 \begin_layout Subsection
 Árvores de decisão [Incompleto]
 \end_layout
@@ -3712,7 +3866,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -3736,6 +3890,19 @@ label{fig:organ_teorica_3}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
 \end_layout
 
 \end_inset
@@ -3881,6 +4048,19 @@ label{fig:organ_teorica_4}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename img/teoria_petri_05.pdf
 	lyxscale 50
@@ -3927,19 +4107,192 @@ fonteProp
 \end_layout
 
 \begin_layout Standard
-As redes neurais artificiais representam modelos computacionais eficientes
- que são amplamente utilizados para resolver problemas de difícil solução.
- A maior dificuldade associada à utilização de redes neurais artificiais
- se deve ao fato das mesmas serem, também, consideradas “caixas-pretas”,
- devido à dificuldade de se obter conhecimento sobre o comportamento da
- rede neural.
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marcio_2007"
+
+\end_inset
+
+, afirma-se que as redes neurais artificiais representam modelos computacionais
+ eficientes que são amplamente utilizados, porém, a maior dificuldade associada
+ à utilização de redes neurais artificiais se deve ao fato das mesmas serem
+ consideradas “caixas-pretas”.
+ Isto significa o total desconhecimento sobre o comportamento interno da
+ rede neural artificial.
 \end_layout
 
 \begin_layout Standard
-Dada uma rede neural treinada, o conjunto de exemplos de treinamento e um
- nível de fidelidade entre o conjunto de regras e o modelo de rede neural,
- deseja-se obter um conjunto de regras que modela a rede neural para um
- dado nível de fidelidade.
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, o processo de extração de regras é resumido da seguinte forma: dada uma
+ rede neural treinada, o conjunto de exemplos de treinamento e um nível
+ de fidelidade entre o conjunto de regras e o modelo de rede neural; deseja-se
+ obter um conjunto de regras que modela a rede neural para um dado nível
+ de fidelidade.
+\end_layout
+
+\begin_layout Standard
+Sistemas baseados em Regras Fuzzy (SRFs) representam uma ferramenta poderosa
+ para resolver problemas de controle (controlador 
+\emph on
+fuzzy
+\emph default
+) e para modelar conhecimento.
+ Em seguida, apresentam-se algumas formas de representação do conhecimento
+ segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "marcio_2007"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Regras convencionais
+\emph default
+: Representam uma expressão em duas partes: os antecedentes e a consequência.
+ A forma dessas regras será
+\begin_inset Formula 
+\[
+\mathrm{SE}\,\left\langle x_{1}\leq t_{1}\,\mathrm{E}\,x_{2}\leq t_{2}\,\ldots\,\mathrm{E}\,x_{n}\leq t_{n}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\]
+
+\end_inset
+
+de modo que 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ são variáveis e 
+\begin_inset Formula $C$
+\end_inset
+
+ é uma classe associada a um conceito.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Regras M de N
+\emph default
+: São semelhantes às regras convencionais.
+ Para que a premissa seja verdadeira, um número 
+\begin_inset Formula $M$
+\end_inset
+
+ de um total de 
+\begin_inset Formula $N$
+\end_inset
+
+ regras devem ser verdadeiras.
+ A forma está dada por
+\begin_inset Formula 
+\[
+\mathrm{SE}\,M\,\mathrm{DE}\,\left\langle x_{1}\leq t_{1}\,\mathrm{E}\,x_{2}\leq t_{2}\,\ldots\,\mathrm{E}\,x_{N}\leq t_{N}\right\rangle \,\mathrm{SÃO\,VERDADEIROS,}\,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\]
+
+\end_inset
+
+de modo que 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ são variáveis que representam as 
+\begin_inset Formula $N$
+\end_inset
+
+ regras lógicas e 
+\begin_inset Formula $C$
+\end_inset
+
+ é uma classe associada a um conceito.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Regras oblíquas
+\emph default
+: É um conjunto de regras, onde cada condição é dada na forma da desigualdade
+ linear do tipo 
+\begin_inset Formula $\mathcal{R}:\sum k_{j}x_{j}\leq\eta$
+\end_inset
+
+, tal que 
+\begin_inset Formula $\sum k_{j}x_{j}$
+\end_inset
+
+ representa um hiperplano, 
+\begin_inset Formula $k_{j}$
+\end_inset
+
+ é um coeficiente, 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ é o valor do atributo 
+\begin_inset Formula $j$
+\end_inset
+
+ e 
+\begin_inset Formula $\eta$
+\end_inset
+
+ é um valor de limiar.
+ Para uma desigualdade linear 
+\begin_inset Formula $\mathcal{R}_{i}$
+\end_inset
+
+, uma regra oblíqua está definida por
+\begin_inset Formula 
+\[
+\mathrm{SE}\,\left\langle \mathcal{R}_{1}\,\mathrm{E}\,\mathcal{R}_{2}\,\ldots\,\mathrm{E}\,\mathcal{R}_{n}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\]
+
+\end_inset
+
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rudy_1997"
+
+\end_inset
+
+, o hiperplano oblíquo é mais geral e pode reduzir substancialmente o número
+ de condições necessárias para descrever a região de decisão.
+ No presente trabalho, utilizando o algoritmo RX, se geram regras lógicas
+ deste tipo.
+\end_layout
+
+\begin_layout Enumerate
+Regras fuzzy: Essas regras utilizam funções de pertinência para lidar com
+ verdades parciais, as regras fuzzy apresentam a forma
+\begin_inset Formula 
+\[
+\mathrm{SE}\,\left\langle \left(x_{1}\,\mathbf{é}\,f_{1}\right)\,\mathrm{E}\,\left(x_{2}\,\mathbf{é}\,f_{2}\right)\,\ldots\,\mathrm{E}\,\left(x_{n}\,\mathbf{é}\,f_{n}\right)\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\]
+
+\end_inset
+
+de forma que 
 \end_layout
 
 \begin_layout Subsubsection
