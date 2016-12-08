@@ -11,7 +11,7 @@
 
 %%%%%%%%%%%%%%% MATRIX LABEL %%%%%%%%%%%%%%%%%%
 %\usepackage[algo2e,vlined,ruled,boxed]{algorithm2e}
-
+\usepackage{appendix}
 \usepackage{listings,lstautogobble}
 \usepackage{pdfpages}
 
@@ -30,6 +30,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{xcolor}
+
 
 
 \definecolor{celeste1}{RGB}{0,154,205}
@@ -246,9 +247,9 @@ contents={%
                %{(}{{\SimCod{(}}}1
                %{;}{{\SimCod{;}}}1
                %{,}{{\SimCod{,}}}1            
-               {>}{{\SimCod{$>$}}}1
-               {<}{{\SimCod{$<$}}}1
-               {=}{{\SimCod{$=$}}}1
+               %{>}{{\SimCod{$>$}}}1
+               %{<}{{\SimCod{$<$}}}1
+               %{=}{{\SimCod{$=$}}}1
                %{.}{{\SimCod{$\centerdot$}}}1
                %{0}{{{\ColorNum{0}}}}1
                %{.0}{{{\ColorNum{.0}}}}1
@@ -992,7 +993,7 @@ small{}
 \end_inset
 
 Trabalho de Conclusão de Curso apresentado como requisito parcial para obtenção
- do grau de Engenheiro da Computação na Universidade Federal do Ceará, 
+ do grau de Engenheiro de Computação na Universidade Federal do Ceará, 
 \emph on
 Campus
 \emph default
@@ -1117,6 +1118,209 @@ status open
 {
 \backslash
 small{} Sobral $-$ CE, dezembro de 2016}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Dedicatoria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Agradecimentos
+\end_layout
+
+\begin_layout Standard
+Agradeço a Deus, por me permitir existir neste mundo.
+\end_layout
+
+\begin_layout Standard
+Agradeço a toda minha família e, em especial aos meus pais que sempre me
+ dizem 
+\begin_inset Quotes eld
+\end_inset
+
+Nunca desperdice o tempo
+\begin_inset Quotes erd
+\end_inset
+
+, à minha tia Gloria que foi como minha segunda mãe, ao meu primo Ronald
+ que foi como um irmão para mim e aos meus dois irmãos que sempre estão
+ no meu pensamento.
+\end_layout
+
+\begin_layout Standard
+Agradeço ao professor Fernando, o professor Jarbas e o professor Márcio,
+ que me deram um pouco do seu tempo para me encaminhar na pesquisa e corrigir
+ aqueles errinhos de português.
+\end_layout
+
+\begin_layout Standard
+Agradeço também a todos os professores do curso da Engenharia de Computação
+ e da Engenharia Elétrica pelo tempo e ensinamentos.
+\end_layout
+
+\begin_layout Standard
+Agradecimentos especiais ao professor Iális, por me apoiar quando cheguei
+ neste campus e a professora Jéssica por ser a melhor: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+The best tia ever!
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Também agradeço a todos os meus colegas do Brasil e do Peru.
+ Especial agradecimento ao Pedro Mateus que colaborou com a realização deste
+ trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Também agradeço a todos os meus colegas do Brasil e do Peru.
+ Especialmente a Diego e Albert, por me mostrar sua lealdade até nos momentos
+ mais difíceis; a Pedro Mateus, por me apoiar na realização deste trabalho;
+ a Edson (Issedisum) e Mateus, por serem amigos leais na hora de fazer as
+ coisas (programar) e a Guilherme Almeida por sua grande amizade
 \end_layout
 
 \end_inset
@@ -1495,7 +1699,91 @@ pagestyle{demas}
 \end_layout
 
 \begin_layout Section
-Introdução [Incompleto]
+Introdução
+\end_layout
+
+\begin_layout Standard
+As redes neurais artificiais são caixas pretas, é dizer que se desconhece
+ totalmente o seu funcionamento interno.
+ É por esse motivo que elas não são utilizadas no processo de mineração
+ de dados.
+ Neste trabalho, utiliza-se uma metodologia popular chamada CRISP-DM e um
+ algoritmo de extração de regras para poder mostrar que é possível utilizar
+ as redes neurais artificiais como parte do processo de extração de conhecimento.
+\end_layout
+
+\begin_layout Standard
+A teoria abordada no trabalho é representada utilizando uma rede de Petri,
+ de modo que os estados são as áreas da Ciência da Computação a serem atingidas
+ e as transições são as técnicas e o embasamento teórico requeridos para
+ passar ao estado seguinte.
+ Começa-se pela Soft Computing (SC), que é uma área das Ciências da Computação
+ que permite resolver problemas com uma abordagem orientada à tolerância
+ de imprecisões.
+ Neste trabalho, tratam-se duas abordagens da SC: a primeira é o raciocínio
+ probabilístico e a segunda são as redes neurais artificiais.
+ Seguindo a rede de Petri, aborda-se a teoria relacionada com o aprendizado
+ de máquina, que, juntamente com as técnicas de descobrimento de conhecimento,
+ dão origem às técnicas de mineração de dados.
+ Neste trabalho se referenciam três metodologias de mineração de dados,
+ no entanto só se usa a metodologia CRISP-DM.
+\end_layout
+
+\begin_layout Standard
+A massa de dados utilizado para este trabalho é sobre a simulação de um
+ nariz eletrônico.
+ Oito sensores foram instalados em um habitação devidamente isolada, esses
+ sensores mediram os valores de condutância 
+\begin_inset Formula $\left(\Omega^{-1}\right)$
+\end_inset
+
+ na presença de um estímulo químico gasoso (odor) de duas diferentes classes:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+banana
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+vinho
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Existe mais uma classe e é a chamada 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+background
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+, que é a resposta dos sensores quando não existe estímulo químico.
+\end_layout
+
+\begin_layout Standard
+O processo de mineração de dados é realizado utilizando a metodologia CRISP-DM
+ juntamente com a aplicação do algoritmo RX, que é um algoritmo que extrai
+ regras de uma rede neural artificial devidamente treinada.
+ O algoritmo J48 se utiliza também dentro da modelagem na metodologia CRISP-DM.
+ É um algoritmo que gera uma árvore de decisão diretamente a partir de uma
+ massa de dados, sem necessidade de projetar uma rede neural e é a implementação
+ 
+\emph on
+open source
+\emph default
+ do algoritmo C4.5.
+ Finalmente, comparam-se as regras lógicas obtidas pelo algoritmo RX e o
+ algoritmo J48.
 \end_layout
 
 \begin_layout Standard
@@ -1519,6 +1807,13 @@ Mostrar uma aplicação direta da extração de regras de redes neurais artifici
 \emph on
 Levenberg–Marquardt
 \emph default
+, proposto em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kenneth_1944"
+
+\end_inset
+
 , no processo de mineração de dados.
 \end_layout
 
@@ -2171,6 +2466,19 @@ Recomendações
 \end_layout
 
 \begin_layout Standard
+Realizar o processo de CRISP-DM utilizando diferentes algoritmos de extração
+ de regras em diferentes arquiteturas de redes neurais artificiais.
+ Utilizar diferentes tipos de algoritmos para classificação utilizando árvores
+ de decisão.
+\end_layout
+
+\begin_layout Standard
+Utilizar uma massa de dados que seja sempre atualizada em tempo real.
+ É interessante porque é onde se dá uma aplicação real ao projeto de mineração
+ de dados utilizando a metodologia CRISP-DM.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -2219,7 +2527,87 @@ status open
 
 
 \backslash
+pagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{appendices}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Árvore de decisão gerada utilizando o software WEKA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{sec:app_A}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
 lstinputlisting[language=Python, caption={}]{arv_dec.py}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{appendices}
 \end_layout
 
 \end_inset

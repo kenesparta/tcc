@@ -805,7 +805,7 @@ cref{alg:EP}
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1003,7 +1003,7 @@ end{algorithmic}
 \end_layout
 
 \begin_layout Subsubsection
-Lógica Difusa
+Lógica Difusa [incompleto]
 \end_layout
 
 \begin_layout Standard
@@ -1074,6 +1074,71 @@ fuzzy
 fuzzificação
 \emph default
 ).
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hans_2001"
+
+\end_inset
+
+, um conjunto 
+\emph on
+fuzzy 
+\emph default
+é assim definido: Sendo 
+\begin_inset Formula $X$
+\end_inset
+
+ uma coleção de objetos denotados por 
+\begin_inset Formula $x$
+\end_inset
+
+, então um conjunto 
+\emph on
+fuzzy
+\emph default
+ 
+\begin_inset Formula $\left(\widetilde{A}\right)$
+\end_inset
+
+ em 
+\begin_inset Formula $X$
+\end_inset
+
+ é o conjunto de pares ordenados:
+\begin_inset Formula 
+\[
+\widetilde{A}=\left\{ \left(x,\mu_{\lambda}\left(x\right)|x\in X\right)\right\} 
+\]
+
+\end_inset
+
+tal que 
+\begin_inset Formula $\mu_{\lambda}\left(x\right)$
+\end_inset
+
+ é chamado de função de associação ou grau de adesão de 
+\begin_inset Formula $x$
+\end_inset
+
+ em 
+\begin_inset Formula $\widetilde{A}$
+\end_inset
+
+ que mapeia o conjunto 
+\begin_inset Formula $X$
+\end_inset
+
+ para o espaço de associação 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ A imagem da função de associação é um subconjunto dos números reais não
+ negativos cujo supremo é finito.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3722,7 +3787,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Árvores de decisão [Incompleto]
+Árvores de decisão
 \end_layout
 
 \begin_layout Standard
@@ -3866,7 +3931,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -3967,12 +4032,339 @@ key "puc_2005"
 .
 \end_layout
 
-\begin_layout Subsubsection
-Como funciona uma árvore de decisão
+\begin_layout Standard
+Uma árvore de decisão realiza a classificação de uma dada amostra de dados
+ através de vários níveis de decisões para ajudar a chegar a uma decisão
+ final.
+ Essa sequência de decisões é representada em uma estrutura em árvore.
+ A estrutura em árvore é usada na classificação de registros de dados desconheci
+dos.
 \end_layout
 
 \begin_layout Subsubsection
-O software WEKA [Incompleto]
+O software WEKA
+\end_layout
+
+\begin_layout Standard
+WEKA, disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.cs.waikato.ac.nz/ml/weka/index.html
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, foi desenvolvido na Universidade de 
+\emph on
+Waikato
+\emph default
+, na Nova Zelândia.
+ O nome significa 
+\emph on
+Waikato Environment for Knowledge Analysis
+\emph default
+.
+ O sistema é escrito em Java e distribuído sob os termos da GNU 
+\emph on
+General Public License
+\emph default
+.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:weka}
+\end_layout
+
+\end_inset
+
+ mostra-se a tela de início do programa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.75
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela de início do WEKA.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:weka}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/weka.PNG
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O WEKA é executado em praticamente qualquer plataforma e foi testado em
+ sistemas operacionais Linux, Windows e Macintosh.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ian_2011"
+
+\end_inset
+
+, WEKA fornece implementações de algoritmos de aprendizagem que você pode
+ facilmente aplicar ao seu conjunto de dados.
+ Também inclui uma variedade de ferramentas para transformar conjuntos de
+ dados.
+\end_layout
+
+\begin_layout Standard
+Neste trabalho, utilizou-se o formato de arquivo 
+\family typewriter
+.arff
+\family default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "ARFF"
+symbol "ARFF"
+description "Attribute-Relation File Format"
+
+\end_inset
+
+ que significa 
+\emph on
+Attribute-Relation File Format
+\emph default
+ (Formato de Arquivo de Relação de Atributos) disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.cs.waikato.ac.nz/ml/weka/arff.html
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+ O tipo ARFF foi desenvolvido pelo Projeto de Aprendizado de Máquina no
+ Departamento de Ciência da Computação da Universidade de 
+\emph on
+Waikato
+\emph default
+ para uso com o software WEKA.
+ Na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:arff_exemplo}
+\end_layout
+
+\end_inset
+
+ pode-se observar um exemplo desse formado de arquivo para a massa de dados
+ utilizada no projeto de mineração de dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.75
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de um arquivo do tipo 
+\family typewriter
+.arff
+\family default
+ que contém os dados utilizados para a mineração de dados.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:arff_exemplo}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_04.pdf
+	lyxscale 50
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3995,8 +4387,207 @@ label{subsec:algoritmo_j48}
 
 \end_layout
 
+\begin_layout Standard
+O algoritmo J48 é uma implementação, de código aberto e escrito na linguagem
+ de programação Java, do algoritmo C4.5 na ferramenta de mineração de dados
+ WEKA.
+ O algoritmo C4.5 é um programa que cria uma árvore de decisão baseada em
+ um conjunto de dados de entrada rotulados.
+ Este algoritmo foi desenvolvido por Ross Quinlan.
+ As árvores de decisão geradas pelo C4.5 podem ser usadas para classificação,
+ e por esta razão, C4.5 é muitas vezes referido como um classificador estatístico
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jay_2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O algoritmo J48 utiliza uma tecnologia 
+\emph on
+greedy
+\emph default
+ para induzir árvores de decisão para posterior classificação.
+ O modelo de árvore de decisão é construído pela análise dos dados de treino
+ e o modelo utilizado para classificar dados ainda não classificados.
+ O J48 gera árvores de decisão, em que cada nó da árvore avalia a existência
+ ou significância de cada atributo individual, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "antonio_2009"
+
+\end_inset
+
+.
+ A árvore de decisão gerada, pelo software WEKA, para o conjunto de dados
+ da planta iris se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:arvoreWEKA}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.75
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de árvore de decisão gerado pelo WEKA utilizando o conjunto de dados
+ da planta Iris, disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.cas.mcmaster.ca/~cs4tf3/iris.arff
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:arvoreWEKA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_04.pdf
+	lyxscale 50
+	scale 30
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Extração de regras [Incompleto]
+Extração de regras
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{sec:extracao_de_regras}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4283,8 +4874,12 @@ key "Rudy_1997"
 \end_layout
 
 \begin_layout Enumerate
-Regras fuzzy: Essas regras utilizam funções de pertinência para lidar com
- verdades parciais, as regras fuzzy apresentam a forma
+
+\emph on
+Regras fuzzy
+\emph default
+: Essas regras utilizam funções de pertinência para lidar com verdades parciais,
+ as regras fuzzy apresentam a forma
 \begin_inset Formula 
 \[
 \mathrm{SE}\,\left\langle \left(x_{1}\,\mathbf{é}\,f_{1}\right)\,\mathrm{E}\,\left(x_{2}\,\mathbf{é}\,f_{2}\right)\,\ldots\,\mathrm{E}\,\left(x_{n}\,\mathbf{é}\,f_{n}\right)\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
@@ -4307,8 +4902,48 @@ fuzzy
 .
 \end_layout
 
-\begin_layout Subsubsection
-Algoritmo RX
+\begin_layout Enumerate
+
+\emph on
+Autômato de estado finito
+\emph default
+: Um autômato de estado finito forma parte do conjunto das Linguagens Regulares
+ juntamente com as Gramáticas Regulares.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bologna_2003"
+
+\end_inset
+
+, as gramáticas são formalismos que geram linguagens.
+ Elas fornecem um conjunto de regras para permitir a formação de frases
+ corretas.
+ As redes neurais artificiais recorrentes têm sido usadas para lidar com
+ problemas em gramáticas regulares.
+ Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Christian_1995"
+
+\end_inset
+
+ se desenvolveu um algoritmo para extrair conhecimento na forma de autômatos
+ de estados finitos, esse método foi usado para extrair regras gramaticais
+ de uma linguagem regular.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4319,7 +4954,149 @@ status open
 
 
 \backslash
-label{subsec:extracao_de_regras}
+vspace{-2em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existem diversos algoritmos de extração de regras, neste trabalho vai ser
+ abordado só algoritmo RX.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, o algoritmo RX é baseado nas ativações das unidades ocultas.
+ Primeiramente, realiza-se o treinamento da rede neural, de modo que se
+ obtenha a taxa de classificação correta desejada.
+ Eliminam-se, então, as conexões redundantes, seguindo-se uma análise dos
+ valores das ativações para a obtenção de regras baseadas nestes valores.
+ Basicamente, pode-se resumir o algoritmo RX nos passos do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{alg:alg_RX}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pseudocódigo para o algoritmo RX, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hongjun_1996,Eduardo_1999"
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{alg:alg_RX}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Processar os eventos pertencentes ao conjunto de treinamento, computando-s
+e os valores de ativação das unidades ocultas da rede neural.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Aplicar um algoritmo de agrupamento aos valores de ativação das unidades
+ ocultas.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Enumerar os valores de ativação discretizados e computar os respectivos
+ valores de saída da rede.
+ Gerar regras que descrevam as saídas da rede em termos dos valores de ativação
+ discretizados em (2:).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Para cada unidade oculta, enumerar os valores de entrada que conduzem
+ aos respectivos valores de ativação das unidades ocultas, gerando regras
+ que descrevam os valores discretizados das unidades ocultas em termos das
+ entradas da rede neural.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+State Combinar as regras obtidas em (3:) e (4:) para obter as regras que
+ relacionam as variáveis dependentes às variáveis independentes.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
