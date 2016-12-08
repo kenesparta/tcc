@@ -2222,7 +2222,7 @@ Aplicando o algoritmo J48 na massa de dados, utilizando o software WEKA
 \end_inset
 
 % de tuplas foram classificadas corretamente.
- Criou-se uma árvore de decisão de tamanho 432 e 217 folhas, ver [ANEXO].
+ Criou-se uma árvore de decisão de tamanho 432 e 217 folhas, ver ANEXO A.1.
  Relembrando que os valores que se mostram na árvore de decisão estão normalizad
 os.
 \end_layout
@@ -2544,39 +2544,27 @@ status open
 
 
 \backslash
+addcontentsline{toc}{section}{Anexo A.1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Anexo A.1: Árvore de decisão do algoritmo J48
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
 begin{appendices}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-section{Árvore de decisão gerada utilizando o software WEKA}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{sec:app_A}
 \end_layout
 
 \end_inset
@@ -2592,7 +2580,7 @@ status open
 
 %
 \backslash
-lstinputlisting[language=Python, caption={}]{arv_dec.py}
+%section{Árvore de decisão gerada utilizando o software WEKA}
 \end_layout
 
 \end_inset
@@ -2607,6 +2595,22 @@ status open
 \begin_layout Plain Layout
 
 
+\backslash
+lstinputlisting[language=Python, caption={}]{arv_dec.py}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
 \backslash
 end{appendices}
 \end_layout

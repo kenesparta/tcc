@@ -855,7 +855,7 @@ O objetivo principal da mineração de dados é mostrar a aplicação prática
 Outro objetivo é obter diversas regras lógicas que relacionem os oito sensores
  químicos utilizados na medição com as respectivas saídas: odor de banana,
  odor de vinho, e inodoro.
- As regras lógicas são da forma
+ As regras lógicas são da forma oblíqua
 \begin_inset Formula 
 \[
 \mathrm{SE}\,\left\langle \mathrm{expressão\,lógica}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{conclusão}\right\rangle 
