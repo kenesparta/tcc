@@ -854,8 +854,12 @@ O objetivo principal da mineração de dados é mostrar a aplicação prática
 \begin_layout Standard
 Outro objetivo é obter diversas regras lógicas que relacionem os oito sensores
  químicos utilizados na medição com as respectivas saídas: odor de banana,
- odor de vinho, e inodoro.
- As regras lógicas são da forma oblíqua
+ odor de vinho e inodoro (
+\emph on
+background
+\emph default
+).
+ As regras lógicas que são obtidas são da forma oblíqua:
 \begin_inset Formula 
 \[
 \mathrm{SE}\,\left\langle \mathrm{expressão\,lógica}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{conclusão}\right\rangle 
@@ -906,7 +910,7 @@ cref{fig:plano_projeto}
 
 \begin_layout Standard
 A obtenção das regras lógicas será utilizando uma rede neural do tipo MLP
- e em seguida, será aplicado o algoritmo RX modificado, disponível em 
+ e, em seguida, será aplicado o algoritmo RX modificado, disponível em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Eduardo_1999"
@@ -6642,9 +6646,9 @@ key "ramon_2016"
 
 \end_inset
 
-, de onde é que a massa de dados é obtida, os autores propõem um modelo
- matemático novo de descorrelação dos sinais dos sensores químicos com os
- efeitos ambientais da umidade e a temperatura.
+, fonte da massa de dados, os autores propõem um modelo matemático novo
+ de descorrelação dos sinais dos sensores químicos com os efeitos ambientais
+ da umidade e a temperatura.
  Para poder chegar ao modelo que eles propõem, utilizam técnicas de aprendizado
  de máquina (ML) para poder discriminar as amostras.
  Devido ao mencionado anteriormente, considera-se que a massa de dados resultant
@@ -6882,20 +6886,31 @@ dt
 \end_inset
 
  não serão necessários porque o cliente somente deseja ver a relação entre
- a classe e da 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:DI_REL}
-\end_layout
-
+ os valores da condutância de cada um dos oito sensores (atributos 
+\begin_inset Quotes eld
 \end_inset
 
-.
+R1
+\begin_inset Quotes erd
+\end_inset
+
+ ate 
+\begin_inset Quotes eld
+\end_inset
+
+R8
+\begin_inset Quotes erd
+\end_inset
+
+), com as saídas respectivas (atributo 
+\begin_inset Quotes eld
+\end_inset
+
+Classe
+\begin_inset Quotes erd
+\end_inset
+
+).
  Como resultado, tem-se o diagrama relacional da 
 \begin_inset ERT
 status open
@@ -7038,7 +7053,7 @@ Dados_sensor
 \begin_inset Quotes erd
 \end_inset
 
-, que representam o 9,79
+, que representam 9,79
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -10794,7 +10809,7 @@ status open
 
 
 \backslash
-cref{subsec:extracao_de_regras}
+cref{sec:extracao_de_regras}
 \end_layout
 
 \end_inset
@@ -11380,7 +11395,7 @@ key "Eduardo_1999"
 \end_layout
 
 \begin_layout Enumerate
-Inserir o fator multiplicador do desvio padrão da massa dedados e o número
+Inserir o fator multiplicador do desvio padrão da massa de dados e o número
  de classes, como se mostra na 
 \begin_inset ERT
 status open
@@ -11682,8 +11697,8 @@ Leader Algorithm
 \emph on
 clusters, 
 \emph default
-com um diâmetro especificado no espaço e no tempo, depende da ordem de apresenta
-ção dos elementos que vão ser agrupados, 
+com um diâmetro especificado no espaço e no tempo, dependendo da ordem de
+ apresentação dos elementos que vão ser agrupados, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hartigan_1973"
@@ -11704,7 +11719,7 @@ cref{alg:leader_algorithm}
 
 \end_inset
 
- explica-se de forma resumida o 
+, explica-se de forma resumida o 
 \emph on
 Leader Algorithm
 \emph default
@@ -11722,7 +11737,7 @@ cref{fig:RX_passo3}
 
 \end_inset
 
- mostra-se a janela de interação onde o usuário insere a porcentagem mínima
+, mostra-se a janela de interação onde o usuário insere a porcentagem mínima
  de elementos do 
 \emph on
 cluster
@@ -11749,15 +11764,11 @@ key "Eduardo_1999"
 
 \end_inset
 
-, recomenda-se utilizar o 80
+, recomenda-se utilizar 80
 \begin_inset space \thinspace{}
 \end_inset
 
-% dos elementos do 
-\emph on
-cluster
-\emph default
-.
+% dos elementos do cluster.
  
 \begin_inset ERT
 status open
@@ -12459,8 +12470,11 @@ key "david_2008"
  descobertos no estágio de mineração de dados.
  Outro problema é qual ferramenta de visualização deve ser usada para mostrar
  os resultados de mineração de dados.
- No presente trabalho não é desenvolvida uma ferramenta para visualizar
- os dados minerados, porém, na 
+\end_layout
+
+\begin_layout Standard
+No presente trabalho não é desenvolvida uma ferramenta para visualizar o
+ resultado da mineração de dados, porém, na 
 \begin_inset ERT
 status open
 
@@ -12477,18 +12491,74 @@ cref{sec:Resultados}
 \end_layout
 
 \begin_layout Subsection
-Desenvolvimento [Imcompleto]
+Desenvolvimento 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Colocar mais do livro
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-Pôr em prática o modelo desenvolvido, não vai ser realizado no presente
- trabalho devido a que os dados coletados são estáticos, ou seja, que não
- serão gerados novos dados em tempo real porque o experimento, realizado
- em 
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+, afirma-se que a criação do modelo geralmente não é o fim do projeto.
+ Mesmo se o propósito do modelo é aumentar o conhecimento dos dados, o conhecime
+nto adquirido terá que ser organizado e apresentado de forma que o cliente
+ possa usá-lo.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, os modelos projetados precisam ser monitorados para detectar as mudanças
+ na fase de produção, porque o que pode ser verdade hoje pode não sê-lo
+ de aqui a um ano.
+ Se ocorrerem mudanças significativas, o modelo deve ser refeito.
+ Também é aconselhável registrar os resultados dos projetos de mineração
+ de dados, de forma que evidências documentadas estejam disponíveis para
+ futuros estudos.
+\end_layout
+
+\begin_layout Standard
+These models need to be monitored for changes in operating conditions, because
+ what might be true today may not be true a year from now.
+ If significant changes do occur, the model should be redone.
+ It’s also wise to record the results of data mining projects so documented
+ evidence is available for future studies.
+\end_layout
+
+\begin_layout Standard
+Os resultados do estudo de mineração de dados precisam ser relatados aos
+ patrocinadores do projeto.
+ O estudo de mineração de dados descobriu novos conhecimentos, que precisam
+ ser vinculados aos objetivos originais do projeto de mineração de dados.
+ A gerência estará então em posição de aplicar essa nova compreensão de
+ seu ambiente de negócios.
+\end_layout
+
+\begin_layout Standard
+O modelo proposto não foi implementado no presente trabalho devido a que
+ os dados coletados são estáticos, ou seja, não serão gerados novos dados
+ em tempo real porque o experimento, realizado em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ramon_2016"

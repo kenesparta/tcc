@@ -1455,7 +1455,7 @@ vspace{-0.8em}
 
 
 \begin_inset Graphics
-	filename img/redeNeural.eps
+	filename img/redeNeural.pdf
 	lyxscale 50
 	scale 60
 
@@ -2132,7 +2132,7 @@ vspace{-0.8em}
 
 
 \begin_inset Graphics
-	filename img/lin_sep.eps
+	filename img/lin_sep.pdf
 	scale 90
 
 \end_inset
@@ -2242,7 +2242,7 @@ vspace{-0.8em}
 
 
 \begin_inset Graphics
-	filename img/nao_lin_sep.eps
+	filename img/nao_lin_sep.pdf
 	scale 90
 
 \end_inset
@@ -3787,7 +3787,26 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Árvores de decisão
+Árvore de decisão
+\end_layout
+
+\begin_layout Standard
+Como resultado da construção teórica, chegou-se ao último estado.
+ Existem duas fichas porque o conhecimento é adquirido tanto do raciocínio
+ probabilístico como da mineração de dados, isto se pode verificar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_3}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3858,7 +3877,7 @@ item
 
 \end_inset
 
-formas estatísticas tradicionais de análise (como regressão linear múltipla)
+formas estatísticas tradicionais de análise (como regressão linear múltipla);
 \end_layout
 
 \begin_layout Standard
@@ -3875,7 +3894,7 @@ item
 \end_inset
 
 uma variedade de ferramentas e técnicas de mineração de dados (como redes
- neurais)
+ neurais);
 \end_layout
 
 \begin_layout Standard
@@ -3939,9 +3958,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Como resultado da construção teórica, chegou-se ao último estado.
- Existem duas fichas porque o conhecimento é adquirido tanto do raciocínio
- probabilístico como da mineração de dados.
+Rede de Petri relacionada com o conhecimento teórico abordado até a árvore
+ de decisão.
 \begin_inset ERT
 status open
 
@@ -4323,9 +4341,9 @@ vspace{-0.8em}
 
 
 \begin_inset Graphics
-	filename img/codigo_arff.eps
+	filename img/arff_codigo_usado.pdf
 	lyxscale 50
-	scale 32
+	scale 40
 
 \end_inset
 
@@ -4423,12 +4441,7 @@ key "antonio_2009"
 \end_inset
 
 .
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-A árvore de decisão gerada, pelo software WEKA, para o conjunto de dados
+ A árvore de decisão gerada, pelo software WEKA, para o conjunto de dados
  da planta iris se mostra na 
 \begin_inset ERT
 status open
@@ -4445,7 +4458,7 @@ cref{fig:arvoreWEKA}
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -4453,7 +4466,7 @@ status open
 
 
 \backslash
-captionsetup{width=0.75
+captionsetup{width=0.85
 \backslash
 textwidth}
 \end_layout
@@ -4465,7 +4478,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -4473,8 +4486,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de árvore de decisão gerado pelo WEKA utilizando o conjunto de dados
- da planta Iris, disponível em 
+Na figura mostra-se a árvore de decisão resultante da aplicação do algoritmo
+ J48 no conjunto de dados da planta iris, disponível em 
 \begin_inset ERT
 status open
 
@@ -4498,7 +4511,7 @@ status open
 
 \end_inset
 
-.
+, com sua respectiva representação.
 \begin_inset ERT
 status open
 
@@ -4531,9 +4544,9 @@ vspace{-0.8em}
 
 
 \begin_inset Graphics
-	filename img/teoria_petri_04.pdf
+	filename img/arvore_dec_planta_iris.pdf
 	lyxscale 50
-	scale 30
+	scale 35
 
 \end_inset
 
@@ -4575,11 +4588,6 @@ fonteProp
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Extração de regras
 \end_layout
@@ -4601,6 +4609,26 @@ label{sec:extracao_de_regras}
 \end_layout
 
 \begin_layout Standard
+Como resultado da construção teórica, chegou-se ao último estado.
+ Existem duas fichas porque o conhecimento é adquirido tanto da rede neural
+ artificial como da mineração de dados, isto se pode verificar na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_4}
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 Em 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4614,6 +4642,112 @@ key "marcio_2007"
  consideradas “caixas-pretas”.
  Isto significa o total desconhecimento sobre o comportamento interno da
  rede neural artificial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.95
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rede de Petri relacionada com o conhecimento teórico abordado até a extração
+ de regras.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:organ_teorica_4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/teoria_petri_05.pdf
+	lyxscale 50
+	scale 55
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonteProp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4782,7 +4916,11 @@ key "Rudy_1997"
 Regras fuzzy
 \emph default
 : Essas regras utilizam funções de pertinência para lidar com verdades parciais,
- as regras fuzzy apresentam a forma
+ as regras 
+\emph on
+fuzzy
+\emph default
+ apresentam a forma
 \begin_inset Formula 
 \[
 \mathrm{SE}\,\left\langle \left(x_{1}\,\mathbf{é}\,f_{1}\right)\,\mathrm{E}\,\left(x_{2}\,\mathbf{é}\,f_{2}\right)\,\ldots\,\mathrm{E}\,\left(x_{n}\,\mathbf{é}\,f_{n}\right)\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
@@ -4837,6 +4975,21 @@ key "Christian_1995"
 \end_layout
 
 \begin_layout Standard
+Existem diversos algoritmos de extração de regras, porém, neste trabalho
+ é abordado somente o algoritmo RX.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eduardo_1999"
+
+\end_inset
+
+, o algoritmo RX é baseado nas ativações das unidades ocultas.
+ Primeiramente, realiza-se o treinamento da rede neural, de modo que se
+ obtenha a taxa de classificação correta desejada.
+ Eliminam-se, então, as conexões redundantes, seguindo-se uma análise dos
+ valores das ativações para a obtenção de regras baseadas nestes valores.
+ Basicamente, pode-se resumir o algoritmo RX nos passos do 
 \begin_inset ERT
 status open
 
@@ -4844,103 +4997,12 @@ status open
 
 
 \backslash
-captionsetup{width=0.95
-\backslash
-textwidth}
+cref{alg:alg_RX}
 \end_layout
 
 \end_inset
 
-
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Como resultado da construção teórica, chegou-se ao último estado.
- Existem duas fichas porque o conhecimento é adquirido tanto da rede neural
- artificial como da mineração de dados.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{fig:organ_teorica_4}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{-0.8em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename img/teoria_petri_05.pdf
-	lyxscale 50
-	scale 55
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\backslash
-vspace{-0.1em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fonteProp
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -4948,7 +5010,7 @@ fonteProp
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5052,37 +5114,6 @@ end{algorithmic}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Existem diversos algoritmos de extração de regras, neste trabalho vai ser
- abordado só algoritmo RX.
- Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Eduardo_1999"
-
-\end_inset
-
-, o algoritmo RX é baseado nas ativações das unidades ocultas.
- Primeiramente, realiza-se o treinamento da rede neural, de modo que se
- obtenha a taxa de classificação correta desejada.
- Eliminam-se, então, as conexões redundantes, seguindo-se uma análise dos
- valores das ativações para a obtenção de regras baseadas nestes valores.
- Basicamente, pode-se resumir o algoritmo RX nos passos do 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{alg:alg_RX}
-\end_layout
-
-\end_inset
-
-.
 \end_layout
 
 \end_body

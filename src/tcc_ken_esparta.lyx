@@ -353,7 +353,7 @@ linewidth=\textwidth,
 \papercolumns 1
 \papersides 1
 \paperpagestyle plain
-\bullet 0 2 21 1
+\bullet 0 2 28 1
 \bullet 1 4 28 -1
 \bullet 2 4 24 -1
 \tracking_changes false
@@ -1198,6 +1198,108 @@ Dedicatoria
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "55col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align right
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+textit {
+\backslash
+small{}
+\end_layout
+
+\end_inset
+
+Aos meus queridos pais.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+À vida do meu amor e ao amor da minha vida, Diane.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -1310,6 +1412,10 @@ The best tia ever!
 Também agradeço a todos os meus colegas do Brasil e do Peru.
  Especial agradecimento ao Pedro Mateus que colaborou com a realização deste
  trabalho.
+\end_layout
+
+\begin_layout Standard
+Por fim, agradeço a Diane, minha querida e amada.
 \end_layout
 
 \begin_layout Standard
@@ -2077,7 +2183,7 @@ key "Luo_2008"
 
 , as redes neurais possuem alta acurácia no processo de classificação na
  descoberta de conhecimento.
- Utiliza o algoritmo RX
+ Utiliza-se o algoritmo RX
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "RX"
@@ -2217,7 +2323,7 @@ Utilizando o algoritmo J48
 
 \begin_layout Standard
 Aplicando o algoritmo J48 na massa de dados, utilizando o software WEKA
- versão 3.8.0, obteve-se que o 93,40
+ versão 3.8.0, obteve-se que 93,40
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -2232,7 +2338,7 @@ Utilizando o algoritmo RX
 \end_layout
 
 \begin_layout Standard
-Aplicando o algoritmo RX na rede neural artificial projetada, ver 
+Foi aplicado o algoritmo RX na rede neural artificial projetada, ver 
 \begin_inset ERT
 status open
 
@@ -2277,8 +2383,8 @@ de tal forma que
 \begin_inset Formula $i=\left\{ 1,2,\ldots,8\right\} $
 \end_inset
 
- são os valores da condutância dos sensores normalizados, estes valores
- são inseridos na camada de entrada da rede neural artificial.
+ são os valores da condutância dos sensores normalizados.
+ Estes valores são inseridos na camada de entrada da rede neural artificial.
  Os valores de 
 \begin_inset Formula $N_{j}$
 \end_inset
@@ -2382,7 +2488,7 @@ key "Eduardo_1999"
 
 \end_inset
 
- classificou corretamente o 89,78
+ classificou corretamente 89,78
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -2419,9 +2525,10 @@ o a partir de uma massa de dados.
 \end_layout
 
 \begin_layout Standard
-Compreender os dados fornecidos pelo cliente é o seguinte passo da metodologia
- CRISP-DM, conhecer os metadados e as variáveis estatísticas envolvidas
- é essencial para realizar a modelagem e o treinamento da rede neural artificial.
+Compreender os dados fornecidos pelo cliente é o passo seguinte da metodologia
+ CRISP-DM.
+ Conhecer os metadados e as variáveis estatísticas envolvidas é essencial
+ para realizar a modelagem e o treinamento da rede neural artificial.
  Selecionar, limpar, construir e integrar os dados são os subprocessos da
  preparação dos dados e são essenciais para que a rede neural projetada
  convirja no menor tempo possível.
@@ -2437,13 +2544,13 @@ A modelagem da metodologia adotada é a parte mais importante do processo
 
 \begin_layout Standard
 Os processos de avaliação e de desenvolvimento da metodologia CRISP-DM são
- dinâmicos, é dizer, os métodos abordados (extração de regras e árvore de
+ dinâmicos, isto é, os métodos abordados (extração de regras e árvore de
  decisão) têm que ser avaliados com dados que sejam gerados em tempo real
  e desenvolvidos com métodos que se adaptem aos novos dados gerados.
  Isto quer dizer que os métodos descritos neste trabalho podem não ser eficiente
 s para novos dados.
  A eficiência dos modelos se mede justamente no processo de avaliação, onde
- se descartam alguns métodos e se propões outros novos.
+ se descartam alguns métodos e se propõem outros novos.
 \end_layout
 
 \begin_layout Standard
@@ -2477,6 +2584,37 @@ Realizar o processo de CRISP-DM utilizando diferentes algoritmos de extração
 Utilizar uma massa de dados que seja sempre atualizada em tempo real.
  É interessante porque é onde se dá uma aplicação real ao projeto de mineração
  de dados utilizando a metodologia CRISP-DM.
+\end_layout
+
+\begin_layout Standard
+Desenvolver uma aplicação que mostre o resultado da mineração e implemente
+ as regras lógicas para que o usuário final possa utilizá-las.
+ Essas regras podem ser implementadas usando uma linguagem de programação
+ de paradigma lógico como SWI Prolog, disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.swi-prolog.org/
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2528,6 +2666,22 @@ status open
 
 
 \backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
 pagestyle{empty}
 \end_layout
 
@@ -2553,7 +2707,7 @@ addcontentsline{toc}{section}{Anexo A.1}
 \end_layout
 
 \begin_layout Section*
-Anexo A.1: Árvore de decisão do algoritmo J48
+Anexo A.1: Árvore de decisão resultante da aplicação do algoritmo J48
 \end_layout
 
 \begin_layout Standard
