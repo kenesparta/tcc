@@ -1250,7 +1250,7 @@ small{}
 
 \end_inset
 
-Aos meus pais, que deram tudo por mim.
+Aos meus queridos pais.
 \begin_inset ERT
 status open
 
@@ -1810,8 +1810,8 @@ Introdução
 \end_layout
 
 \begin_layout Standard
-As redes neurais artificiais são caixas pretas, é dizer que se desconhece
- totalmente o seu funcionamento interno.
+As redes neurais artificiais são caixas pretas, pois se desconhece totalmente
+ o seu funcionamento interno.
  É por esse motivo que elas não são utilizadas no processo de mineração
  de dados.
  Neste trabalho, utiliza-se uma metodologia popular chamada CRISP-DM e um
@@ -1824,7 +1824,7 @@ A teoria abordada no trabalho é representada utilizando uma rede de Petri,
  de modo que os estados são as áreas da Ciência da Computação a serem atingidas
  e as transições são as técnicas e o embasamento teórico requeridos para
  passar ao estado seguinte.
- Começa-se pela Soft Computing (SC), que é uma área das Ciências da Computação
+ Começa-se pela Soft Computing (SC), que é uma área da Ciência da Computação
  que permite resolver problemas com uma abordagem orientada à tolerância
  de imprecisões.
  Neste trabalho, tratam-se duas abordagens da SC: a primeira é o raciocínio
@@ -1837,10 +1837,10 @@ A teoria abordada no trabalho é representada utilizando uma rede de Petri,
 \end_layout
 
 \begin_layout Standard
-A massa de dados utilizado para este trabalho é sobre a simulação de um
+A massa de dados utilizada para este trabalho trata da a simulação de um
  nariz eletrônico.
- Oito sensores foram instalados em um habitação devidamente isolada, esses
- sensores mediram os valores de condutância 
+ Oito sensores foram instalados em uma habitação devidamente isolada.
+ Esses sensores mediram os valores de condutância 
 \begin_inset Formula $\left(\Omega^{-1}\right)$
 \end_inset
 
