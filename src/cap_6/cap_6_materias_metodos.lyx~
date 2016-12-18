@@ -12516,9 +12516,9 @@ key "pete_2000"
 \end_inset
 
 , afirma-se que a criação do modelo geralmente não é o fim do projeto.
- Mesmo se o propósito do modelo é aumentar o conhecimento dos dados, o conhecime
-nto adquirido terá que ser organizado e apresentado de forma que o cliente
- possa usá-lo.
+ Mesmo se o propósito do modelo é aumentar o conhecimento a partir da geração
+ de novos dados, o conhecimento adquirido terá que ser organizado e apresentado
+ de forma que o cliente possa usá-lo.
 \end_layout
 
 \begin_layout Standard
@@ -12530,29 +12530,11 @@ key "david_2008"
 \end_inset
 
 , os modelos projetados precisam ser monitorados para detectar as mudanças
- na fase de produção, porque o que pode ser verdade hoje pode não sê-lo
- de aqui a um ano.
+ na fase de produção.
  Se ocorrerem mudanças significativas, o modelo deve ser refeito.
  Também é aconselhável registrar os resultados dos projetos de mineração
  de dados, de forma que evidências documentadas estejam disponíveis para
  futuros estudos.
-\end_layout
-
-\begin_layout Standard
-These models need to be monitored for changes in operating conditions, because
- what might be true today may not be true a year from now.
- If significant changes do occur, the model should be redone.
- It’s also wise to record the results of data mining projects so documented
- evidence is available for future studies.
-\end_layout
-
-\begin_layout Standard
-Os resultados do estudo de mineração de dados precisam ser relatados aos
- patrocinadores do projeto.
- O estudo de mineração de dados descobriu novos conhecimentos, que precisam
- ser vinculados aos objetivos originais do projeto de mineração de dados.
- A gerência estará então em posição de aplicar essa nova compreensão de
- seu ambiente de negócios.
 \end_layout
 
 \begin_layout Standard
