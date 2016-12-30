@@ -3787,7 +3787,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Árvores de decisão
+Árvore de decisão
 \end_layout
 
 \begin_layout Standard
@@ -4139,7 +4139,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -4442,7 +4442,31 @@ key "antonio_2009"
 
 .
  A árvore de decisão gerada, pelo software WEKA, para o conjunto de dados
- da planta iris se mostra na 
+ da planta iris, disponível em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{
+\end_layout
+
+\end_inset
+
+http://www.cas.mcmaster.ca/~cs4tf3/iris.arff
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+, se mostra na 
 \begin_inset ERT
 status open
 
@@ -4487,31 +4511,7 @@ status open
 
 \begin_layout Plain Layout
 Na figura mostra-se a árvore de decisão resultante da aplicação do algoritmo
- J48 no conjunto de dados da planta iris, disponível em 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-url{
-\end_layout
-
-\end_inset
-
-http://www.cas.mcmaster.ca/~cs4tf3/iris.arff
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-, com sua respectiva representação.
+ J48 no conjunto de dados da planta iris com sua respectiva representação.
 \begin_inset ERT
 status open
 
@@ -4546,7 +4546,7 @@ vspace{-0.8em}
 \begin_inset Graphics
 	filename img/arvore_dec_planta_iris.pdf
 	lyxscale 50
-	scale 35
+	scale 45
 
 \end_inset
 
@@ -4975,6 +4975,19 @@ key "Christian_1995"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Existem diversos algoritmos de extração de regras, porém, neste trabalho
  é abordado somente o algoritmo RX.
  Segundo 
@@ -5010,7 +5023,7 @@ cref{alg:alg_RX}
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard

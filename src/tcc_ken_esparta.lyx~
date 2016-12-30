@@ -81,9 +81,9 @@
 
 \DeclareCaptionFont{colorFigure}{\color{refFig}{}}
 \DeclareCaptionFont{colorTable}{\color{refFig}{}}
-\captionsetup[figure]{labelfont={bf,footnotesize,colorFigure},textfont={it,footnotesize},format=hang}%%
+\captionsetup[figure]{labelfont={bf,footnotesize,colorFigure},textfont={footnotesize},format=hang}%%
 %labelsep=period}
-\captionsetup[table]{labelfont={bf,footnotesize,colorTable}, format=hang,textfont={it,footnotesize}}
+\captionsetup[table]{labelfont={bf,footnotesize,colorTable}, format=hang,textfont={footnotesize}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%Package SECTSTY
 %Para centrar el capitulo
@@ -460,9 +460,7 @@ fonteProp}{
 
 					
 \backslash
-scriptsize{
-\backslash
-em{Fonte: Autoria própria.
+scriptsize{{Fonte: Autoria própria.
 \backslash
 
 \backslash
@@ -508,9 +506,7 @@ fonte}[1]{
 
 					
 \backslash
-scriptsize{
-\backslash
-em{Fonte:~Adaptado~de~#1.
+scriptsize{{Fonte:~Adaptado~de~#1.
 \backslash
 
 \backslash
@@ -1436,6 +1432,61 @@ Também agradeço a todos os meus colegas do Brasil e do Peru.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Resumo
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -1862,7 +1913,7 @@ vinho
 \end_inset
 
 .
- Existe mais uma classe e é a chamada 
+ Existe mais uma classe chamada 
 \begin_inset Quotes eld
 \end_inset
 
