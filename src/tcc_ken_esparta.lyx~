@@ -1432,6 +1432,13 @@ Também agradeço a todos os meus colegas do Brasil e do Peru.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1484,6 +1491,68 @@ phantomsection
 
 \begin_layout Section*
 Resumo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Abstract
 \end_layout
 
 \begin_layout Standard
@@ -1861,30 +1930,68 @@ Introdução
 \end_layout
 
 \begin_layout Standard
-As redes neurais artificiais são caixas pretas, pois se desconhece totalmente
- o seu funcionamento interno.
- É por esse motivo que elas não são utilizadas no processo de mineração
- de dados.
- Neste trabalho, utiliza-se uma metodologia popular chamada CRISP-DM e um
- algoritmo de extração de regras para poder mostrar que é possível utilizar
- as redes neurais artificiais como parte do processo de extração de conhecimento.
+O processo de mineração de dados é a extração do conhecimento a partir de
+ uma masa de dados.
+ Existem diversas metodologias para realizar o processo de mineração de
+ dados, no presente trabalho aborda-se a metodologia CRISP-DM (
+\emph on
+Cross-Industry Standard Process for Data Mining
+\emph default
+).
 \end_layout
 
 \begin_layout Standard
-A teoria abordada no trabalho é representada utilizando uma rede de Petri,
- de modo que os estados são as áreas da Ciência da Computação a serem atingidas
- e as transições são as técnicas e o embasamento teórico requeridos para
- passar ao estado seguinte.
- Começa-se pela Soft Computing (SC), que é uma área da Ciência da Computação
- que permite resolver problemas com uma abordagem orientada à tolerância
- de imprecisões.
+A Modelagem é um processo da metodologia CRISP-DM onde se definem as técnicas
+ que auxiliam o processo de mineração de dados.
+ Uma das técnicas utilizadas no presente trabalho está relacionada com as
+ Redes Neurais Artificiais (RNA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "RNA"
+symbol "RNA"
+description "Redes Neurais Artificiais"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+As RNAs são consideradas caixas pretas porque se desconhece totalmente o
+ seu funcionamento interno.
+ É por esse motivo que elas não são utilizadas no processo de mineração
+ de dados, porém, existem os algoritmos de extração de regras que permitem
+ extrair informação delas na forma de regras lógicas.
+\end_layout
+
+\begin_layout Standard
+A teoria abordada é representada utilizando uma rede de Petri, de modo que
+ os estados são as áreas da Ciência da Computação a serem atingidas e as
+ transições são as técnicas e o embasamento teórico requeridos para passar
+ ao estado seguinte.
+\end_layout
+
+\begin_layout Standard
+Começa-se pela 
+\emph on
+Soft Computing
+\emph default
+ (SC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+prefix "SC"
+symbol "SC"
+description "Soft Computing"
+
+\end_inset
+
+), que é uma área da Ciência da Computação que permite resolver problemas
+ com uma abordagem orientada à tolerância de imprecisões.
  Neste trabalho, tratam-se duas abordagens da SC: a primeira é o raciocínio
  probabilístico e a segunda são as redes neurais artificiais.
  Seguindo a rede de Petri, aborda-se a teoria relacionada com o aprendizado
  de máquina, que, juntamente com as técnicas de descobrimento de conhecimento,
  dão origem às técnicas de mineração de dados.
- Neste trabalho se referenciam três metodologias de mineração de dados,
- no entanto só se usa a metodologia CRISP-DM.
 \end_layout
 
 \begin_layout Standard
@@ -1930,12 +2037,23 @@ background
 
 \begin_layout Standard
 O processo de mineração de dados é realizado utilizando a metodologia CRISP-DM
- juntamente com a aplicação do algoritmo RX, que é um algoritmo que extrai
- regras de uma rede neural artificial devidamente treinada.
- O algoritmo J48 se utiliza também dentro da modelagem na metodologia CRISP-DM.
- É um algoritmo que gera uma árvore de decisão diretamente a partir de uma
- massa de dados, sem necessidade de projetar uma rede neural e é a implementação
- 
+ juntamente com a aplicação de um algoritmo que extrai regras de uma RNA
+ devidamente treinada, o algoritmo RX.
+ O treinamento da RNA é realizado utilizando o algoritmo de 
+\emph on
+Levenberg–Marquardt
+\emph default
+, que consiste na junção dos algoritmos de gradiente descendente e o método
+ de 
+\emph on
+Gauss-Newton.
+\end_layout
+
+\begin_layout Standard
+É utilizado também um algoritmo que gera uma árvore de decisão diretamente
+ a partir de uma massa de dados sem necessidade de projetar uma rede neural,
+ esse é o algoritmo J48.
+ Este é a implementação 
 \emph on
 open source
 \emph default
@@ -1944,28 +2062,21 @@ open source
  algoritmo J48.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
+\begin_layout Subsection
 Objetivo
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Objetivo geral
 \end_layout
 
 \begin_layout Standard
-Mostrar uma aplicação direta da extração de regras de redes neurais artificiais
- de múltiplas camadas, com algoritmo de treinamento 
+Mostrar uma aplicação direta da extração de regras de um perceptron de múltiplas
+ camadas (MLP), com algoritmo de treinamento 
 \emph on
 Levenberg–Marquardt
 \emph default
-, proposto em 
+ (), proposto em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kenneth_1944"
@@ -1975,7 +2086,7 @@ key "Kenneth_1944"
 , no processo de mineração de dados.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Objetivos específicos
 \end_layout
 
@@ -1987,7 +2098,7 @@ status open
 
 
 \backslash
-begin{itemize}[leftmargin=1.9cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.55cm]
+begin{itemize}[leftmargin=0.7cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
 \end_layout
 
 \end_inset
@@ -2171,8 +2282,8 @@ key "jung_2014"
 \end_layout
 
 \begin_layout Standard
-As redes neurais artificiais são consideradas caixas pretas e são consideradas
- aproximadores universais.
+As redes neurais artificiais são consideradas caixas pretas e aproximadores
+ universais.
  No artigo intitulado 
 \emph on
 
@@ -2234,7 +2345,7 @@ key "Luo_2008"
 
 , as redes neurais possuem alta acurácia no processo de classificação na
  descoberta de conhecimento.
- Utiliza-se o algoritmo RX
+ Utiliza-se o algoritmo RX (Rule Extraction)
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "RX"
@@ -2243,7 +2354,8 @@ description "Rule Extraction"
 
 \end_inset
 
- melhorado para poder extrair as regras de uma rede neural do tipo RBF 
+ melhorado para poder extrair as regras de uma rede neural do tipo RBF (Radial
+ Basis Function)
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "RBF"

@@ -759,7 +759,7 @@ capacidade
 \end_inset
 
 ) é formada pela seleção dos indivíduos mais capazes.
- Alguns membros da nova população sofrem transformações por meio dos operadores
+ Os membros da nova população sofrem transformações por meio dos operadores
  
 \begin_inset Quotes eld
 \end_inset
@@ -784,7 +784,7 @@ crossover
 
 ), cuja função é gerar novos indivíduos pela combinação das partes de dois
  ou mais indivíduos de uma geração.
- A estrutura básica de um EP se pode observar no 
+ A estrutura básica de um EP é observada no 
 \begin_inset ERT
 status open
 
@@ -1047,12 +1047,52 @@ key "zadeh_1996"
 , algumas das caraterísticas principais da lógica difusa são as seguintes:
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Extrair conhecimento é enxergado como um caso limitativo de conhecimento
  aproximado.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 O conhecimento é interpretado como uma coleção de restrições 
 \emph on
 fuzzy
@@ -1060,11 +1100,35 @@ fuzzy
  em uma coleção de variáveis.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 A inferência é enxergada como um processo de propagação de restrições adaptáveis.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Qualquer sistema lógico pode ser tornado em um sistema 
 \emph on
 fuzzy
@@ -1074,6 +1138,39 @@ fuzzy
 fuzzificação
 \emph default
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace -0.5cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3364,6 +3461,19 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+MAIS!!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
  com a 
 \begin_inset ERT
@@ -3856,7 +3966,7 @@ status open
 
 
 \backslash
-begin{itemize}[leftmargin=1.9cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.55cm]
+begin{itemize}[leftmargin=0.7cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
 \end_layout
 
 \end_inset
@@ -4982,6 +5092,10 @@ status open
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset VSpace -0.5cm
 \end_inset
 
 
