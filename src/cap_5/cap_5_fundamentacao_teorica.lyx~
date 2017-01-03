@@ -300,7 +300,7 @@ A SC é composta por técnicas como as Redes Neurais (
 \emph on
 Neural Networks
 \emph default
-
+, NN
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "NN"
@@ -313,7 +313,7 @@ description "Neural Networks"
 \emph on
 Evolutionary Computing
 \emph default
-
+, EC
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "EC"
@@ -326,7 +326,7 @@ description "Evolutionary Computing"
 \emph on
 Fuzzy Systems
 \emph default
-
+, FS
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "FS"
@@ -339,7 +339,7 @@ description "Fuzzy Systems"
 \emph on
 Probabilistic Reasoning
 \emph default
-
+, PR
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "PR"
@@ -1263,7 +1263,7 @@ fuzzy
 fuzzificação
 \emph default
  como o conceito de aproximação que é aplicável.
- A abordagem bayesiana é comumente utilizada.
+ A abordagem Bayesiana é comumente utilizada.
 \end_layout
 
 \begin_layout Standard
@@ -1439,8 +1439,8 @@ ria, os quais capacitam o aprendizado da rede.
 \end_layout
 
 \begin_layout Enumerate
-O modelo de cada neurônio da rede inclui uma função de ativação não linear
- e diferenciável em todo o seu domínio.
+O modelo de cada neurônio da camada intermediária inclui uma função de ativação
+ não linear e diferenciável em todo o seu domínio.
  Essa função de ativação comumente é a função logística definida em
 \begin_inset Formula 
 \begin{equation}
@@ -1626,8 +1626,8 @@ key "Manolis_2005"
 
 \begin_layout Standard
 O algoritmo de LM é rápido e tem convergência estável.
- No campo de redes neurais artificiais, este algoritmo é adequado para o
- treinamento de pequenos e médios problemas, 
+ No campo das RNA, este algoritmo é adequado para o treinamento de pequenos
+ e médios problemas, 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Hao_2011"
@@ -1774,7 +1774,7 @@ Fuzzy
 \begin_inset Quotes eld
 \end_inset
 
-Usa Redes Neurais Artificiais
+Usa RNA
 \begin_inset Quotes erd
 \end_inset
 
@@ -2919,7 +2919,7 @@ vspace{-0.8em}
 \begin_inset Graphics
 	filename img/kdd.pdf
 	lyxscale 50
-	scale 40
+	scale 52
 
 \end_inset
 
@@ -3112,7 +3112,7 @@ vspace{-0.8em}
 \begin_inset Graphics
 	filename img/semma.pdf
 	lyxscale 50
-	scale 42
+	scale 50
 
 \end_inset
 
@@ -3400,7 +3400,7 @@ vspace{-0.8em}
 \begin_inset Graphics
 	filename img/crisp-dm.pdf
 	lyxscale 50
-	scale 43
+	scale 53
 
 \end_inset
 
@@ -3521,7 +3521,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -3966,7 +3966,7 @@ status open
 
 
 \backslash
-begin{itemize}[leftmargin=0.7cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
 \end_layout
 
 \end_inset
@@ -4552,31 +4552,7 @@ key "antonio_2009"
 
 .
  A árvore de decisão gerada, pelo software WEKA, para o conjunto de dados
- da planta iris, disponível em 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-url{
-\end_layout
-
-\end_inset
-
-http://www.cas.mcmaster.ca/~cs4tf3/iris.arff
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-, se mostra na 
+ da planta iris se mostra na 
 \begin_inset ERT
 status open
 
@@ -4590,6 +4566,28 @@ cref{fig:arvoreWEKA}
 \end_inset
 
 .
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "iris_plant_1988"
+
+\end_inset
+
+, o conjunto de dados da planta iris possui 150 tuplas, quatro atributos
+ reais e um atributo de classe, como se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{tab:iris_plant}
+\end_layout
+
+\end_inset
+
+ .
 \end_layout
 
 \begin_layout Standard
@@ -4698,6 +4696,262 @@ fonteProp
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.8
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Metadados da massa de dados da planta iris.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tab:iris_plant}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Atributo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tipo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sepallength
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+REAL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sepalwidth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+REAL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+petallength
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+REAL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+petalwidth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+REAL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+class
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\{ \right.$
+\end_inset
+
+Iris-setosa, Iris-versicolor, Iris-virginica
+\begin_inset Formula $\left.\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{0.2em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "iris_plant_1988"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Extração de regras
 \end_layout
@@ -4746,10 +5000,9 @@ key "marcio_2007"
 
 \end_inset
 
-, afirma-se que as redes neurais artificiais representam modelos computacionais
- eficientes que são amplamente utilizados, porém, a maior dificuldade associada
- à utilização de redes neurais artificiais se deve ao fato das mesmas serem
- consideradas “caixas-pretas”.
+, afirma-se que as RNA representam modelos computacionais eficientes que
+ são amplamente utilizados, porém, a maior dificuldade associada à utilização
+ de RNA se deve ao fato das mesmas serem consideradas “caixas-pretas”.
  Isto significa o total desconhecimento sobre o comportamento interno da
  rede neural artificial.
 \end_layout
@@ -5038,7 +5291,7 @@ fuzzy
 
 \end_inset
 
-de forma que 
+tal que 
 \begin_inset Formula $f_{i}$
 \end_inset
 
@@ -5070,8 +5323,8 @@ key "bologna_2003"
 , as gramáticas são formalismos que geram linguagens.
  Elas fornecem um conjunto de regras para permitir a formação de frases
  corretas.
- As redes neurais artificiais recorrentes têm sido usadas para lidar com
- problemas em gramáticas regulares.
+ As RNA recorrentes têm sido usadas para lidar com problemas em gramáticas
+ regulares.
  Em 
 \begin_inset CommandInset citation
 LatexCommand cite

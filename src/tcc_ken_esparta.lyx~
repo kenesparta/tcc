@@ -395,7 +395,7 @@ ntcc{
 \end_inset
 
 Aplicação de um algoritmo para extração de regras de uma Rede Neural Artificial
- no processo de mineração de dados
+ no processo de Mineração de Dados
 \begin_inset ERT
 status open
 
@@ -656,7 +656,7 @@ end{center}
 
 
 \size large
-Curso de Engenharia da Computação
+Curso de Engenharia de Computação
 \end_layout
 
 \begin_layout Standard
@@ -1185,6 +1185,148 @@ phantomsection
 status open
 
 \begin_layout Plain Layout
+Ficha de catalogação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Folha de aprovação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+phantomsection
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Dedicatoria
 \end_layout
 
@@ -1358,7 +1500,7 @@ Agradecimentos
 \end_layout
 
 \begin_layout Standard
-Agradeço a Deus, por me permitir existir neste mundo.
+Agradeço a Deus, por me permitir existir neste universo.
 \end_layout
 
 \begin_layout Standard
@@ -1412,6 +1554,8 @@ Também agradeço a todos os meus colegas do Brasil e do Peru.
 
 \begin_layout Standard
 Por fim, agradeço a Diane, minha querida e amada.
+ Que me brindou o seu apoio moral e carinho durante todos estes anos.
+ Iluminou meu caminho com um amor verdadeiro.
 \end_layout
 
 \begin_layout Standard
@@ -1491,6 +1635,10 @@ phantomsection
 
 \begin_layout Section*
 Resumo
+\end_layout
+
+\begin_layout Standard
+Utiliza-se uma rede de Petri para modelar a base teórica utilizada no trabalho.
 \end_layout
 
 \begin_layout Standard
@@ -1957,7 +2105,7 @@ description "Redes Neurais Artificiais"
 \end_layout
 
 \begin_layout Standard
-As RNAs são consideradas caixas pretas porque se desconhece totalmente o
+As RNA são consideradas caixas pretas porque se desconhece totalmente o
  seu funcionamento interno.
  É por esse motivo que elas não são utilizadas no processo de mineração
  de dados, porém, existem os algoritmos de extração de regras que permitem
@@ -1988,7 +2136,7 @@ description "Soft Computing"
 ), que é uma área da Ciência da Computação que permite resolver problemas
  com uma abordagem orientada à tolerância de imprecisões.
  Neste trabalho, tratam-se duas abordagens da SC: a primeira é o raciocínio
- probabilístico e a segunda são as redes neurais artificiais.
+ probabilístico e a segunda são as RNAs.
  Seguindo a rede de Petri, aborda-se a teoria relacionada com o aprendizado
  de máquina, que, juntamente com as técnicas de descobrimento de conhecimento,
  dão origem às técnicas de mineração de dados.
@@ -2098,7 +2246,7 @@ status open
 
 
 \backslash
-begin{itemize}[leftmargin=0.7cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
 \end_layout
 
 \end_inset
@@ -2282,8 +2430,7 @@ key "jung_2014"
 \end_layout
 
 \begin_layout Standard
-As redes neurais artificiais são consideradas caixas pretas e aproximadores
- universais.
+As RNA são consideradas caixas pretas e aproximadores universais.
  No artigo intitulado 
 \emph on
 
@@ -2304,8 +2451,8 @@ key "benitez_1997"
 \end_inset
 
 , propõem-se métodos para extrair regras a partir uma rede neural artificial.
- Nesse artigo, apresenta-se uma interpretação das redes neurais artificiais
- para que elas não sejam mais vistas como caixas pretas.
+ Nesse artigo, apresenta-se uma interpretação das RNA para que elas não
+ sejam mais vistas como caixas pretas.
  Esta interpretação é construída com base nas regras 
 \emph on
 fuzzy
@@ -2543,7 +2690,7 @@ de tal forma que
 \end_inset
 
 , para 
-\begin_inset Formula $i=\left\{ 1,2,\ldots,8\right\} $
+\begin_inset Formula $i=\left\{ 1,2,3,4,5,6,7,8\right\} $
 \end_inset
 
  são os valores da condutância dos sensores normalizados.
@@ -2738,7 +2885,7 @@ Recomendações
 
 \begin_layout Standard
 Realizar o processo de CRISP-DM utilizando diferentes algoritmos de extração
- de regras em diferentes arquiteturas de redes neurais artificiais.
+ de regras em diferentes arquiteturas de RNA.
  Utilizar diferentes tipos de algoritmos para classificação utilizando árvores
  de decisão.
 \end_layout
