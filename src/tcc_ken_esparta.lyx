@@ -302,7 +302,7 @@ linewidth=\textwidth,
 \font_roman "times" "default"
 \font_sans "helvet" "default"
 \font_typewriter "beramono" "default"
-\font_math "default" "auto"
+\font_math "newtxmath" "auto"
 \font_default_family rmdefault
 \use_non_tex_fonts false
 \font_sc false
@@ -971,7 +971,7 @@ width "48col%"
 special "none"
 height "1in"
 height_special "totalheight"
-thickness "0.4pt"
+thickness "0pt"
 separation "3pt"
 shadowsize "4pt"
 framecolor "black"
@@ -1367,7 +1367,7 @@ width "55col%"
 special "none"
 height "1in"
 height_special "totalheight"
-thickness "0.4pt"
+thickness "0pt"
 separation "3pt"
 shadowsize "4pt"
 framecolor "black"
@@ -2111,7 +2111,7 @@ As RNA são consideradas caixas pretas porque se desconhece totalmente o
  seu funcionamento interno.
  É por esse motivo que elas não são utilizadas no processo de mineração
  de dados, porém, existem os algoritmos de extração de regras que permitem
- extrair informação delas na forma de regras lógicas.
+ obter informação de uma RNA na forma de regras lógicas.
 \end_layout
 
 \begin_layout Standard
@@ -2226,7 +2226,7 @@ Mostrar uma aplicação direta da extração de regras de um perceptron de múlt
 \emph on
 Levenberg–Marquardt
 \emph default
- (), proposto em 
+, proposto em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kenneth_1944"
@@ -2737,9 +2737,9 @@ banana
 \begin_inset Formula 
 \[
 \begin{array}{rclcc}
-\mathrm{SE} & 3.07\leq N_{1}\leq3.74 & \mathrm{E}\\
- & -2.22\leq N_{2}\leq-0.91 & \mathrm{E}\\
- & -4.03\leq N_{3}\leq-3.65 & \mathrm{ENTÃO} & \mathrm{banana}
+\textrm{\textbf{SE}} & 3.07\leq N_{1}\leq3.74 & \textrm{\textbf{E}}\\
+ & -2.22\leq N_{2}\leq-0.91 & \mathrm{\textrm{\textbf{E}}}\\
+ & -4.03\leq N_{3}\leq-3.65 & \textrm{\textbf{ENTÃO É}} & \mathrm{\textrm{\textbf{banana}}}
 \end{array}
 \]
 
@@ -2757,9 +2757,9 @@ vinho
 \begin_inset Formula 
 \[
 \begin{array}{rclcc}
-\mathrm{SE} & 2.98\leq N_{1}\leq3.83 & \mathrm{E}\\
- & -2.27\leq N_{2}\leq-0.63 & \mathrm{E}\\
- & -4.18\leq N_{3}\leq-3.57 & \mathrm{ENTÃO} & \mathrm{vinho}
+\textrm{\textbf{SE}} & 2.98\leq N_{1}\leq3.83 & \textrm{\textbf{E}}\\
+ & -2.27\leq N_{2}\leq-0.63 & \textrm{\textbf{E}}\\
+ & -4.18\leq N_{3}\leq-3.57 & \textrm{\textbf{ENTÃO É}} & \mathrm{\textrm{\textbf{vinho}}}
 \end{array}
 \]
 
@@ -2781,9 +2781,9 @@ background
 \begin_inset Formula 
 \[
 \begin{array}{rclcc}
-\mathrm{SE} & 3.33\leq N_{1}\leq3.60 & \mathrm{E}\\
- & -1.98\leq N_{2}\leq-1.49 & \mathrm{E}\\
- & -3.99\leq N_{3}\leq-3.80 & \mathrm{ENTÃO} & \mathrm{background}
+\textrm{\textbf{SE}} & 3.33\leq N_{1}\leq3.60 & \textrm{\textbf{E}}\\
+ & -1.98\leq N_{2}\leq-1.49 & \mathrm{\textrm{\textbf{E}}}\\
+ & -3.99\leq N_{3}\leq-3.80 & \mathrm{\textrm{\textbf{ENTÃO É}}} & \mathrm{\textrm{\textbf{background}}}
 \end{array}
 \]
 
@@ -2885,20 +2885,20 @@ Fazendo uma comparação dos resultados do método de extração de regras (algo
 Recomendações
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Realizar o processo de CRISP-DM utilizando diferentes algoritmos de extração
  de regras em diferentes arquiteturas de RNA.
  Utilizar diferentes tipos de algoritmos para classificação utilizando árvores
  de decisão.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Utilizar uma massa de dados que seja sempre atualizada em tempo real.
  É interessante porque é onde se dá uma aplicação real ao projeto de mineração
  de dados utilizando a metodologia CRISP-DM.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Desenvolver uma aplicação que mostre o resultado da mineração e implemente
  as regras lógicas para que o usuário final possa utilizá-las.
  Essas regras podem ser implementadas usando uma linguagem de programação

@@ -862,7 +862,7 @@ background
  As regras lógicas que são obtidas são da forma oblíqua:
 \begin_inset Formula 
 \[
-\mathrm{SE}\,\left\langle \mathrm{expressão\,lógica}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{conclusão}\right\rangle 
+\textrm{\textbf{SE }}\left\langle \mathrm{expressão\,lógica}\right\rangle \textrm{\textbf{ ENTÃO }}\left\langle \mathrm{conclusão}\right\rangle 
 \]
 
 \end_inset
@@ -5693,33 +5693,53 @@ cref{tab:stats_massa_dados}
 \begin_inset Formula $\left(\overline{x}\right)$
 \end_inset
 
-, como se mostra na equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:norm_norm"
+, como se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:norm-norm}
+\end_layout
 
 \end_inset
 
-
+:
 \begin_inset Formula 
 \begin{equation}
-N_{d}\left(r\right)=\frac{r-\overline{x}}{\sigma}\label{eq:norm_norm}
+N_{d}\left(r\right)=\frac{r-\overline{x}}{\sigma}\label{eq:norm-norm}
 \end{equation}
 
 \end_inset
 
 ou também pode ser efetuada utilizando os valores da condutância máximo
- e mínimo medidos para cada sensor, como se mostra na equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:norm_max_min"
+ 
+\begin_inset Formula $\left(R_{\textrm{max}}\right)$
+\end_inset
+
+ e mínimo 
+\begin_inset Formula $\left(R_{\textrm{min}}\right)$
+\end_inset
+
+ medidos para cada sensor, como se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:norm-max-min}
+\end_layout
 
 \end_inset
 
-
+:
 \begin_inset Formula 
 \begin{equation}
-N_{m}\left(r\right)=\frac{r-R_{min}}{R_{max}-R_{min}}\label{eq:norm_max_min}
+N_{m}\left(r\right)=\frac{r-R_{\textrm{min}}}{R_{\textrm{max}}-R_{\textrm{min}}}\label{eq:norm-max-min}
 \end{equation}
 
 \end_inset
@@ -5733,10 +5753,16 @@ de modo que
 
 \begin_layout Standard
 A função sigmoide permite uma transição gradual e não linear entre dois
- estados, como se mostra na equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:sigmoide"
+ estados, como se mostra na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:sigmoide}
+\end_layout
 
 \end_inset
 
@@ -5748,7 +5774,7 @@ S\left(x\right)=\frac{1}{1+e^{-\alpha x}}\label{eq:sigmoide}
 
 \end_inset
 
-onde 
+tal que 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -5796,9 +5822,15 @@ status open
 
 \begin_layout Plain Layout
 Função sigmoide da equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:sigmoide"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:sigmoide}
+\end_layout
 
 \end_inset
 
@@ -6680,8 +6712,9 @@ O objetivo do pré-processamento de dados é limpar os dados selecionados
  para uma melhor qualidade.
  Alguns dados selecionados podem ter formatos diferentes porque são escolhidos
  de fontes de dados diferentes.
- Se os dados selecionados forem de arquivos planos, mensagem de voz e texto
- da Web, eles devem ser convertidos em um formato eletrônico consistente.
+ Por exemplo, se os dados selecionados forem de arquivos planos, mensagem
+ de voz e texto da Web, eles devem ser convertidos em um formato eletrônico
+ consistente.
  Em geral, a limpeza de dados significa filtrar, agregar e preencher valores
  ausentes, 
 \begin_inset CommandInset citation
@@ -7067,7 +7100,7 @@ Dados_sensor
 background
 \emph default
 .
- Se selecionaram o mesmo número de tuplas para cada classe para que a rede
+ Seleciona-se o mesmo número de tuplas para cada classe para que a rede
  neural artificial não seja tendenciosa.
 \end_layout
 
@@ -7399,9 +7432,15 @@ Formatar os dados
 A formatação dos dados serão feitas de dois tipos: uma delas será utilizada
  pelo algoritmo J48 e a outra, pelo algoritmo RX.
  Os dois tipos de formatação estão normalizadas utilizando a equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:norm_max_min"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:sigmoide}
+\end_layout
 
 \end_inset
 
@@ -11236,14 +11275,20 @@ cref{fig:rede_nueral_RX}
 
 \end_inset
 
- mostra-se a rede neural projetada, onde a função de ativação 
+ mostra-se a rede neural projetada, tal que a função de ativação 
 \begin_inset Formula $\left(\sigma\right)$
 \end_inset
 
- é a função sigmoide da equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:sigmoide"
+ é a função sigmoide da 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:sigmoide}
+\end_layout
 
 \end_inset
 
@@ -11396,20 +11441,7 @@ key "Eduardo_1999"
 
 \begin_layout Enumerate
 Inserir o fator multiplicador do desvio padrão da massa de dados e o número
- de classes, como se mostra na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:RX_passo1}
-\end_layout
-
-\end_inset
-
-.
+ de classes.
  Os autores do artigo 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -11421,102 +11453,8 @@ key "Eduardo_1999"
  Fixa-se o número de classes igual a 3.
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Primeira janela de interação com o usuário.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{fig:RX_passo1}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{-0.8em}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename img/passo_1.PNG
-	scale 70
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\backslash
-vspace{-0.1em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fonteProp{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
-Em seguida, se inserem o número de tuplas relacionadas com as três classes
+Em seguida, se insere o número de tuplas relacionadas com as três classes
  relacionadas: 
 \begin_inset Quotes eld
 \end_inset
@@ -11545,125 +11483,14 @@ background
 \begin_inset Quotes erd
 \end_inset
 
-, como se pode verificar na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:RX_passo2}
-\end_layout
-
-\end_inset
-
 .
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Janela para colocar o numero de exemplos para a primeira classe (
-\begin_inset Quotes eld
+ Cada classe possui 30
+\begin_inset space \thinspace{}
 \end_inset
 
-banana
-\begin_inset Quotes erd
-\end_inset
-
-).
- É a primeira das três janelas.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{fig:RX_passo2}
+000 tuplas.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{-0.8em}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename img/passo_2.PNG
-	scale 90
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\backslash
-vspace{-0.1em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fonteProp{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 Por fim, escolhe-se a porcentagem mínima de elementos que conterão o 
 \emph on
@@ -11724,40 +11551,7 @@ cref{alg:leader_algorithm}
 Leader Algorithm
 \emph default
 .
- Na 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:RX_passo3}
-\end_layout
-
-\end_inset
-
-, mostra-se a janela de interação onde o usuário insere a porcentagem mínima
- de elementos do 
-\emph on
-cluster
-\emph default
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Em 
+ Em 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Eduardo_1999"
@@ -11768,8 +11562,36 @@ key "Eduardo_1999"
 \begin_inset space \thinspace{}
 \end_inset
 
-% dos elementos do cluster.
- 
+% dos elementos do 
+\emph on
+cluster
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Leader Algorithm
+\emph default
+, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zibigniew_1996"
+
+\end_inset
+
+.
 \begin_inset ERT
 status open
 
@@ -11777,7 +11599,7 @@ status open
 
 
 \backslash
-label{fig:RX_passo3}
+label{alg:leader_algorithm}
 \end_layout
 
 \end_inset
@@ -11788,6 +11610,9 @@ label{fig:RX_passo3}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -11795,48 +11620,202 @@ status open
 
 
 \backslash
-vspace{-0.8em}
-\end_layout
-
-\end_inset
-
-
+begin{algorithmic}[1]
 \end_layout
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename img/passo_3.PNG
-	scale 90
-
-\end_inset
 
 
-\begin_inset ERT
-status open
+\backslash
+Procedure{Leader Algorithm}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $I 
+\backslash
+gets 1$ 
+\backslash
+Comment{$I$ indica a posição do objeto}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $L(1) 
+\backslash
+gets 1$ 
+\backslash
+Comment{$L(I)$ é o objeto líder}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{($I<N$)} 
+\backslash
+Comment{$N$ indica o número de elementos do conjunto}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State $I 
+\backslash
+gets I + 1$ 
+\backslash
+Comment{$d
+\backslash
+left(I,J
+\backslash
+right)$ indica a distância entre $I$ e o possível líder $J$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State 
+\backslash
+textbf{Procure o objeto} $J$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+				
+\backslash
+textbf{entre}
+\end_layout
+
+\begin_layout Plain Layout
+
+				$L
+\backslash
+left(1
+\backslash
+right),
+\backslash
+cdots,L
+\backslash
+left(I-1
+\backslash
+right)$, 
+\backslash
+textbf{para que cada} $d
+\backslash
+left(I,J
+\backslash
+right)$ 
+\backslash
+textbf{seja mínima.}	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%   
+\backslash
+Comment{Call Recursion again}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)
+\backslash
+leq D$)} 
+\backslash
+Comment{$D$ é o limiar de distância}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets J$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)>D$)}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets I$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndWhile
+\end_layout
+
+\begin_layout Plain Layout
+
+	%
+\backslash
+State 
+\backslash
+textbf{return} $a$ 
+\end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-
-\backslash
-
-\backslash
-vspace{-0.1em}
+EndProcedure
 \end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-fonteProp{}
+end{algorithmic}
 \end_layout
 
 \end_inset
@@ -11849,7 +11828,6 @@ fonteProp{}
 
 \end_layout
 
-\end_deeper
 \begin_layout Subsubsection
 Avaliar o modelo
 \end_layout
@@ -12174,265 +12152,6 @@ cref{sec:Resultados}
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float algorithm
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\emph on
-Leader Algorithm
-\emph default
-, disponível em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zibigniew_1996"
-
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{alg:leader_algorithm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{algorithmic}[1]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-Procedure{Leader Algorithm}{}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-State $I 
-\backslash
-gets 1$ 
-\backslash
-Comment{$I$ indica a posição do objeto}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-State $L(1) 
-\backslash
-gets 1$ 
-\backslash
-Comment{$L(I)$ é o objeto líder}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-While{($I<N$)} 
-\backslash
-Comment{$N$ indica o número de elementos do conjunto}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-State $I 
-\backslash
-gets I + 1$ 
-\backslash
-Comment{$d
-\backslash
-left(I,J
-\backslash
-right)$ indica a distância entre $I$ e o possível líder $J$}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-State 
-\backslash
-textbf{Procure o objeto} $J$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-				
-\backslash
-textbf{entre}
-\end_layout
-
-\begin_layout Plain Layout
-
-				$L
-\backslash
-left(1
-\backslash
-right),
-\backslash
-cdots,L
-\backslash
-left(I-1
-\backslash
-right)$, 
-\backslash
-textbf{para que cada} $d
-\backslash
-left(I,J
-\backslash
-right)$ 
-\backslash
-textbf{seja mínima.}	
-\end_layout
-
-\begin_layout Plain Layout
-
-	%   
-\backslash
-Comment{Call Recursion again}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{($d
-\backslash
-left(I,J
-\backslash
-right)
-\backslash
-leq D$)} 
-\backslash
-Comment{$D$ é o limiar de distância}
-\end_layout
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State $L
-\backslash
-left(I
-\backslash
-right) 
-\backslash
-gets J$
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-EndIf
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{($d
-\backslash
-left(I,J
-\backslash
-right)>D$)}
-\end_layout
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State $L
-\backslash
-left(I
-\backslash
-right) 
-\backslash
-gets I$
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-EndIf
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-EndWhile
-\end_layout
-
-\begin_layout Plain Layout
-
-	%
-\backslash
-State 
-\backslash
-textbf{return} $a$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-EndProcedure
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{algorithmic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection

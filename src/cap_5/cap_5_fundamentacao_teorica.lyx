@@ -1267,16 +1267,23 @@ fuzzificação
 \end_layout
 
 \begin_layout Standard
-Os axiomas de probabilidade, combinados com o teorema de Bayes (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:bayes"
+Os axiomas de probabilidade, combinados com o teorema de Bayes, dão origem
+ a um sistema de raciocínio completo, que inclui a lógica dedutiva tradicional
+ como um caso especial.
+ Mostra-se o teorema de Naive Bayes na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:bayes}
+\end_layout
 
 \end_inset
 
-), dão origem a um sistema de raciocínio completo, que inclui a lógica dedutiva
- tradicional como um caso especial.
- Em seguida, mostra-se o teorema de Naive Bayes
+:
 \begin_inset Formula 
 \begin{equation}
 P\left(B|A\right)=\frac{P\left(A|B\right)\centerdot P\left(B\right)}{P\left(A\right)}\label{eq:bayes}
@@ -1441,7 +1448,20 @@ ria, os quais capacitam o aprendizado da rede.
 \begin_layout Enumerate
 O modelo de cada neurônio da camada intermediária inclui uma função de ativação
  não linear e diferenciável em todo o seu domínio.
- Essa função de ativação comumente é a função logística definida em
+ Essa função de ativação comumente é a função sigmoide definida na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:logistica}
+\end_layout
+
+\end_inset
+
+:
 \begin_inset Formula 
 \begin{equation}
 y_{j}=\frac{1}{1+e^{-v_{j}}}\label{eq:logistica}
@@ -1476,7 +1496,21 @@ cref{fig:rede_neural}
 
 \end_inset
 
- mostra-se a arquitetura básica de uma rede neural artificial.
+ mostra-se a arquitetura básica de uma rede neural artificial, de forma
+ que o símbolo 
+\begin_inset Formula $\sum$
+\end_inset
+
+ indica o somatório ponderado dos pesos com as entradas da rede neural (ou
+ as saídas de cada neurônio), o 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ é a função de ativação de cada neurônio e 
+\begin_inset Formula $\theta$
+\end_inset
+
+ é o valor de bias.
 \end_layout
 
 \begin_layout Standard
@@ -1505,21 +1539,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mostra-se a arquitetura básica de uma rede neural.
- O símbolo 
-\begin_inset Formula $\sum$
-\end_inset
-
- indica o somatório ponderado dos pesos com as entradas da rede neural (ou
- as saídas de cada neurônio), o 
-\begin_inset Formula $\sigma$
-\end_inset
-
- é a função de ativação de cada neurônio e 
-\begin_inset Formula $\theta$
-\end_inset
-
- é o valor de bias.
+Arquitetura básica de uma rede neural.
 \begin_inset ERT
 status open
 
@@ -1554,7 +1574,7 @@ vspace{-0.8em}
 \begin_inset Graphics
 	filename img/redeNeural.pdf
 	lyxscale 50
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -2445,14 +2465,34 @@ key "marcio_2013"
 \end_layout
 
 \begin_layout Standard
-O modelo de regressão mais elementar é o modelo de regressão linear simples,
- que pode ser expresso pela seguinte equação
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russell_2003"
+
+\end_inset
+
+, se afirma que o modelo de regressão mais elementar é o modelo de regressão
+ linear simples, que pode ser expresso pela 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:regresao}
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-y_{t}=\beta_{1}+\beta_{2}X_{t}+\mu_{t}\label{eq:regressao}
+y_{t}=\beta_{1}+\beta_{2}X_{t}+\mu_{t}\label{eq:regresao}
 \end{equation}
 
 \end_inset
@@ -2507,14 +2547,20 @@ de modo que o subíndice
 \end_inset
 
  é chamado de erro não observado.
- Então, das cinco quantidades observadas em (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:regressao"
+ Então, das cinco quantidades observadas na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{eq:regresao}
+\end_layout
 
 \end_inset
 
-), duas são observadas (
+, duas são observadas (
 \begin_inset Formula $y_{t}$
 \end_inset
 
@@ -2544,14 +2590,7 @@ reference "eq:regressao"
 \begin_inset Formula $n$
 \end_inset
 
- observações 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Russell_2003"
-
-\end_inset
-
-.
+ observações.
 \end_layout
 
 \begin_layout Standard
@@ -2804,8 +2843,9 @@ key "umair_2014"
 
 \end_inset
 
- coloca-se o KDD, juntamente com o CRISP-DM e o SEMMA, como um tipo de processo
- relacionado com a mineração de dados.
+ coloca-se o KDD, juntamente com o CRISP-DM e o SEMMA (Sample, Explore,
+ Modify, Model and Assess), como um tipo de processo relacionado com a mineração
+ de dados.
  A seguir, expõe-se uma breve descrição sobre eles:
 \end_layout
 
@@ -2839,21 +2879,6 @@ cref{fig:KDD}
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "carlos_2011"
-
-\end_inset
-
-, menciona-se que a mineração de dados existia como uma fase do processo
- KDD.
- A mineração de dados só compreendia a aplicação de algoritmos de otimização
- e classificação, mas com o tempo evoluiu e atualmente refere-se ao processo
- completo de KDD.
 \end_layout
 
 \begin_layout Standard
@@ -2977,6 +3002,21 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "carlos_2011"
+
+\end_inset
+
+, menciona-se que a mineração de dados existia como uma fase do processo
+ KDD.
+ A mineração de dados só compreendia a aplicação de algoritmos de otimização
+ e classificação, mas com o tempo evoluiu e atualmente refere-se ao processo
+ completo de KDD.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3461,11 +3501,141 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+Como se mostra na 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-MAIS!!!
+
+
+\backslash
+cref{fig:NIVEIS-DE-CRISP-DM}
+\end_layout
+
+\end_inset
+
+, a metodologia CRISP-DM é descrita em termos de um modelo de processo hierárqui
+co, consistindo de conjuntos de tarefas descritas em quatro níveis de abstração
+ (de geral a específico): fases, tarefas genéricas, tarefas especializadas
+ e instâncias de processos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+captionsetup{width=0.7
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Distribuição em quatro níveis da metodologia CRISP-DM.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:NIVEIS-DE-CRISP-DM}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename img/NIVEIS-CRISPDM.pdf
+	lyxscale 50
+	scale 57
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+vspace{-0.1em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3474,8 +3644,7 @@ MAIS!!!
 \end_layout
 
 \begin_layout Standard
-Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
- com a 
+Tendo como referência a 
 \begin_inset ERT
 status open
 
@@ -3483,22 +3652,92 @@ status open
 
 
 \backslash
-cref{fig:organ_teorica}
+cref{fig:NIVEIS-DE-CRISP-DM}
 \end_layout
 
 \end_inset
 
-, é necessário adotar um tipo de processo de mineração de dados.
- Como é mencionado em 
+, no nível superior, o processo de mineração de dados é organizado em um
+ número definido de fases; cada fase consiste em várias tarefas genéricas
+ de segundo nível.
+ Este segundo nível é chamado de genérico porque é destinado para cobrir
+ todas as possíveis situações de mineração de dados.
+ As tarefas genéricas devem ser o mais completas e estáveis possível.
+ Completo significa abranger o processo de mineração de dados e suas possíveis
+ aplicações.
+ Estável significa que o modelo deve ser válido para novos desenvolvimentos
+ que não foram previstos, 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "david_2008"
+key "pete_2000"
 
 \end_inset
 
-, nas três metodologias que foram consideradas, não há obrigação de seguir
- de forma rígida seus respectivos passos.
- Afinal, optou-se por seguir a metodologia CRISP-DM.
+.
+\end_layout
+
+\begin_layout Standard
+O nível das tarefas especializadas, na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:NIVEIS-DE-CRISP-DM}
+\end_layout
+
+\end_inset
+
+, é o lugar para descrever como as ações nas tarefas genéricas devem ser
+ realizadas em determinadas situações específicas.
+ Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+, no terceiro nível se descreve como essas tarefas se diferenciam umas com
+ outras na forma de serem executadas em diversos contextos.
+\end_layout
+
+\begin_layout Standard
+Finalmente, ainda na 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:NIVEIS-DE-CRISP-DM}
+\end_layout
+
+\end_inset
+
+, tem-se no quarto nível as instâncias de processo.
+ Estas são registros das ações, decisões e resultados de um projeto de mineração
+ de dados real.
+ Uma instância de processo é organizada de acordo com as tarefas definidas
+ nos níveis mais altos e representa, de forma específica, o que realmente
+ acontece no projeto, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The fourth level, the process instance, is a record of the actions, decisions,
+ and results of an actual data mining engagement.
+ A process instance is organized according to the tasks defined at the higher
+ levels, but represents what actually happened in a particular engagement,
+ rather than what happens in general.
 \end_layout
 
 \begin_layout Standard
@@ -3521,7 +3760,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -3894,6 +4133,34 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Para passar ao seguinte estado da rede de Petri estabelecida, de acordo
+ com a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:organ_teorica_2}
+\end_layout
+
+\end_inset
+
+, é necessário adotar um tipo de processo de mineração de dados.
+ Como é mencionado em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "david_2008"
+
+\end_inset
+
+, nas três metodologias que foram consideradas, não há obrigação de seguir
+ de forma rígida seus respectivos passos.
+ Afinal, optou-se por seguir a metodologia CRISP-DM.
 \end_layout
 
 \begin_layout Subsection
@@ -5129,21 +5396,21 @@ key "Eduardo_1999"
 \end_layout
 
 \begin_layout Standard
-Sistemas baseados em Regras Fuzzy (SRFs) representam uma ferramenta poderosa
- para resolver problemas de controle (controlador 
-\emph on
-fuzzy
-\emph default
-) e para modelar conhecimento.
- Em seguida, apresentam-se algumas formas de representação do conhecimento
- segundo 
+Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "marcio_2007"
 
 \end_inset
 
-:
+, sistemas baseados em Regras Fuzzy (SRFs) representam uma ferramenta poderosa
+ para resolver problemas de controle (controlador 
+\emph on
+fuzzy
+\emph default
+) e para modelar conhecimento.
+ Em seguida, apresentam-se algumas formas de representação do conhecimento
+ de regras extraídas de uma RNA:
 \end_layout
 
 \begin_layout Enumerate
@@ -5151,11 +5418,11 @@ key "marcio_2007"
 \emph on
 Regras convencionais
 \emph default
-: Representam uma expressão em duas partes: os antecedentes e a consequência.
- A forma dessas regras será
+: Representam uma expressão em duas partes, os antecedentes e a consequência.
+ A forma dessas regras é:
 \begin_inset Formula 
 \[
-\mathrm{SE}\,\left\langle x_{1}\leq t_{1}\,\mathrm{E}\,x_{2}\leq t_{2}\,\ldots\,\mathrm{E}\,x_{n}\leq t_{n}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\textrm{\textbf{SE} }\left\langle x_{1}\leq t_{1}\textrm{ \textbf{E} }x_{2}\leq t_{2}\,\ldots\textrm{ \textbf{E} }x_{n}\leq t_{n}\right\rangle \textrm{ \textbf{ENTÃO} }\left\langle C\right\rangle 
 \]
 
 \end_inset
@@ -5190,10 +5457,10 @@ Regras M de N
 \end_inset
 
  regras devem ser verdadeiras.
- A forma está dada por
+ A forma está dada por:
 \begin_inset Formula 
 \[
-\mathrm{SE}\,M\,\mathrm{DE}\,\left\langle x_{1}\leq t_{1}\,\mathrm{E}\,x_{2}\leq t_{2}\,\ldots\,\mathrm{E}\,x_{N}\leq t_{N}\right\rangle \,\mathrm{SÃO\,VERDADEIROS,}\,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\textrm{\textbf{SE} }M\textrm{ \textbf{DE} }\left\langle x_{1}\leq t_{1}\textrm{ \textbf{E} }x_{2}\leq t_{2}\,\ldots\textrm{ \textbf{E} }x_{N}\leq t_{N}\right\rangle \textrm{ \textbf{SÃO VERDADEIROS, ENTÃO} }\left\langle C\right\rangle 
 \]
 
 \end_inset
@@ -5222,12 +5489,13 @@ de modo que
 \emph on
 Regras oblíquas
 \emph default
-: É um conjunto de regras, onde cada condição é dada na forma da desigualdade
+: É um conjunto de regras tal que cada condição é dada na forma da desigualdade
  linear do tipo 
 \begin_inset Formula $\mathcal{R}:\sum k_{j}x_{j}\leq\eta$
 \end_inset
 
-, tal que 
+.
+ A expressão 
 \begin_inset Formula $\sum k_{j}x_{j}$
 \end_inset
 
@@ -5252,10 +5520,10 @@ Regras oblíquas
 \begin_inset Formula $\mathcal{R}_{i}$
 \end_inset
 
-, uma regra oblíqua está definida por
+, uma regra oblíqua está definida por:
 \begin_inset Formula 
 \[
-\mathrm{SE}\,\left\langle \mathcal{R}_{1}\,\mathrm{E}\,\mathcal{R}_{2}\,\ldots\,\mathrm{E}\,\mathcal{R}_{n}\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\textrm{\textbf{SE} }\left\langle \mathcal{R}_{1}\textrm{ \textbf{E} }\mathcal{R}_{2}\,\ldots\textrm{ \textbf{E} }\mathcal{R}_{n}\right\rangle \textrm{ \textbf{ENTÃO} }\left\langle C\right\rangle 
 \]
 
 \end_inset
@@ -5283,10 +5551,10 @@ Regras fuzzy
 \emph on
 fuzzy
 \emph default
- apresentam a forma
+ apresentam a forma:
 \begin_inset Formula 
 \[
-\mathrm{SE}\,\left\langle \left(x_{1}\,\mathbf{é}\,f_{1}\right)\,\mathrm{E}\,\left(x_{2}\,\mathbf{é}\,f_{2}\right)\,\ldots\,\mathrm{E}\,\left(x_{n}\,\mathbf{é}\,f_{n}\right)\right\rangle \,\mathrm{ENTÃO}\,\left\langle \mathrm{C}\right\rangle 
+\textrm{\textbf{SE} }\left\langle \left(x_{1}\textrm{ \textbf{É}  }f_{1}\right)\textrm{ \textbf{E} }\left(x_{2}\textrm{ \textbf{É} }f_{2}\right)\,\ldots\textrm{ \textbf{E} }\left(x_{n}\textrm{ \textbf{É} }f_{n}\right)\right\rangle \textrm{ \textbf{ENTÃO} }\left\langle C\right\rangle 
 \]
 
 \end_inset
@@ -5383,6 +5651,19 @@ cref{alg:alg_RX}
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FIQUEI AQUIII! >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
