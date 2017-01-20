@@ -5766,7 +5766,7 @@ cref{eq:sigmoide}
 
 \end_inset
 
-
+:
 \begin_inset Formula 
 \begin{equation}
 S\left(x\right)=\frac{1}{1+e^{-\alpha x}}\label{eq:sigmoide}
@@ -7206,7 +7206,35 @@ Dados_sensor
  O processo de junção acontece do modo seguinte:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Agrupar pelo atributo 
 \begin_inset Quotes eld
 \end_inset
@@ -7235,7 +7263,19 @@ ID
 , para cada uma das tuplas.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Procuram-se os ID correspondentes a cada classe na tabela 
 \begin_inset Quotes eld
 \end_inset
@@ -7264,7 +7304,19 @@ Dados_sensor
  é modificada.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 A tabela 
 \begin_inset Quotes eld
 \end_inset
@@ -7299,7 +7351,6 @@ cref{fig:DI_REL_JUNCAO}
 .
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -7423,7 +7474,22 @@ fonteProp{}
 
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Formatar os dados
 \end_layout
@@ -11439,7 +11505,35 @@ key "Eduardo_1999"
  Para poder utilizar o algoritmo seguem-se os passos:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Inserir o fator multiplicador do desvio padrão da massa de dados e o número
  de classes.
  Os autores do artigo 
@@ -11453,7 +11547,19 @@ key "Eduardo_1999"
  Fixa-se o número de classes igual a 3.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Em seguida, se insere o número de tuplas relacionadas com as três classes
  relacionadas: 
 \begin_inset Quotes eld
@@ -11491,7 +11597,19 @@ background
 000 tuplas.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Por fim, escolhe-se a porcentagem mínima de elementos que conterão o 
 \emph on
 cluster
@@ -11567,6 +11685,281 @@ key "Eduardo_1999"
 cluster
 \emph default
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Leader Algorithm
+\emph default
+, disponível em 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zibigniew_1996"
+
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{alg:leader_algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Procedure{Leader Algorithm}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $I 
+\backslash
+gets 1$ 
+\backslash
+Comment{$I$ indica a posição do objeto}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $L(1) 
+\backslash
+gets 1$ 
+\backslash
+Comment{$L(I)$ é o objeto líder}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{($I<N$)} 
+\backslash
+Comment{$N$ indica o número de elementos do conjunto}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State $I 
+\backslash
+gets I + 1$ 
+\backslash
+Comment{$d
+\backslash
+left(I,J
+\backslash
+right)$ indica a distância entre $I$ e o possível líder $J$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State 
+\backslash
+textbf{Procure o objeto} $J$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+				
+\backslash
+textbf{entre}
+\end_layout
+
+\begin_layout Plain Layout
+
+				$L
+\backslash
+left(1
+\backslash
+right),
+\backslash
+cdots,L
+\backslash
+left(I-1
+\backslash
+right)$, 
+\backslash
+textbf{para que cada} $d
+\backslash
+left(I,J
+\backslash
+right)$ 
+\backslash
+textbf{seja mínima.}	
+\end_layout
+
+\begin_layout Plain Layout
+
+	%   
+\backslash
+Comment{Call Recursion again}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)
+\backslash
+leq D$)} 
+\backslash
+Comment{$D$ é o limiar de distância}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets J$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+If{($d
+\backslash
+left(I,J
+\backslash
+right)>D$)}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State $L
+\backslash
+left(I
+\backslash
+right) 
+\backslash
+gets I$
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+EndIf
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndWhile
+\end_layout
+
+\begin_layout Plain Layout
+
+	%
+\backslash
+State 
+\backslash
+textbf{return} $a$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndProcedure
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -11893,265 +12286,6 @@ cref{sec:Resultados}
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float algorithm
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\emph on
-Leader Algorithm
-\emph default
-, disponível em 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zibigniew_1996"
-
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-label{alg:leader_algorithm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{algorithmic}[1]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-Procedure{Leader Algorithm}{}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-State $I 
-\backslash
-gets 1$ 
-\backslash
-Comment{$I$ indica a posição do objeto}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-State $L(1) 
-\backslash
-gets 1$ 
-\backslash
-Comment{$L(I)$ é o objeto líder}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-While{($I<N$)} 
-\backslash
-Comment{$N$ indica o número de elementos do conjunto}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-State $I 
-\backslash
-gets I + 1$ 
-\backslash
-Comment{$d
-\backslash
-left(I,J
-\backslash
-right)$ indica a distância entre $I$ e o possível líder $J$}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-State 
-\backslash
-textbf{Procure o objeto} $J$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-				
-\backslash
-textbf{entre}
-\end_layout
-
-\begin_layout Plain Layout
-
-				$L
-\backslash
-left(1
-\backslash
-right),
-\backslash
-cdots,L
-\backslash
-left(I-1
-\backslash
-right)$, 
-\backslash
-textbf{para que cada} $d
-\backslash
-left(I,J
-\backslash
-right)$ 
-\backslash
-textbf{seja mínima.}	
-\end_layout
-
-\begin_layout Plain Layout
-
-	%   
-\backslash
-Comment{Call Recursion again}
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{($d
-\backslash
-left(I,J
-\backslash
-right)
-\backslash
-leq D$)} 
-\backslash
-Comment{$D$ é o limiar de distância}
-\end_layout
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State $L
-\backslash
-left(I
-\backslash
-right) 
-\backslash
-gets J$
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-EndIf
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-If{($d
-\backslash
-left(I,J
-\backslash
-right)>D$)}
-\end_layout
-
-\begin_layout Plain Layout
-
-			
-\backslash
-State $L
-\backslash
-left(I
-\backslash
-right) 
-\backslash
-gets I$
-\end_layout
-
-\begin_layout Plain Layout
-
-		
-\backslash
-EndIf
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-EndWhile
-\end_layout
-
-\begin_layout Plain Layout
-
-	%
-\backslash
-State 
-\backslash
-textbf{return} $a$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-EndProcedure
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{algorithmic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection

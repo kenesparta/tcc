@@ -460,7 +460,11 @@ fonteProp}{
 
 \begin_layout Plain Layout
 
-					
+\end_layout
+
+\begin_layout Plain Layout
+
+						
 \backslash
 scriptsize{{Fonte: Autoria própria.
 \backslash
@@ -469,6 +473,11 @@ scriptsize{{Fonte: Autoria própria.
 
 \backslash
 vspace{0.2em}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+					
 \end_layout
 
 \begin_layout Plain Layout
@@ -533,6 +542,62 @@ vspace{0.2em}}}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+resumo}[1]{
+\end_layout
+
+\begin_layout Plain Layout
+
+				{
+\end_layout
+
+\begin_layout Plain Layout
+
+					
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+						
+\backslash
+textsc{
+\backslash
+textbf{#1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+					
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+				}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -557,10 +622,6 @@ status open
 begin{titlepage}
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator latexpar
 \end_inset
 
 
@@ -779,7 +840,7 @@ Sobral $-$ CE
 \backslash
 
 \backslash
-2016
+2017
 \end_layout
 
 \end_inset
@@ -1116,7 +1177,11 @@ status open
 
 {
 \backslash
-small{} Sobral $-$ CE, dezembro de 2016}
+small{} Sobral $-$ CE 
+\backslash
+
+\backslash
+ 2017}
 \end_layout
 
 \end_inset
@@ -1196,70 +1261,9 @@ Ficha de catalogação
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage clearpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cleardoublepage
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-phantomsection
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{page}{1}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-phantomsection
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Folha de aprovação
-\end_layout
+\begin_inset External
+	template PDFPages
+	filename caralografica.pdf
 
 \end_inset
 
@@ -1561,23 +1565,6 @@ Por fim, agradeço a Diane, minha querida e amada.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Também agradeço a todos os meus colegas do Brasil e do Peru.
- Especialmente a Diego e Albert, por me mostrar sua lealdade até nos momentos
- mais difíceis; a Pedro Mateus, por me apoiar na realização deste trabalho;
- a Edson (Issedisum) e Mateus, por serem amigos leais na hora de fazer as
- coisas (programar) e a Guilherme Almeida por sua grande amizade
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -1635,15 +1622,102 @@ phantomsection
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resumo{
+\end_layout
+
+\end_inset
+
 Resumo
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Utiliza-se uma rede de Petri para modelar a base teórica utilizada no trabalho.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent 
+\end_layout
+
+\end_inset
+
+O conhecimento existente em uma massa de dados pode ser extraído utilizando
+ métodos de mineração de dados.
+ No trabalho utiliza-se a metodologia CRISP-DM (
+\emph on
+Cross-Industry Standard Process for Data Mining
+\emph default
+) para extrair conhecimento relevante da massa de dados obtida a partir
+ de uma simulação de um nariz eletrônico.
+ O nariz eletrônico consiste em oito sensores que monitoram uma área fechada
+ e são estimulados com dois tipos de odor.
+ O objetivo da mineração de dados é encontrar as regras lógicas que relacionem
+ os valores da condutância dos oito sensores e os tipos de odor.
+ Para a modelagem, que é um processo da metodologia CRISP-DM, são utilizados
+ o algoritmo RX (extração de regras a partir de Redes Neurais Artificiais)
+ e o algoritmo J48 (árvore de decisão) de forma separada, finalmente, uma
+ comparação das regras lógicas obtidas por esses algoritmos é realizada.
+ As regras lógicas obtidas utilizando o algoritmo RX são de menor quantidade
+ comparadas com as obtidas utilizando o algoritmo J48, porém, oferecem uma
+ menor precisão.
+ A quantidade de regras é importante na hora de serem interpretadas por
+ um especialista, uma menor quantidade de regras garante uma maior eficiência
+ na sua interpretação.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Palavras-chave
+\series default
+: Mineração de dados, CRISP-DM, extração de regras, Redes Neurais Artificiais,
+ árvores de decisão.
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -1701,8 +1775,96 @@ phantomsection
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resumo{
+\end_layout
+
+\end_inset
+
 Abstract
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent 
+\end_layout
+
+\end_inset
+
+Existing knowledge in a dataset can be extracted using data mining methods.
+ In this work, CRISP-DM (Standard Trans-Industry Process for Data Mining)
+ methodology is used to extract relevant knowledge from the dataset obtained
+ in a simulation of an electronic nose.
+ The electronic nose consists of eight sensors that monitoring an enclosed
+ area and are stimulated with two types of odor.
+ The objective of data mining is to find the logical rules that relate the
+ values of the conductance of the eight sensors and the types of odor.
+ For the modeling, which is a process of the CRISP-DM methodology, the algorithm
+ RX (rule extraction from Artificial Neural Networks) and the algorithm
+ J48 (decision tree) are used separately, finally a comparison of the logical
+ rules Obtained by these algorithms is performed.
+ The amount of logical rules obtained using the RX algorithm are smaller
+ compared to obtained using the J48 algorithm, but they offer less precision.
+ The amount of rules is important when interpreted by a specialist, a smaller
+ number of rules ensures greater efficiency in their interpretation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Keywords
+\series default
+: Data Mining, CRISP-DM, rule extraction, Artificial Neural Networks, decision
+ trees.
 \end_layout
 
 \begin_layout Standard
@@ -2091,7 +2253,7 @@ Cross-Industry Standard Process for Data Mining
 \end_layout
 
 \begin_layout Standard
-A Modelagem é um processo da metodologia CRISP-DM onde se definem as técnicas
+A modelagem é um processo da metodologia CRISP-DM onde se definem as técnicas
  que auxiliam o processo de mineração de dados.
  Uma das técnicas utilizadas no presente trabalho está relacionada com as
  Redes Neurais Artificiais (RNA
@@ -2200,9 +2362,9 @@ Gauss-Newton.
 \end_layout
 
 \begin_layout Standard
-É utilizado também um algoritmo que gera uma árvore de decisão diretamente
- a partir de uma massa de dados sem necessidade de projetar uma rede neural,
- esse é o algoritmo J48.
+O algoritmo J48, que foi também utilizado no trabalho, é um algoritmo que
+ gera uma árvore de decisão a partir da massa de dados utilizada, sem necessidad
+e de projetar uma rede neural.
  Este é a implementação 
 \emph on
 open source
@@ -2503,8 +2665,11 @@ description "Rule Extraction"
 
 \end_inset
 
- melhorado para poder extrair as regras de uma rede neural do tipo RBF (Radial
- Basis Function)
+ melhorado para poder extrair as regras de uma rede neural do tipo RBF (
+\emph on
+Radial Basis Function
+\emph default
+)
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 prefix "RBF"
@@ -2597,8 +2762,7 @@ label{sec:Resultados}
 \end_layout
 
 \begin_layout Standard
-Os resultados são mostrados como resultado do processo de modelagem da metodolog
-ia CRISP-DM, ver 
+O resultado do processo de modelagem da metodologia CRISP-DM, ver 
 \begin_inset ERT
 status open
 
@@ -2611,9 +2775,9 @@ cref{subsec:modelagem}
 
 \end_inset
 
-.
- Uma árvore de decisão e um conjunto de regras lógicas sãos construídos
- a partir da massa de dados fornecida pelo cliente, como se explica na 
+, é mostrado nesta seção.
+ Regras lógicas são construídas a partir da massa de dados fornecida pelo
+ cliente, como se explica na 
 \begin_inset ERT
 status open
 
@@ -2879,26 +3043,81 @@ Fazendo uma comparação dos resultados do método de extração de regras (algo
 % de classificações corretas).
  Conclui-se também que o algoritmo RX possui visivelmente menor número de
  regras lógicas com relação ao algoritmo J48.
+ Ter um número menor de regras lógicas é uma vantagem para a o especialista
+ que vai interpretá-las, aplicá-las e fazer predições para dados que serão
+ gerados no futuro.
 \end_layout
 
 \begin_layout Subsection
 Recomendações
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Realizar o processo de CRISP-DM utilizando diferentes algoritmos de extração
  de regras em diferentes arquiteturas de RNA.
  Utilizar diferentes tipos de algoritmos para classificação utilizando árvores
  de decisão.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Utilizar uma massa de dados que seja sempre atualizada em tempo real.
  É interessante porque é onde se dá uma aplicação real ao projeto de mineração
  de dados utilizando a metodologia CRISP-DM.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Desenvolver uma aplicação que mostre o resultado da mineração e implemente
  as regras lógicas para que o usuário final possa utilizá-las.
  Essas regras podem ser implementadas usando uma linguagem de programação
@@ -2927,6 +3146,22 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

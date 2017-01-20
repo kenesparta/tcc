@@ -1672,29 +1672,6 @@ key "Henri_2016"
 ão: o método de gradiente descendente e o método de Gauss-Newton.
 \end_layout
 
-\begin_layout Enumerate
-
-\emph on
-Método gradiente descendente
-\emph default
-: É um método de minimização geral que atualiza os valores dos parâmetros
- no sentido "descendente": direção oposta ao gradiente da função objetivo.
- Este método converge bem para problemas com funções objetivas simples porém,
- para problemas com vários parâmetros não é um método viável.
-\end_layout
-
-\begin_layout Enumerate
-
-\emph on
-Método de Gauss-Newton:
-\emph default
- é um método para minimizar uma função objetivo de soma de quadrados.
- Presume-se que a função objetivo é aproximadamente quadrática nos parâmetros
- próximos à solução ótima.
- Para problemas de tamanho moderado, o método de Gauss-Newton converge tipicamen
-te muito mais rapidamente do que o método de gradiente descendente.
-\end_layout
-
 \begin_layout Subsection
 Aprendizado de máquina
 \end_layout
@@ -3521,6 +3498,39 @@ co, consistindo de conjuntos de tarefas descritas em quatro níveis de abstraç�
 \end_layout
 
 \begin_layout Standard
+Tendo como referência a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{fig:NIVEIS-DE-CRISP-DM}
+\end_layout
+
+\end_inset
+
+, no nível superior, o processo de mineração de dados é organizado em um
+ número definido de fases; cada fase consiste em várias tarefas genéricas
+ de segundo nível.
+ Este segundo nível é chamado de genérico porque é destinado para cobrir
+ todas as possíveis situações de mineração de dados.
+ As tarefas genéricas devem ser o mais completas e estáveis possível.
+ Completo significa abranger o processo de mineração de dados e suas possíveis
+ aplicações.
+ Estável significa que o modelo deve ser válido para novos desenvolvimentos
+ que não foram previstos, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pete_2000"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -3540,7 +3550,7 @@ textwidth}
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -3644,39 +3654,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-Tendo como referência a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{fig:NIVEIS-DE-CRISP-DM}
-\end_layout
-
-\end_inset
-
-, no nível superior, o processo de mineração de dados é organizado em um
- número definido de fases; cada fase consiste em várias tarefas genéricas
- de segundo nível.
- Este segundo nível é chamado de genérico porque é destinado para cobrir
- todas as possíveis situações de mineração de dados.
- As tarefas genéricas devem ser o mais completas e estáveis possível.
- Completo significa abranger o processo de mineração de dados e suas possíveis
- aplicações.
- Estável significa que o modelo deve ser válido para novos desenvolvimentos
- que não foram previstos, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "pete_2000"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 O nível das tarefas especializadas, na 
 \begin_inset ERT
 status open
@@ -3730,14 +3707,6 @@ key "pete_2000"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-The fourth level, the process instance, is a record of the actions, decisions,
- and results of an actual data mining engagement.
- A process instance is organized according to the tasks defined at the higher
- levels, but represents what actually happened in a particular engagement,
- rather than what happens in general.
 \end_layout
 
 \begin_layout Standard
@@ -5413,10 +5382,38 @@ fuzzy
  de regras extraídas de uma RNA:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 
 \emph on
-Regras convencionais
+ Regras convencionais
 \emph default
 : Representam uma expressão em duas partes, os antecedentes e a consequência.
  A forma dessas regras é:
@@ -5442,7 +5439,19 @@ de modo que
  é uma classe associada a um conceito.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 
 \emph on
 Regras M de N
@@ -5484,7 +5493,19 @@ de modo que
  é uma classe associada a um conceito.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 
 \emph on
 Regras oblíquas
@@ -5541,7 +5562,19 @@ key "Rudy_1997"
  deste tipo.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 
 \emph on
 Regras fuzzy
@@ -5554,7 +5587,7 @@ fuzzy
  apresentam a forma:
 \begin_inset Formula 
 \[
-\textrm{\textbf{SE} }\left\langle \left(x_{1}\textrm{ \textbf{É}  }f_{1}\right)\textrm{ \textbf{E} }\left(x_{2}\textrm{ \textbf{É} }f_{2}\right)\,\ldots\textrm{ \textbf{E} }\left(x_{n}\textrm{ \textbf{É} }f_{n}\right)\right\rangle \textrm{ \textbf{ENTÃO} }\left\langle C\right\rangle 
+\textrm{\textbf{SE} }\left\langle \left(x_{1}\textrm{ \textbf{É} }f_{1}\right)\textrm{ \textbf{E} }\left(x_{2}\textrm{ \textbf{É} }f_{2}\right)\,\ldots\textrm{ \textbf{E} }\left(x_{n}\textrm{ \textbf{É} }f_{n}\right)\right\rangle \textrm{ \textbf{ENTÃO} }\left\langle C\right\rangle 
 \]
 
 \end_inset
@@ -5574,7 +5607,19 @@ fuzzy
 .
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 
 \emph on
 Autômato de estado finito
@@ -5606,6 +5651,22 @@ key "Christian_1995"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Phantom VPhantom
 status open
 
@@ -5616,6 +5677,9 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace -0.5cm
 \end_inset
 

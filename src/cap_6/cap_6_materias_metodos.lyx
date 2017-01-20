@@ -5766,7 +5766,7 @@ cref{eq:sigmoide}
 
 \end_inset
 
-
+:
 \begin_inset Formula 
 \begin{equation}
 S\left(x\right)=\frac{1}{1+e^{-\alpha x}}\label{eq:sigmoide}
@@ -7206,7 +7206,35 @@ Dados_sensor
  O processo de junção acontece do modo seguinte:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Agrupar pelo atributo 
 \begin_inset Quotes eld
 \end_inset
@@ -7235,7 +7263,19 @@ ID
 , para cada uma das tuplas.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Procuram-se os ID correspondentes a cada classe na tabela 
 \begin_inset Quotes eld
 \end_inset
@@ -7264,7 +7304,19 @@ Dados_sensor
  é modificada.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 A tabela 
 \begin_inset Quotes eld
 \end_inset
@@ -7299,7 +7351,6 @@ cref{fig:DI_REL_JUNCAO}
 .
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -7423,7 +7474,22 @@ fonteProp{}
 
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Formatar os dados
 \end_layout
@@ -11439,7 +11505,35 @@ key "Eduardo_1999"
  Para poder utilizar o algoritmo seguem-se os passos:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}[leftmargin=0.71cm,labelwidth=2cm,labelindent=1.5em,labelsep=0.5cm]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Inserir o fator multiplicador do desvio padrão da massa de dados e o número
  de classes.
  Os autores do artigo 
@@ -11453,7 +11547,19 @@ key "Eduardo_1999"
  Fixa-se o número de classes igual a 3.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Em seguida, se insere o número de tuplas relacionadas com as três classes
  relacionadas: 
 \begin_inset Quotes eld
@@ -11491,7 +11597,19 @@ background
 000 tuplas.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
 Por fim, escolhe-se a porcentagem mínima de elementos que conterão o 
 \emph on
 cluster
@@ -11821,6 +11939,22 @@ end{algorithmic}
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
 \end_layout
 
 \end_inset
